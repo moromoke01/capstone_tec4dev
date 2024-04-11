@@ -1,0 +1,60 @@
+.container{
+    width:100vw;
+    font-weight: 100px;
+    font-size: 35px;
+    background-color: #fff;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add bottom border shadow */
+    height: 100px;    
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .navbar ul li {
+    margin-right: 20px;
+  }
+  
+  .navbar ul li:last-child {
+    margin-right: 0;
+  }
+
+  .navbar button {
+    background-color:#9C13BE;
+    color: #fff; /* White text color */
+    
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Add pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .navbar button:hover {
+    background-color: white; 
+    color: #9C13BE;
+  }
+  .navbar button.second {
+    background-color: #fff; /* White background color */
+    color: black;
+    border-color:#9C13BE;
+  }
+  
+  .navbar button.second:hover {
+    background-color: #9C13BE; /* Hover background color */
+    color: #fff; /* Hover text color */
+  }
+
+
+  
