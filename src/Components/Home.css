@@ -1,0 +1,277 @@
+.containerbody {
+  background: linear-gradient(283.67deg, rgba(245, 245, 245, 0.35) 0.63%, rgba(220, 199, 212, 0.66) 50.07%, rgba(220, 199, 212, 0.59) 72.37%, #F5F5F5 81.09%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+}
+
+.containerbody h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.containerbody h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.containerbody button {
+  background-color: #EB5757;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.containerbody button:hover {
+  background-color: white;
+  color: #806262;
+}
+
+.containerbody img {
+  max-width: 100%;
+  height: auto; 
+  margin-top: -110px; 
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+
+.dofooter img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.dofooter {
+  margin: 10px;
+}
+
+.stars i {
+  color: #E2B93B; 
+  font-size: 20px; 
+  margin-left: 5px; 
+}
+
+.stars {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.but {
+  background-color: #EB5757;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.but:hover {
+  background-color: white;
+  color: #806262;
+}
+
+.two {
+  margin: auto;
+  max-width: 60%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.par{
+  display: flex;
+}
+.paral {
+  width: 750px; /* Adjust the width of each card */
+  margin: 20px; /* Adjust the spacing between cards */
+  padding: 20px;
+  border: 1px solid #ccc; /* Add border to simulate card */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 280px;
+  
+}
+
+.score{
+  margin: auto 8%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0.1, 0.1);
+  border-radius: 10px;
+  width: 200px;
+  border: 1px solid #ccc; /* Add border to simulate card */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.nextone {
+  margin: 5px;
+  padding: 5px;
+  background: #0F172A;
+  color: #fff;
+  border-radius: #ccc;
+}
+
+.nextone h3 {
+  margin: auto 35%;
+}
+
+.changes {
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.review {
+  background-color: #27AE6024;
+  padding: 20px;
+}
+
+.reviewheading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 0 0 calc(50% - 50px);
+  margin: 25px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review h3 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.review p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.stars {
+  color: gold;
+  font-size: 20px;
+}
+.frequent{
+gap: 7%
+}
+.second-tolast{
+  background: conic-gradient(from 32.78deg at 32.07% 54.51%, #090909 -199.79deg, #0B0B0B 106.47deg, #525252 114.54deg, #6E6E6E 155.73deg, #090909 160.21deg, #0B0B0B 466.47deg);
+height: 350px;
+color: #ccc;
+display: flex;
+}
+.second-tolast h1{
+  margin: auto 20px;
+  padding-top: 6%;
+}
+.second-tolast .but{
+  margin : 50px;
+}
+.second-tolast {
+  position: relative;
+}
+
+.ofour {
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+  position: absolute; 
+  margin-left: 70%;
+}
+.othree{
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+  position: absolute;
+  margin-left: 50%;
+}
+.otwo{
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+  position: absolute;
+  margin-left: 30%;
+}
+.one{
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%; 
+  position: absolute;
+  margin-left: 90%;
+}
+.last{
+  display: flex;
+  gap: 40%;
+  font-size: 30px;
+  flex-direction: row;
+}
+.last ul{
+  display: flex;
+  text-decoration: none;
+  gap: 40px;
+  list-style-type: none;
+}
+@media screen and (max-width: 768px) {
+  .last {
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .last img {
+    margin-bottom: 10px; /* Add some space between logo and list on small screens */
+  }
+
+  .last ul {
+    flex-direction: row;
+    text-align: center;
+    font-size: 9px;
+  }
+
+  .last li {
+    margin: 5px 0; /* Adjust the spacing between list items for small screens */
+  }
+}

@@ -1,11 +1,14 @@
-.NavbarItems{
-    background: #daebc3;
-    height: 100px;
+.NavbarItems {
+    background: #f4f5f4;
+    height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-}
+    align-items: center; 
+    justify-content: space-between; 
+    font-size: 2rem;
+    position: relative;
+    padding: 10px 20px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
 .navbar-logo{
     color: #9C13BE;
     justify-self: start;
@@ -69,7 +72,7 @@
 /*smaller screens*/
 @media screen and (max-width: 768px) {
     .NavbarItems {
-        background: #daebc3;
+        background: #fffffe;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -103,7 +106,7 @@
         left: -100%;
         opacity: 1;
         transition: all 0.5s ease;
-        background: #daebc3;
+        background: #fafaf9;
         border-radius: 10px; 
         padding: 20px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
