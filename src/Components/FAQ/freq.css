@@ -1,0 +1,11 @@
+.open-bg {
+     background: rgba(251, 235, 255, 0.59);
+    
+}
+.floating-shadow {
+    box-shadow: 0 4px 6px -1px rgba(167, 124, 207, 0.452), 0 2px 4px -1px rgba(0, 0, 0, 0.05);
+}
+
+.floating-shadow:hover {
+    box-shadow: 0 10px 15px -3px rgba(207, 107, 207, 0.411), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}

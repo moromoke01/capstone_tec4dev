@@ -148,7 +148,7 @@ const Home = () => {
      
        <div className='frequent'>
         <div className='faq-item'>
-          <h3>Frequently Asked Questions</h3>
+          <h3 className='items-center'>Frequently Asked Questions</h3>
         </div>
         <Freq/>
         </div>
