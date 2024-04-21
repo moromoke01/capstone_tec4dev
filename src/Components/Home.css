@@ -197,6 +197,13 @@ footer {
 .frequent{
 gap: 7%
 }
+.items-center h3{
+  font-family: 'Source Sans Pro', sans-serif; /* Specify the font family */
+  font-size: 18px; /* Specify the font size */
+  text-align: center; /* Center the text horizontally */
+  background-color: #EB5757;
+}
+
 .second-tolast{
   background: conic-gradient(from 32.78deg at 32.07% 54.51%, #090909 -199.79deg, #0B0B0B 106.47deg, #525252 114.54deg, #6E6E6E 155.73deg, #090909 160.21deg, #0B0B0B 466.47deg);
 height: 350px;
@@ -364,3 +371,23 @@ display: flex;
 .footer ul li a:hover {
   text-decoration: underline;
 }
+
+.insightify-section {
+  padding-right: 20px; /* Add some spacing to the right */
+  border-right: 3px solid white; /* Add a right border */
+}
+
+.insightify-section h3 {
+  font-family: Andika New Basic;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  margin-bottom: 10px;
+  color: white; /* Set heading color */
+}
+
+.insightify-section p {
+  color: white; /* Set paragraph text color */
+}
+
+/* Adjust the spacing and color of the border based on your design preferences */

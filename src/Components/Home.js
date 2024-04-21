@@ -100,7 +100,7 @@ const Home = () => {
      </div>
      <div className='frequent'>
         <div className='faq-item'>
-          <h1 className='items-center'>Frequently Asked Questions</h1>
+          <h3 className='items-center'>Frequently Asked Questions</h3>
         </div>
         <Freq/>
         </div>
