@@ -98,6 +98,13 @@ const Home = () => {
         </div>
         </div>
      </div>
+     <div className='frequent'>
+        <div className='faq-item'>
+          <h3 className='items-center'>Frequently Asked Questions</h3>
+        </div>
+        <Freq/>
+        </div>
+
      <div className='review'>
         <div className='reviewheading'> 
             <h1>Reviews </h1>
@@ -138,7 +145,7 @@ const Home = () => {
                 <img src={foot_three} alt="Person 3"/>
             </div>
             <div class="review">
-                <h3>Michaella Johnson</h3>
+                <h1>Michaella Johnson</h1>
                 <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, fugiat."</p>
                 <div class="stars">★★★★★</div>
             </div>
@@ -146,36 +153,51 @@ const Home = () => {
     </div>
      </div>
      
-       <div className='frequent'>
-        <div className='faq-item'>
-          <h3 className='items-center'>Frequently Asked Questions</h3>
-        </div>
-        <Freq/>
-        </div>
-      <div className='second-tolast'>
-         <div>
-          <h1>Go On A Journey Of <br/>Self-Discovery With Us</h1>
-          <div><button className='but' ><a href='/quiz'>Take a Test Now</a></button></div>
-     
-          <img src={foot_one} className='one'/>
-         <img src={foot_two} className='otwo'/>
-         <img src={foot_three} className='othree'/>
-         <img src={foot_one} className='ofour' />
-        
-       </div>
        
+
+        <div className="newsletter-section">
+          <h1>Subscribe to Our Newsletter</h1>
+          <div className="email-input">
+            <label htmlFor="email" className="email-label">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" className="email-input-box" />
+            </div>
+            <button className="subscribe-button">SUBSCRIBE</button>
+            </div>
+
+            <div className='layer-two'>
+        {/* Footer section */}
+        <footer className='footer'>
+          <div className='insightify-section'>
+            <h3>Insightify</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur.<br/> Morbi massa feugiat gravida a senectus sit cursus.<br/> Semper pulvinar sed tortor porta habitant congue morbi amet at. <br/> Dictumst ipsum orci est diam odio. <br/>Nibh ac dui nulla facilisis neque dui t diam odio.<br/> Nibh ac dui nulla facilisis neque dui t
+            </p>
+          </div>
+          <div className='navigate-section'>
+            <h3>NAVIGATE</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/">Explore Tech4Dev Opportunities</a></li>
+              <li><a href="/">Result</a></li>
+              <li><a href="/">About Us</a></li>
+              <li><a href="/">Contact</a></li>
+            </ul>
+            <p>Address: 8502 Preston Rd. Inglewood, Maine 98380</p>
+          </div>
+          <div className='connect-section'>
+            <h3>CONNECT WITH US</h3>
+            <ul>
+              <li>Address: 8502 Preston Rd. Inglewood, Maine 98380</li>
+              <li>Email: example@example.com</li>
+              <li>Social: <a href="/">Facebook</a>, <a href="/">Twitter</a>, <a href="/">Instagram</a></li>
+            </ul>
+          </div>
+        </footer>
       </div>
-      <div className="last">
-        <img src={logo}/>
-        <ul>
-           <li><a href=''>Home</a></li>
-           <li><a href=''>About</a></li>
-           <li><a href=''>Pricing</a></li>
-           <li><a href=''>Blog</a></li>
-           <li><a href=''>Contact</a></li>
-        </ul>
-      </div>
-    </div>
+
+            
+            
+            </div>
   );
 }
 

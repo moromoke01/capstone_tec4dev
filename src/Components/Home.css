@@ -197,6 +197,13 @@ footer {
 .frequent{
 gap: 7%
 }
+.items-center h3{
+  font-family: 'Source Sans Pro', sans-serif; /* Specify the font family */
+  font-size: 18px; /* Specify the font size */
+  text-align: center; /* Center the text horizontally */
+  background-color: #EB5757;
+}
+
 .second-tolast{
   background: conic-gradient(from 32.78deg at 32.07% 54.51%, #090909 -199.79deg, #0B0B0B 106.47deg, #525252 114.54deg, #6E6E6E 155.73deg, #090909 160.21deg, #0B0B0B 466.47deg);
 height: 350px;
@@ -275,3 +282,112 @@ display: flex;
     margin: 5px 0; /* Adjust the spacing between list items for small screens */
   }
 }
+
+.newsletter-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.newsletter-section h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 52px;
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
+.email-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 400px; /* Limit width to prevent overflowing */
+  background: transparent;
+  border: none; /* Remove border */
+  border-radius: 0; /* Remove border radius */
+  border-bottom: 2px solid #9c13be; /* Add bottom border */
+}
+
+.email-label {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 5px;
+  color: #9C13BE;
+}
+
+.email-input-box {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid transparent; /* Make border not visible */
+  outline: none; /* Remove input field outline */
+  box-sizing: border-box;
+}
+
+.subscribe-button {
+  background-color: #9C13BE;
+  color: #fff;
+  width: 200px;
+  height: 48px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px; /* Add space between input field and button */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #9C13BE;
+  color: white;
+  padding: 20px;
+}
+
+.footer h3 {
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  margin-bottom: 5px;
+}
+
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.insightify-section {
+  padding-right: 20px; /* Add some spacing to the right */
+  border-right: 3px solid white; /* Add a right border */
+}
+
+.insightify-section h3 {
+  font-family: Andika New Basic;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 44px;
+  margin-bottom: 10px;
+  color: white; /* Set heading color */
+}
+
+.insightify-section p {
+  color: white; /* Set paragraph text color */
+}
+
+/* Adjust the spacing and color of the border based on your design preferences */
