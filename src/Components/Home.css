@@ -405,7 +405,7 @@ display: flex;
 
 .newsletter-section h1 {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 52px;
   margin-bottom: 20px; /* Add space below the heading */
@@ -452,11 +452,12 @@ display: flex;
 }
 
 .footer {
-  width: 2800px;
-  height: 100px;
-  padding: 29px 100px 29px 100px;
+  width: 100%; /* Set width to fill the page */
+  padding: 29px 20px; /* Adjust padding for better spacing */
   display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
   justify-content: space-around;
+  align-items: center;
   background-color: #9C13BE;
   color: white;
 }
