@@ -32,30 +32,30 @@ const Home = () => {
         <div className='gh'></div>
       </div>
 
-      {/* Avatar/rating Section */}
-      <div className='layer-two'>
-          <div className='dofooter'>
-            <span><img src={foot_one} alt="Footer Image 1" /></span>
-            <span><img src={foot_two} alt="Footer Image 2" /></span>
-            <span><img src={foot_three} alt="Footer Image 3" /></span>
-          </div>
-          <div className='pancon'>
-            <span>
-              <h3>10M+ Community</h3>
-              <h6>You can be a member</h6>
-            </span>
-          </div>
-          <div className='stars'>
-            <span>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <h6>20,000 rated</h6>
-            </span>
-          </div>
-      </div>
+    {/* Avatar/rating Section */}
+<div className='layer-two'>
+  <div className='dofooter'>
+    <span><img src={foot_one} alt="Footer Image 1" /></span>
+    <span><img src={foot_two} alt="Footer Image 2" /></span>
+    <span><img src={foot_three} alt="Footer Image 3" /></span>
+  </div>
+  <div className='pancon'>
+    <span>
+      <h3>10M+ Community</h3>
+      <h6>You can be a member</h6>
+    </span>
+  </div>
+  <div className='stars'>
+    <span>
+      <i className="fa-solid fa-star"></i>
+      <i className="fa-solid fa-star"></i>
+      <i className="fa-solid fa-star"></i>
+      <i className="fa-solid fa-star"></i>
+      <i className="fa-solid fa-star"></i>
+      <h6>20,000 rated</h6>
+    </span>
+  </div>
+</div>
 
       <div className='two'>
         <h1 id='about'>ABOUT INSIGHTIFY</h1>
