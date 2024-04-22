@@ -74,11 +74,11 @@ const Home = () => {
               highest standards of quality, integrity, and professionalism in everything we do. Whether you're a <br /> seasoned tech professional looking to level up your skills or a newcomer eager to break into the <br /> industry, Insightify is here to support you every step of the way.</h4>
           </div>
 
-          <div className="paral">
+          {/* <div className="paral">
             <h2>Lorem ipsum</h2>
             <h4>Lorem ipsum dolor sit amet consectetur. Porta ut pretium aliquet sed placerat <br />
               Lorem ipsum dolor sit amet consectetur. Porta ut pretium aliquet sed placerat <br />venenatis purus. Habitasse et blandit.</h4>
-          </div>
+          </div> */}
         </div>
         <div className='score'>
           <h2>Your Score <i className="fa-solid fa-arrow-right"></i></h2>
@@ -87,7 +87,7 @@ const Home = () => {
       </div>
 
       <div className='nextone'>
-        <div><h3>Join Insightify for getting proven results</h3></div>
+        <div><h3>Join Insightify to get  proven results</h3></div>
         <div className='changes'>
           <div>
             <h5>10M</h5>
@@ -103,10 +103,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+      {/* FAQ Section */}
       <div className='frequent'>
         <div className='faq-item'>
-          <h3 className='items-center'>Frequently Asked Questions</h3>
+          <h3 className='items-center'>Frequently Asked Questions(FAQs)</h3>
         </div>
         <Freq />
       </div>
@@ -158,9 +158,7 @@ const Home = () => {
         </div>
     </div>
      </div>
-     
-       
-
+     {/* Newsletter Section */}
         <div className="newsletter-section">
           <h1>Subscribe to Our Newsletter</h1>
           <div className="email-input">
@@ -170,9 +168,9 @@ const Home = () => {
             <button className="subscribe-button">SUBSCRIBE</button>
             </div>
 
-            <div className='layer-two'>
+         <div className='layer-two'>
         {/* Footer section */}
-        <footer className='footer'>
+         <footer className='footer'>
           <div className='insightify-section'>
             <h3>Insightify</h3>
             <p>

@@ -2,10 +2,8 @@
   background: linear-gradient(104.37deg, rgba(245, 245, 245, 0.8) 3.85%, rgba(199, 129, 217, 0.29) 29.35%, rgba(156, 19, 190, 0.14) 61.15%, rgba(161, 33, 193, 0.16) 68.99%, rgba(178, 76, 204, 0.14) 81.9%, rgba(245, 245, 245, 0.8) 96.03%);
   width: 1440px;
   height: 800px;
-  top: 157px;
   padding: 80px 100px 0px 100px;
   gap: 0px;
-  opacity: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -300,19 +298,27 @@
 }
 
 .stars {
-  color: gold;
+  color: #E2B93B;
   font-size: 20px;
 }
-.frequent{
-gap: 7%
-}
-.items-center h3{
-  font-family: 'Source Sans Pro', sans-serif; /* Specify the font family */
-  font-size: 18px; /* Specify the font size */
-  text-align: center; /* Center the text horizontally */
-  background-color: #EB5757;
+.frequent {
+  text-align: center; /* Center the content horizontally */
 }
 
+.frequent .faq-item h3 {
+  font-family: 'Source Sans Pro', sans-serif; /* Specify the font family */
+  font-size: 30px; /* Specify the font size */
+  font-weight: 700; /* Specify the font weight */
+  line-height: 44px; /* Specify the line height */
+  color: #000000; /* Specify the text color */
+  margin-top: 10px;
+}
+.items-center h3 {
+  font-family: 'Source Sans Pro', sans-serif; /* Specify the font family */
+  font-size: 40px; /* Specify the font size */
+  text-align: center; /* Center the text horizontally */
+  /* background-color: #EB5757; Specify the background color  */
+}
 .second-tolast{
   background: conic-gradient(from 32.78deg at 32.07% 54.51%, #090909 -199.79deg, #0B0B0B 106.47deg, #525252 114.54deg, #6E6E6E 155.73deg, #090909 160.21deg, #0B0B0B 466.47deg);
 height: 350px;
@@ -391,7 +397,6 @@ display: flex;
     margin: 5px 0; /* Adjust the spacing between list items for small screens */
   }
 }
-
 .newsletter-section {
   background-color: white;
   padding: 20px;
@@ -408,7 +413,7 @@ display: flex;
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
-  margin-bottom: 20px; /* Add space below the heading */
+  margin-bottom: 5px; /* Add space below the heading */
 }
 
 .email-input {
@@ -417,10 +422,9 @@ display: flex;
   align-items: flex-start;
   width: 100%;
   max-width: 400px; /* Limit width to prevent overflowing */
-  background: transparent;
   border: none; /* Remove border */
-  border-radius: 0; /* Remove border radius */
   border-bottom: 2px solid #9c13be; /* Add bottom border */
+  margin-bottom: 20px; /* Add space below the input */
 }
 
 .email-label {
@@ -428,7 +432,7 @@ display: flex;
   font-size: 20px;
   line-height: 28px;
   margin-bottom: 5px;
-  color: #9C13BE;
+  color: #9c13be; /* Update color */
 }
 
 .email-input-box {
@@ -441,25 +445,28 @@ display: flex;
 }
 
 .subscribe-button {
-  background-color: #9C13BE;
+  background-color: #9c13be;
   color: #fff;
   width: 200px;
   height: 48px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  margin-top: 20px; /* Add space between input field and button */
+}
+
+.subscribe-button:hover {
+  background-color: #7f0f98; /* Darken color on hover */
 }
 
 .footer {
-  width: 100%; /* Set width to fill the page */
-  padding: 29px 20px; /* Adjust padding for better spacing */
+  width: 100%;
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: #9C13BE;
+  background-color: #9c13be;
   color: white;
+  box-sizing: border-box;
 }
 
 .footer h3 {
@@ -485,21 +492,23 @@ display: flex;
 }
 
 .insightify-section {
-  padding-right: 20px; /* Add some spacing to the right */
-  border-right: 3px solid white; /* Add a right border */
+  padding-right: 20px;
+  border-right: 3px solid white;
 }
 
 .insightify-section h3 {
-  font-family: Andika New Basic;
+  font-family: 'Andika New Basic', sans-serif; /* Add quotes */
   font-weight: 700;
   font-size: 40px;
   line-height: 44px;
   margin-bottom: 10px;
-  color: white; /* Set heading color */
+  color: white;
 }
 
 .insightify-section p {
-  color: white; /* Set paragraph text color */
+  color: white;
 }
+
+
 
 /* Adjust the spacing and color of the border based on your design preferences */
