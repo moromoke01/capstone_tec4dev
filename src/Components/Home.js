@@ -113,54 +113,55 @@ const Home = () => {
         </div>
         <Freq />
       </div>
-
-      <div className='review'>
-        <div className='reviewheading'>
-          <h1>Reviews</h1>
-        </div>
-        <div className="card-container">
-          <div className="card">
-            <div className="avatar">
-              <img src={foot_one} alt="Person 1" />
-            </div>
-            <div className="review">
-              <h3>John Doe</h3>
-              <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, fugiat."</p>
-              <div className="stars">★★★★</div>
-            </div>
-          </div>
-          <div className="card">
-            <div className="avatar">
-              <img src={foot_two} alt="Person 2" />
-            </div>
-            <div className="review">
-              <h3>Jane Smith</h3>
-              <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, fugiat."</p>
-              <div className="stars">★★★★★</div>
-            </div>
-          </div>
-          <div className="card">
-            <div className="avatar">
-              <img src={foot_three} alt="Person 3" />
-            </div>
-            <div className="review">
-              <h3>Michael Johnson</h3>
-              <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, fugiat."</p>
-              <div className="stars">★★★★★</div>
-            </div>
-          </div>
-          <div className="card">
-            <div className="avatar">
-              <img src={foot_three} alt="Person 3" />
-            </div>
-            <div class="review">
-                <h1>Michaella Johnson</h1>
-                <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, fugiat."</p>
-                <div class="stars">★★★★★</div>
-            </div>
-        </div>
+      {/* review section */}
+      <div class="review">
+  <div class="reviewheading">
+    <h2>We’ve got a lot of testimonials. See what people <br/>have to say about our platform.</h2>
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <div class="avatar">
+        <img src={foot_one} alt="Person 1" />
+      </div>
+      <div class="review-content">
+        <h3>John Doe</h3>
+        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, fugiat."</p>
+        <div class="stars">★★★★</div>
+      </div>
     </div>
-     </div>
+    <div class="card">
+      <div class="avatar">
+        <img src={foot_two} alt="Person 2" />
+      </div>
+      <div class="review-content">
+        <h3>Jane Smith</h3>
+        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, fugiat."</p>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="avatar">
+        <img src={foot_three} alt="Person 3" />
+      </div>
+      <div class="review-content">
+        <h3>Michael Johnson</h3>
+        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, fugiat."</p>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="avatar">
+        <img src={foot_three} alt="Person 4" />
+      </div>
+      <div class="review-content">
+        <h3>Michaella Johnson</h3>
+        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, fugiat."</p>
+        <div class="stars">★★★★★</div>
+      </div>
+    </div>
+  </div>
+</div>
+
             {/* Newsletter Section */}
         <div className="newsletter-section">
           <h1>Subscribe to Our Newsletter</h1>
