@@ -13,16 +13,16 @@ function Question({ ques, answ }) {
     <div className={`p-5 border-b border-gray-300 mb-2 last:border-b-0 ${isOpen ? 'open-bg' : 'bg-white floating-shadow'}`}>
       <div className="flex justify-between items-center cursor-pointer" onClick={toggleAnsw}>
         <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-800 leading-relaxed">{ques}</h2>
-        <span className={`text-xl transform transition-transform ${isOpen ? 'rotate-180' : ''}`}><img src={Arrow} alt="Faq Arrow" /></span>
+        <span className={`text-xl transform transition-transform ${isOpen ? 'rotate-90' : ''}`}><img src={Arrow} alt="Faq Arrow" /></span>
       </div>
-      {isOpen && <p className="mt-2 text-gray-600 text-base md:text-lg leading-relaxed">{answ}</p>}
+      {isOpen && <p className="mt-2">{answ}</p>}
     </div>
   );
 }
 
 function Freq() {
   return (
-    <div className="max-w-5xl mx-auto my-5 p-5 bg-gray-100 rounded-lg shadow-lg">
+    <div className="max-w-7x2 mx-auto my-5 p-5">
       {/* <h1 className="text-3xl text-center mb-8 font-bold">Frequently Asked Questions</h1> */}
       <div className="grid grid-cols-3 gap-4">
         <Question

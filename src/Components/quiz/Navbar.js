@@ -1,34 +1,36 @@
-import React, { Component } from 'react'
-import { MenuItems } from './MenuItems'
-import './Navbar.css'
-
+import React, { Component } from 'react';
+import { MenuItems } from './MenuItems';
+import './Navbar.css';
+import Logo from '../../Assets/Insightify Logo.png'; // Import your logo image
 
 class Navbar extends Component {
-    state = { clicked: false}
+    state = { clicked: false }
 
     handleClick = () => {
-        this.setState({clicked: !this.state.clicked})
+        this.setState({ clicked: !this.state.clicked });
     }
 
     render() {
-        return(
+        return (
             <nav className='NavbarItems'>
-                <h1 className='navbar-logo'><i class="fa-brands fa-mendeley"></i>Insightify</h1>
+                <div className='navbar-logo'>
+                    <img src={Logo} alt="Logo" /> {/* Add your logo image */}
+                    <h2>...the best online career compass</h2> {/* Add the heading */}
+                </div>
                 <div className='menu-icon' onClick={this.handleClick}>
-                    <i className={this.state.clicked ? "fa fa-times" :"fa fa-bars"}></i>
+                    <i className={this.state.clicked ? "fa fa-times" : "fa fa-bars"}></i>
                 </div>
                 <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
                     {MenuItems.map((item, index) => {
-                        return(
+                        return (
                             <li key={index}>
-                               <a className={item.cName} href={item.url}>
+                                <a className={item.cName} href={item.url}>
                                     {item.title}
-                               </a>
+                                </a>
                             </li>
                         )
                     })}
                 </ul>
-                
             </nav>
         )
     }
