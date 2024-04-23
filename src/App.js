@@ -11,6 +11,7 @@ import Signup from './Components/LoginSignup/Signup';
 import Login from './Components/LoginSignup/Login';
 import TestMainPage from './Components/quiz/psychometricTest/TestMainPage';
 import TestIntroPage from './Components/quiz/psychometricTest/TestIntroPage';
+import ExploreCarousel from './Components/Explore/ExploreCarousel';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/Login" element={<Login/>} />
           <Route path="/TestMainPage" element={<TestMainPage/>} />
           <Route path="/TestIntroPage" element={<TestIntroPage/>} />
+          <Route path="/Explore" element={<ExploreCarousel/>} />
         </Routes>
       </Router>
     </div>
