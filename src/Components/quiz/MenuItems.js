@@ -20,13 +20,18 @@ export const MenuItems = [
         cName: 'nav-links',
     },
     {
+        title: 'Result', // New menu item
+        url: '/result', // Update the URL accordingly
+        cName: 'nav-links',
+    },
+    {
         title: 'Sign Up',
-        url: '/signup', // Updated URL for Sign Up
+        url: '/signup',
         cName: 'nav-links-mobile',
     },
     {
-        title: 'Take a Test',
-        url: '/quiz', // Updated URL for Take a Test
+        title: 'Take Test',
+        url: '/quiz',
         cName: 'nav-links-mobile-alone',
     }
 ]
