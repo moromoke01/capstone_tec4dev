@@ -51,21 +51,7 @@
 .menu-icon {
     display: none;
 }
-
 .nav-links-mobile {
-    color: #9C13BE;
-    border: 2px solid #9C13BE;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.nav-links-mobile:hover {
-    background-color: #9C13BE;
-    color: white;
-}
-
-.nav-links-mobile-alone {
     background-color: #9C13BE;
     color: white;
     padding: 10px 20px;
@@ -73,10 +59,23 @@
     text-decoration: none;
     font-weight: 700;
 }
-
-.nav-links-mobile-alone:hover {
+.nav-links-mobile:hover {
     background-color: #6A097D;
-    color: black;}
+    color: #C0C0C0;
+}
+.nav-links-mobile-alone {
+    color: #9C13BE;
+    border: 1px solid #9C13BE;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.nav-links-mobile-alone:hover {
+    background-color: #9C13BE;
+    color: white;
+}
+
 
 @media screen and (min-width: 769px) {
     .nav-links-mobile {
