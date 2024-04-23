@@ -5,6 +5,11 @@ export const MenuItems = [
         cName: 'nav-links',
     },
     {
+        title: 'Explore Tech4Dev Opportunities',
+        url: '/explore',
+        cName: 'nav-links',
+    },
+    {
         title: 'About Us',
         url: '#about',
         cName: 'nav-links',
