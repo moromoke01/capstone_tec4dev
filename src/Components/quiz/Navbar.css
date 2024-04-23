@@ -87,6 +87,7 @@
 /*smaller screens*/
 @media screen and (max-width: 768px) {
     .NavbarItems {
+        z-index: 1;
         background: #fffffe;
         height: auto;
         display: flex;

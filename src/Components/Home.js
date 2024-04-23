@@ -8,6 +8,7 @@ import foot_three from '../Assets/img3.jpeg';
 import Freq from './FAQ/freq';
 import logo from '../Assets/logo.png';
 import RoundProgressBar from './progressbar/progress';
+import Footer from './Footer/Footer';
 
 const Home = () => {
   const progress = 80;
