@@ -5,16 +5,6 @@ export const MenuItems = [
         cName: 'nav-links',
     },
     {
-        title: 'About Us',
-        url: '#about',
-        cName: 'nav-links',
-    },
-    {
-        title: 'Contact Us',
-        url: '#',
-        cName: 'nav-links',
-    },
-    {
         title: 'Explore Tech4Dev Opportunities', // New menu item
         url: '/tech4dev', // Update the URL accordingly
         cName: 'nav-links',
@@ -22,6 +12,16 @@ export const MenuItems = [
     {
         title: 'Result', // New menu item
         url: '/result', // Update the URL accordingly
+        cName: 'nav-links',
+    },
+    {
+        title: 'About Us',
+        url: '#about',
+        cName: 'nav-links',
+    },
+    {
+        title: 'Contact Us',
+        url: '#',
         cName: 'nav-links',
     },
     {
