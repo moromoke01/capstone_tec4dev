@@ -95,15 +95,15 @@ const Home = () => {
         <div className='changes'>
           <div>
             <h5>10M</h5>
-            <h5>Lorem ipsum dolor sit amet <br />consectetur.</h5>
+            <h4>Lorem ipsum dolor sit amet <br />consectetur.</h4>
           </div>
           <div>
             <h5>92%</h5>
-            <h5>Lorem ipsum dolor sit amet <br />consectetur.</h5>
+            <h4>Lorem ipsum dolor sit amet <br />consectetur.</h4>
           </div>
           <div>
             <h5>5000+</h5>
-            <h5>Lorem ipsum dolor sit amet <br />consectetur.</h5>
+            <h4>Lorem ipsum dolor sit amet <br />consectetur.</h4>
           </div>
         </div>
       </div>

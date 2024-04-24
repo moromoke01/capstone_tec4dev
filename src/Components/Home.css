@@ -214,26 +214,6 @@
   .paral {
     width: calc(100% - 40px); /* Adjusted to occupy full width on smaller screens */
   }
-
-  .email-input-box {
-    width: 100%; /* Make input box width 100% for responsiveness */
-  }
-
-  .card {
-    flex-basis: calc(50% - 20px);
-    margin: 10px;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .paral {
-    width: calc(100% - 20px); /* Adjusted to occupy full width on smaller screens */
-  }
-
-  .card {
-    flex-basis: calc(100% - 20px);
-    margin: 10px 0;
-  }
 }
 /* .score{
   margin: auto 8%;
@@ -296,13 +276,11 @@
   text-align: center;
   color: #FEFEFE;
 }
-/* Default styles */
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .review {
   background-color: #27AE6024;
   padding: 20px;
@@ -356,7 +334,6 @@
   color: #E2B93B;
   font-size: 20px;
 }
-
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
   .card {
@@ -371,6 +348,7 @@
     margin: 10px 0;
   }
 }
+
 .frequent {
   text-align: center; /* Center the content horizontally */
 }
@@ -486,6 +464,7 @@ display: flex;
   line-height: 40px;
   margin-bottom: 20px; /* Increase space below the heading for better readability */
 }
+
 .email-input {
   display: flex;
   flex-direction: column;
@@ -495,6 +474,7 @@ display: flex;
   border-bottom: 2px solid #9c13be; /* Add bottom border */
   margin-bottom: 20px; /* Add space below the input */
 }
+
 .email-label {
   font-weight: 600;
   font-size: 18px; /* Decrease font size for better alignment */
@@ -502,6 +482,7 @@ display: flex;
   margin-bottom: 10px; /* Increase margin for better spacing */
   color: #9c13be; /* Update color */
 }
+
 .email-input-box {
   width: 100%;
   padding: 10px;
@@ -510,6 +491,7 @@ display: flex;
   outline: none;
   box-sizing: border-box;
 }
+
 .subscribe-button {
   background-color: #9c13be;
   color: #fff;
@@ -520,23 +502,34 @@ display: flex;
   border: none;
   cursor: pointer;
 }
+
 .subscribe-button:hover {
   background-color: #7f0f98; /* Darken color on hover */
 }
-/* Newsletter Section */
+
+/* Responsive Styles */
 @media only screen and (max-width: 768px) {
-  .email-input {
-    max-width: 100%; /* Adjust max-width for smaller screens */
+  .newsletter-section h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .email-label {
+    font-size: 16px;
+    line-height: 22px;
   }
 
   .subscribe-button {
     max-width: none; /* Remove max-width for responsiveness */
   }
 }
+
+
 .layer-three {
   width: 100%;
   box-sizing: border-box;
 }
+
 .footer {
   width: 100%;
   display: flex;
