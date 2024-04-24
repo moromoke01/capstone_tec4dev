@@ -14,17 +14,17 @@ const AboutUsPage = () => {
   return (
     <div className="about-us-container">
       <Navbar /> {/* Render the Navbar component here */}
-      <section>
+      <section className="about-section">
         <h1 className="section-heading">WHO WE ARE</h1>
         <p className="section-content">
-          Insightify serves as a host where psychology meets technology to help you unlock insights and discover hidden potentials in different people.
-          We believe in the power of self-discovery and personal growth. Our mission is to provide you with the tools and resources you need to better understand yourself and navigate career challenges with confidence.
-          If you are curious about your personality, strengths, values, or preferences, Insightify offers a range of psychometric assessments designed to illuminate different aspects of who you are. From personality tests based on well-established frameworks to innovative quizzes tailored to specific areas of interest, our assessments are backed by research and crafted with care.
+          Insightify serves as a host where psychology meets technology to help you unlock insights and discover hidden potentials in different people.<br/> <br/>
+          We believe in the power of self-discovery and personal growth. Our mission is to provide you with the tools and resources you need to better understand yourself and navigate career challenges with confidence. <br/> <br/>
+          you are curious about your personality, strengths, values, or preferences, Insightify offers a range of psychometric assessments designed to illuminate different aspects of who you are. From personality tests based on well-established frameworks to innovative quizzes tailored to specific areas of interest, our assessments are backed by research and crafted with care. <br/> <br/>
         </p>
-      </section>
+        </section>
 
-      <section>
-        <h1 className="section-heading">Our Team</h1>
+      <section className='about-section2'>
+        <h1 className="section-heading">OUR TEAM</h1>
         <div className="team-grid">
           {teamMembers.map(member => (
             <div key={member.id} className="team-member">
