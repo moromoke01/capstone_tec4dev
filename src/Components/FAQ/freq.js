@@ -68,7 +68,7 @@ function Freq() {
         />
         <Question
           ques="
-          What's next after receiving your Insightify test results?"
+          What's next after receiving my Insightify test results?"
           answ="After receiving your test results on Insightify, if you identify as female, you can choose to enroll in the Women Techster program or join the waitlist. If you identify as male, you can explore Tech4Dev opportunities from the menu bar."
         />
         <Question
