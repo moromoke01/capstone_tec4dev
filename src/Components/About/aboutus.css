@@ -1,0 +1,53 @@
+/* aboutus.css */
+
+/* Style for the main container */
+.about-us-container {
+  padding: 20px;
+}
+
+/* Style for the section headings */
+.section-heading {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style for the paragraphs */
+.section-content {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Style for the team grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+  gap: 20px; /* Gap between team members */
+}
+
+/* Style for the team member cards */
+.team-member {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style for team member images */
+.team-member img {
+  width: 100px; /* Adjust image size as needed */
+  height: 100px; /* Adjust image size as needed */
+  border-radius: 50%; /* Make the image round */
+  margin-bottom: 10px;
+}
+
+/* Style for team member names */
+.team-member h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Style for team member roles */
+.team-member p {
+  font-size: 14px;
+  color: #888;
+}

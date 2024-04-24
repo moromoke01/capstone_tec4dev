@@ -206,15 +206,12 @@
     font-size: 14px; /* Decrease font size for smaller screens */
     line-height: 18px; /* Adjust line height for smaller screens */
   }
-}
-
-
-/* Responsive styles */
-@media only screen and (max-width: 768px) {
+  
   .paral {
     width: calc(100% - 40px); /* Adjusted to occupy full width on smaller screens */
   }
 }
+
 /* .score{
   margin: auto 8%;
   box-shadow: 0 4px 8px rgba(0, 0, 0.1, 0.1);

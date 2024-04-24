@@ -62,28 +62,28 @@ const Home = () => {
   <h1 id='about'>ABOUT INSIGHTIFY</h1>
 </div> */}
 <div className='par'>
-  <div className="card-container">
-    <div className="paral">
-      <h2>Our Mission</h2>
-      <h4>Our mission at Insightify is simple yet profound:<br />To empower individuals like you to thrive in the fast-paced and dynamic field of technology.<br />We are committed to providing you with the tools, resources, and insights needed to excel<br />in your tech career and achieve your professional goals.</h4>
-    </div>
+      <div className="card-container">
+        <div className="paral">
+          <h2>Our Mission</h2> <br/>
+          <h4>Our mission at Insightify is simple yet profound:<br/> <br/>To empower individuals like you to thrive in the fast-paced and dynamic field of technology.<br/> <br/> We are committed to providing you with the tools, resources, and insights needed to excel in your tech career and achieve your professional goals.</h4>
+        </div>
 
-    <div className="paral">
-      <h2>Our Commitment <br/>To Excellence</h2>
-      <h4>At Insightify, excellence is not just a goal; it's our standard. We are dedicated to upholding the<br />highest standards of quality, integrity, and professionalism in everything we do.<br />Whether you're a seasoned tech professional looking to level up your skills or a newcomer eager to break into the industry, Insightify is here to support you every step of the way.</h4>
-    </div>
-  </div>
+        <div className="paral">
+          <h2>Our Commitment To Excellence</h2> <br/>
+          <h4>At Insightify, excellence is not just a goal; it's our standard. We are dedicated to upholding the highest standards of quality, integrity, and professionalism in everything we do.<br/> <br/>Whether you're a seasoned tech professional looking to level up your skills or a newcomer eager to break into the industry, Insightify is here to support you every step of the way.</h4>
+        </div>
+      </div>
 
-  <div className="card-container">
-    <div className="paral">
-      <h2>Take your Test</h2>
-      <h4>Embark on your tech journey to unlock your full potential.<br />Start exploring and delve into your behavior, strengths, and weaknesses to uncover the tech skills that align with you perfectly.<br />Insightify carefully analyzes your individual traits to craft personalized learning paths that match your unique goals and aspirations.</h4>
-    </div>
-    <div className="paral">
-      <h2>Accurate Career Recommendations</h2>
-      <h4>Unlock your professional potential with our Accurate Career Recommendations.<br />Our advanced algorithm considers your skills, experiences, and career goals to offer personalized advice tailored just for you.<br />Say goodbye to guesswork and hello to a clear path forward with Insightify</h4>
-    </div>
-  </div>
+      <div className="card-container">
+        <div className="paral">
+          <h2>Take Your Test</h2> <br/>
+          <h4>Embark on your tech journey to unlock your full potential.<br/>Start exploring and delve into your behavior, strengths, and weaknesses to uncover the tech skills that align with you perfectly.<br /> <br/> Insightify carefully analyzes your individual traits to craft personalized learning paths that match your unique goals and aspirations.</h4>
+        </div>
+        <div className="paral">
+          <h2>Accurate Career Recommendations</h2> <br/>
+          <h4>Unlock your professional potential with our Accurate Career Recommendations. <br/><br/>Our advanced algorithm considers your skills, experiences, and career goals to offer personalized advice tailored just for you.<br /><br/>Say goodbye to guesswork and hello to a clear path forward with Insightify</h4>
+        </div>
+      </div>
     {/* <div className='score'>
           <h2>Your Score <i className="fa-solid fa-arrow-right"></i></h2>
           <RoundProgressBar/>
