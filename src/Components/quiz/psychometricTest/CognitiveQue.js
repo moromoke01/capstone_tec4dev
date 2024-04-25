@@ -18,12 +18,26 @@ const CognitiveQuestions = () => {
       // Simulate fetching data from a URL
       const response = await fetch('http://localhost:5000/question/questions');
       const data = await response.json();
+      
       // Filter questions by section "Cognitive Abilities"
       const cognitiveQuestions = data.filter(question => question.section === "Cognitive Abilities");
-      setCognitiveAbilityQuestions(cognitiveQuestions);
+
+      // Shuffle the array of questions
+      const shuffledQuestions = shuffleArray(cognitiveQuestions);
+      
+      setCognitiveAbilityQuestions(shuffledQuestions);
     } catch (error) {
       console.error('Error fetching questions:', error);
     }
+  };
+
+  // Function to shuffle an array
+  const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
   };
 
   const handleNext = () => {
@@ -81,7 +95,7 @@ const CognitiveQuestions = () => {
             <h4>{currentQuestionIndex + 1}. {currentQuestion.question}</h4>
             <form>
               {currentQuestion.options.map((option, index) => (
-                <div key={index}>
+                <div key={index} className="que-options">
                   <input
                     type="radio"
                     id={`option-${index}`}
@@ -92,6 +106,7 @@ const CognitiveQuestions = () => {
                   />
                   <label htmlFor={`option-${index}`}  className="options">{option}</label>
                 </div>
+                
               ))}
             </form>
           </div>

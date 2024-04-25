@@ -5,10 +5,11 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Signup() {
   const navigate = useNavigate();
+  
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({
     step1: { fullName: '', email: '', password: '', cpass: '' },
-    step2: { gender: '', age: '', education: '', occupation: '', career: '', factor: '' },
+    step2: { gender: '', birthdate: '', education: '', occupation: '', career: '', factor: '' },
   });
 
   const handleChange = (e) => {
@@ -23,7 +24,7 @@ export default function Signup() {
       email: formData.step1.email,
       password: formData.step1.password,
       gender: formData.step2.gender,
-      birthdate: formData.step2.birthdate, // Collecting birthdate instead of age
+      birthdate: formData.step2.birthdate,
       education: formData.step2.education,
       occupation: formData.step2.occupation,
       career: formData.step2.career,
@@ -34,8 +35,6 @@ export default function Signup() {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",
-          Accept: "application/json",
-          "Access-Control-Allow-Origin": "*",
         },
         body: JSON.stringify(userData),
       });
@@ -43,12 +42,12 @@ export default function Signup() {
       if (response.ok) {
         alert("User successfully registered");
         console.log('User Account successfully created');
-        navigate('/Login');  // Use navigate to go to the login page
+        navigate('/Login');
       } else {
         console.log("Account creation failed");
       }
     } catch (error) {
-      console.log("fail to create account", error);
+      console.log("Failed to create account", error);
     }
   };
 
@@ -118,7 +117,7 @@ export default function Signup() {
               </select>
             </div>
 
-            {/* <div>
+            <div>
               <label>What is your age range?</label>
               <select name="age" className='block  w-full border border-5-gray py-3 px-4 pr-8 rounded leading tight focus:outline-none' value={formData.step2.age} onChange={handleChange}>
                 <option value="">Select one</option>
@@ -128,9 +127,9 @@ export default function Signup() {
                 <option value="31-40">26-30 years</option>
                 <option value="30-above">30 years-above</option>
               </select>
-            </div> */}
+            </div>
               {/* adjusted age input to fit backend */}
-              <div>
+              {/* <div>
                 <label>Birthdate</label>
                 <input
                   type="date"
@@ -140,7 +139,7 @@ export default function Signup() {
                   onChange={handleChange}
                   placeholder="YYYY-MM-DD"
                 />
-              </div>
+              </div> */}
 
              <div >
               <label>What is your highest qualification?</label>

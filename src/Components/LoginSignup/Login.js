@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import './Auth.css';
 import logo from '../../Assets/logo.png'
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-
+  const navigate = useNavigate();
+  
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -38,6 +40,7 @@ const Login = () => {
           localStorage.setItem("userId", data.userId);
           
           alert('Login successful');
+          navigate('/');
           // history('/Home',{ state: { id: email, userId} });
          }else{
           alert('Invalid email or password');

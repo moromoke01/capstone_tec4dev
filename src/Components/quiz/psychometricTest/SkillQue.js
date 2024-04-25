@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import "./testStyle.css";
+import logo from '../../../Assets/logo.png';
 
 const SkillsAndInterest = () => {
   const [skillQuestions, setSkillQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedOption, setSelectedOption] = useState('');
+  const [answeredQuestions, setAnsweredQuestions] = useState([]);
 
   useEffect(() => {
     // Fetch  questions from the backend
@@ -18,10 +20,23 @@ const SkillsAndInterest = () => {
       const data = await response.json();
       // Filter questions by section 
       const skillQuestions = data.filter(question => question.section === "skills and interest");
-      setSkillQuestions(skillQuestions);
+
+      // Shuffle the array of questions
+      const shuffledQuestions = shuffleArray(skillQuestions);
+      
+      setSkillQuestions(shuffledQuestions);
     } catch (error) {
       console.error('Error fetching questions:', error);
     }
+  };
+
+  // Function to shuffle an array
+  const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
   };
 
   const handleNext = () => {
@@ -40,20 +55,36 @@ const SkillsAndInterest = () => {
 
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
-  };
-
-  const handleAnswer = () => {
-    const selectedAnswer = selectedOption;
-    // Handle user's answer selection
-    // Compare selectedAnswer with correctAnswer to determine correctness
-    // Update UI to reflect user's choice
+    // Update answeredQuestions array to mark current question as answered
+    const updatedAnsweredQuestions = [...answeredQuestions];
+    updatedAnsweredQuestions[currentQuestionIndex] = true;
+    setAnsweredQuestions(updatedAnsweredQuestions);
   };
 
   const currentQuestion = skillQuestions[currentQuestionIndex];
 
   return (
     <div className="quiz-container">
-      <h1>Skill and Interest Questions</h1>
+      <div className="header">
+         <img src ={logo} style={{width:150}} alt="logo"/>
+         <h4><b>Section E:Skill and Interest Questions</b></h4>
+
+         <span>
+          <b>59:49</b>
+          <button>End Assessment</button></span>
+       </div>
+
+      <div className='pagination'>
+        {skillQuestions.map((question, index) => (
+          <div
+              key={index}
+              className={`pagination-circle ${answeredQuestions[index] ? 'answered' : 'unanswered'}`}  onClick={() => setCurrentQuestionIndex(index)}>
+
+                {index + 1}
+              </div>
+        ))}
+      </div>
+      
       <div className="questions">
         {currentQuestion && (
           <div className="question">
