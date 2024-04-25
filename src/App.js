@@ -2,8 +2,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Terms from './Components/terms';
-import Result from './Components/Result';
-import Home from './Components/Home';
 import Quiz from './Components/quiz/quiz';
 import { SignupForm, SigninForm } from './Components/LoginSignup/LoginSignup';
 import VerificationPage from './Components/LoginSignup/Verification';
@@ -13,6 +11,8 @@ import TestMainPage from './Components/quiz/psychometricTest/TestMainPage';
 import TestIntroPage from './Components/quiz/psychometricTest/TestIntroPage';
 import ExploreCarousel from './Components/Explore/ExploreCarousel';
 import AboutUs from './Components/About/aboutus';
+import Home from './Components/Home/Home';
+import Result from './Components/Result/Result';
 
 function App() {
   return (

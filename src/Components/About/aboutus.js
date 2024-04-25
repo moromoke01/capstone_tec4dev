@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../quiz/Navbar';
+import Navbar from '../Navbar/Navbar';
 import './aboutus.css'; 
 
 const AboutUsPage = () => {

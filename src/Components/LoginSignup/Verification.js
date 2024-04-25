@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Verification.css';
+import email from "../../Assets/email.png";
 
 const VerificationPage = () => {
   const [verificationCode, setVerificationCode] = useState(['', '', '', '', '', '']);
@@ -18,16 +19,21 @@ const VerificationPage = () => {
   };
 
   return (
-    <div className='body'>
-      <div className='container'>
-        <div className="header">
-          <div className="text">Verify Your Account</div>
-          <div className="underline"></div>
+    <div className='body'> 
+      <div className='cont flex'>
+
+      <div className='email-image '>
+        <img src={email}  alt="email-logo"/>
+        <div className='circled-number'>  </div>
+      </div>
+
+
+       <div className='verify-content '>
+        <div className="verify-header">
+          <h2 className='v-text'>Verify Your Account </h2>
+         <p className='text-center'>A mail containing 6-digit code has been sent to your email address. Check your email and inputthe code here to verify account to continue</p>
         </div>
-        <div className="verification-heading">
-          <h4>Enter the 6-digit code sent to <br/>
-             <br/> genesiseemmanuella@gmail.com</h4>
-        </div>
+        
 
         {/* Verification code boxes */}
         <div className="verification-code">
@@ -47,9 +53,10 @@ const VerificationPage = () => {
           <button className="submit" onClick={handleVerify}>VERIFY</button>
         </div>
 
-        <div className="already-have-account">
-          <Link to="/signin">Back to Sign In</Link>
-        </div>
+        
+      </div>
+
+           
       </div>
     </div>
   );
