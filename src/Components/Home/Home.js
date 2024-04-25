@@ -5,9 +5,9 @@ import foot_one from '../../Assets/img1.jpeg';
 import foot_two from '../../Assets/img2.jpeg';
 import foot_three from '../../Assets/img3.jpeg';
 import Freq from '../FAQ/freq';
-import logo from '../../Assets/logo.png';
-import RoundProgressBar from '../progressbar/progress';
-import Footer from '../Footer/Footer';
+// import logo from '../../Assets/logo.png';
+// import RoundProgressBar from '../progressbar/progress';
+// import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
 
 const Home = () => {
@@ -32,7 +32,6 @@ const Home = () => {
         <div className='gh'></div>
         <div className='gh'></div>
       </div>
-
     {/* Avatar/rating Section */}
 <div className='layer-two'>
   <div className='dofooter'>
@@ -58,9 +57,6 @@ const Home = () => {
   </div>
 </div>
 
-{/* <div className='two'>
-  <h1 id='about'>ABOUT INSIGHTIFY</h1>
-</div> */}
 <div className='par'>
       <div className="card-container1">
         <div className="paral">
@@ -84,10 +80,6 @@ const Home = () => {
           <h4>Unlock your professional potential with our Accurate Career Recommendations. <br/><br/>Our advanced algorithm considers your skills, experiences, and career goals to offer personalized advice tailored just for you.<br /><br/>Say goodbye to guesswork and hello to a clear path forward with Insightify</h4>
         </div>
       </div>
-    {/* <div className='score'>
-          <h2>Your Score <i className="fa-solid fa-arrow-right"></i></h2>
-          <RoundProgressBar/>
-        </div> */}
       </div>
 
       <div className='nextone'>
@@ -116,9 +108,12 @@ const Home = () => {
       </div>
       {/* review section */}
       <div class="review">
-  <div class="reviewheading">
-    <h2>We’ve got a lot of testimonials. See what people <br/>have to say about our platform.</h2>
+        <div class="reviewheading">
+          <h2>We’ve got a lot of testimonials. See what people <br/>have to say about our platform.</h2>
   </div>
+  <div>
+  </div>
+  <div>
   <div class="card-container">
     <div class="card">
       <div class="avatar">
@@ -161,10 +156,10 @@ const Home = () => {
       </div>
     </div>
   </div>
+  </div>
 </div>
-
-            {/* Newsletter Section */}
-        <div className="newsletter-section">
+ {/* Newsletter Section */}
+ <div className="newsletter-section">
           <h1>Subscribe to Our Newsletter</h1>
           <div className="email-input">
             <label htmlFor="email" className="email-label">Email Address</label>
