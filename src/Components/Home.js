@@ -62,7 +62,7 @@ const Home = () => {
   <h1 id='about'>ABOUT INSIGHTIFY</h1>
 </div> */}
 <div className='par'>
-      <div className="card-container">
+      <div className="card-container1">
         <div className="paral">
           <h2>Our Mission</h2> <br/>
           <h4>Our mission at Insightify is simple yet profound:<br/> <br/>To empower individuals like you to thrive in the fast-paced and dynamic field of technology.<br/> <br/> We are committed to providing you with the tools, resources, and insights needed to excel in your tech career and achieve your professional goals.</h4>
@@ -74,8 +74,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="card-container">
-        <div className="paral">
+      <div className="card-container1">
+      <div className="paral">
           <h2>Take Your Test</h2> <br/>
           <h4>Embark on your tech journey to unlock your full potential.<br/>Start exploring and delve into your behavior, strengths, and weaknesses to uncover the tech skills that align with you perfectly.<br /> <br/> Insightify carefully analyzes your individual traits to craft personalized learning paths that match your unique goals and aspirations.</h4>
         </div>
@@ -125,8 +125,8 @@ const Home = () => {
         <img src={foot_one} alt="Person 1" />
       </div>
       <div class="review-content">
-        <h3>John Doe</h3>
-        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, fugiat."</p>
+        <h3>Amaka Obi</h3>
+        <p>"I was skeptical at first, but Insightify blew me away! The assessment was surprisingly accurate, and the personalized recommendations helped me navigate my tech career path with confidence."</p>
         <div class="stars">★★★★</div>
       </div>
     </div>
@@ -135,8 +135,8 @@ const Home = () => {
         <img src={foot_two} alt="Person 2" />
       </div>
       <div class="review-content">
-        <h3>Jane Smith</h3>
-        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, fugiat."</p>
+        <h3>Oluwabukola Olayode</h3>
+        <p>"As someone new to the tech world, Insightify was a game-changer for me. The assessments were engaging, and the recommendations were spot-on"</p>
         <div class="stars">★★★★★</div>
       </div>
     </div>
@@ -145,8 +145,8 @@ const Home = () => {
         <img src={foot_three} alt="Person 3" />
       </div>
       <div class="review-content">
-        <h3>Michael Johnson</h3>
-        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, fugiat."</p>
+        <h3>Benedict Ayo</h3>
+        <p>"Insightify helped me unlock my full potential! The assessment was thorough, and the personalized learning recommendations gave me the push I needed to pursue my tech dreams. Highly recommend!"</p>
         <div class="stars">★★★★★</div>
       </div>
     </div>
@@ -155,8 +155,8 @@ const Home = () => {
         <img src={foot_three} alt="Person 4" />
       </div>
       <div class="review-content">
-        <h3>Michaella Johnson</h3>
-        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, fugiat."</p>
+        <h3>Ebere Umeh</h3>
+        <p>"The assessment results were so insightful and helped me understand myself better. Plus, the platform's user-friendly interface made the whole experience a breeze!"</p>
         <div class="stars">★★★★★</div>
       </div>
     </div>

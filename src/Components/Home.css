@@ -153,16 +153,19 @@
   margin-top: 40px;
 } */
 
-.card-container {
+.card-container1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #27AE60;
+  background-color:  #27AE6024;
+  width: 100%; /* Adjusted to occupy full width */
 }
+
 
 .par {
   display: flex;
   justify-content: center;
+
 }
 
 .paral {
@@ -170,7 +173,6 @@
   height: auto; /* Adjust height to fit content */
   margin: 20px; /* Adjust the spacing between cards */
   padding: 20px;
-  border: 1px solid #ccc; 
   border-radius: 8px; /* Add border radius for rounded corners */
   background: white;
 }
@@ -296,8 +298,8 @@
 .card {
   flex: 0 0 calc(50% - 50px);
   margin: 25px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  border: 0px;
+  border-radius: 5px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
