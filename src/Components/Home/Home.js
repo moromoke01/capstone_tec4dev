@@ -4,6 +4,7 @@ import image from '../../Assets/Img.png';
 import foot_one from '../../Assets/img1.jpeg';
 import foot_two from '../../Assets/img2.jpeg';
 import foot_three from '../../Assets/img3.jpeg';
+import foot_four from '../../Assets/Frame 57.png';
 import Freq from '../FAQ/freq';
 // import logo from '../../Assets/logo.png';
 // import RoundProgressBar from '../progressbar/progress';
@@ -151,7 +152,7 @@ const Home = () => {
                 </div>
               ))}
             </div>
-</div>
+        </div>
 
  {/* Newsletter Section */}
  <div className="newsletter-section">
