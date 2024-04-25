@@ -4,6 +4,7 @@ import image from '../../Assets/Img.png';
 import foot_one from '../../Assets/img1.jpeg';
 import foot_two from '../../Assets/img2.jpeg';
 import foot_three from '../../Assets/img3.jpeg';
+import foot_four from '../../Assets/Frame 57.png';
 import Freq from '../FAQ/freq';
 // import logo from '../../Assets/logo.png';
 // import RoundProgressBar from '../progressbar/progress';
@@ -131,7 +132,7 @@ const Home = () => {
         <img src={foot_two} alt="Person 2" />
       </div>
       <div class="review-content">
-        <h3>Oluwabukola Olayode</h3>
+        <h3>Joseph Olayode</h3>
         <p>"As someone new to the tech world, Insightify was a game-changer for me. The assessments were engaging, and the recommendations were spot-on"</p>
         <div class="stars">★★★★★</div>
       </div>
@@ -141,14 +142,14 @@ const Home = () => {
         <img src={foot_three} alt="Person 3" />
       </div>
       <div class="review-content">
-        <h3>Benedict Ayo</h3>
+        <h3>Benedicta Akindele</h3>
         <p>"Insightify helped me unlock my full potential! The assessment was thorough, and the personalized learning recommendations gave me the push I needed to pursue my tech dreams. Highly recommend!"</p>
         <div class="stars">★★★★★</div>
       </div>
     </div>
     <div class="card">
       <div class="avatar">
-        <img src={foot_three} alt="Person 4" />
+        <img src={foot_four} alt="Person 4" />
       </div>
       <div class="review-content">
         <h3>Ebere Umeh</h3>
