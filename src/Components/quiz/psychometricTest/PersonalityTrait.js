@@ -20,12 +20,25 @@ const PersonalityTrait = () => {
       const data = await response.json();
       // Filter questions by section 
       const traitQuestions = data.filter(question => question.section === "Personality Trait");
-      setPersonalTraitQuestions(traitQuestions);
+
+      // Shuffle the array of questions
+      const shuffledQuestions = shuffleArray(traitQuestions);
+      
+      setPersonalTraitQuestions(shuffledQuestions);
       // Initialize answeredQuestions array with false for each question
-      setAnsweredQuestions(new Array(traitQuestions.length).fill(false));
+      setAnsweredQuestions(new Array(shuffledQuestions.length).fill(false));
     } catch (error) {
       console.error('Error fetching questions:', error);
     }
+  };
+
+  // Function to shuffle an array
+  const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
   };
 
   const handleNext = () => {

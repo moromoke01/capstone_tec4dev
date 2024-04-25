@@ -50,10 +50,10 @@ function TestPage() {
       {/* Render all your question components */}
       
       {currentQuestion < totalQuestions ? (
-        <button className="nexted-section" onClick={handleNext}>Next Section</button>
+        <button className="nexted-section-btn" onClick={handleNext}>Next Section</button>
       ) : (
         <>
-          <button className="nexted-section" onClick={handleSubmit}>Submit</button>
+          <button className="nexted-section-btn" onClick={handleSubmit}>Submit</button>
           {learningTrack && <p>Predicted Learning Track: {learningTrack}</p>}
         </>
       )}

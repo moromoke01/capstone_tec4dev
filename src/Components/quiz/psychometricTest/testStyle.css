@@ -64,19 +64,39 @@ ul li{
     border: none;
 }
 
+.que-options {
+    display: flex;
+    align-items: center; /* Center options vertically */
+    margin-bottom: 10px; /* Add margin between options */
+  }
+  
+  .options {
+    font-size: 16px; /* Decrease font size for options */
+    margin-left: -27em;
+  }
+  
+  /* Styling for radio buttons */
+  input[type="radio"] {
+    margin-inline-start: -27em; /* Add margin between radio button and label */
+  }
+  
+
 .testMainPage{
     width: 100%;
     height: 100vh;
     background-color: #999898;
 }
 
-.nexted-section{
+.nexted-section-btn{
     display:block;
     margin:auto;
-    margin-top:1em;
+    margin-top:10px;
     padding:10px;
     justify-content:center;
     align-items: center;
+    background: #070594;
+    color: #ffffff;
+    border-radius: 5px;
 }
 
 .pagination {
@@ -85,11 +105,12 @@ ul li{
     margin-top: 40px;
     gap: 20px;
     row-gap: 15px;
+    margin-left: 20px;
   }
   
   .pagination-circle {
-    width: 31px;
-    height: 30px;
+    width: 29px;
+    height: 28px;
     border-radius: 50%;
     color:#e2dcdc;
     background-color: #7e7c7c; /* Default color for unanswered questions */
@@ -135,7 +156,8 @@ ul li{
     text-align: left;
     align-content: flex-start;
     border-bottom: 2px solid #7c0594;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    margin-top: 30px;
 }
 .head-intro h2{
     color: #460634;
