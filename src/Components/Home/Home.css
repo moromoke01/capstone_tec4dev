@@ -472,11 +472,11 @@ display: flex;
 .footer ul li a:hover {
   text-decoration: underline;
 }
-.insightify-section, .navigate-section, .connect-section, .p {
+.insightify-section, .navigate-section, .connect-section {
   flex: 1; /* Make sections evenly spaced */
   padding: 0 20px; /* Add padding to each section */
 }
-.insightify-section h3, .navigate-section h3, .connect-section h3, .p {
+.insightify-section h3, .navigate-section h3, .connect-section h3{
   font-family: 'Andika New Basic', sans-serif;
   font-weight: 700;
   font-size: 24px; /* Decrease font size for better readability */
@@ -484,5 +484,5 @@ display: flex;
   margin-bottom: 10px;
 }
 .insightify-section p {
-  color: rgba(255, 255, 255, 0.069);
+  color: white
 }
