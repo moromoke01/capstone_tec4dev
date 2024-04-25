@@ -28,16 +28,16 @@ const Home = () => {
         <h1>Unleashing Your Tech Skills Potential</h1>
         <h2>Welcome to Insightify, your ultimate destination for unlocking your true potential in the vast world of technology. <br />At Insightify, we believe that every individual possesses unique talents and abilities waiting to be discovered and harnessed. <br />With our cutting-edge psychometric tests tailored specifically for tech skills, <br />we are dedicated to helping you understand your strengths, identify areas for growth, <br />and embark on a journey of continuous improvement. </h2>
         <div><button className='but'>Take Test</button></div>
-        <div><img src={image} alt="Home Image" /></div>
+        <div><img src={image} alt="Home Groupie" /></div>
         <div className='gh'></div>
         <div className='gh'></div>
       </div>
     {/* Avatar/rating Section */}
 <div className='layer-two'>
   <div className='dofooter'>
-    <span><img src={foot_one} alt="Footer Image 1" /></span>
-    <span><img src={foot_two} alt="Footer Image 2" /></span>
-    <span><img src={foot_three} alt="Footer Image 3" /></span>
+    <span><img src={foot_one} alt="Footer 1" /></span>
+    <span><img src={foot_two} alt="Footer 2" /></span>
+    <span><img src={foot_three} alt="Footer 3" /></span>
   </div>
   <div className='pancon'>
     <span>
@@ -86,16 +86,16 @@ const Home = () => {
         <div><h3>Join Insightify to get  proven results</h3></div>
         <div className='changes'>
           <div>
-            <h5>10M</h5>
-            <h4>Lorem ipsum dolor sit amet <br />consectetur.</h4>
+            <h5>10000+</h5>
+            <h4>Registered<br/> Users</h4>
           </div>
           <div>
             <h5>92%</h5>
-            <h4>Lorem ipsum dolor sit amet <br />consectetur.</h4>
+            <h4>Career Match<br/> Accuracy</h4>
           </div>
           <div>
             <h5>5000+</h5>
-            <h4>Lorem ipsum dolor sit amet <br />consectetur.</h4>
+            <h4>Who have successfully <br/>transitioned into tech</h4>
           </div>
         </div>
       </div>

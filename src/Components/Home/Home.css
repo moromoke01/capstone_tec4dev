@@ -118,11 +118,11 @@
 }
 .stars h6 {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 550;
   line-height: 18px;
   color: #09070A;
-  margin-top: 5px; /* Add margin at the top to create space between stars and text */
+  margin-left: 40px;
 }
 .card-container1 {
   display: flex;
@@ -180,14 +180,12 @@
   padding: 40px 20px; /* Adjust padding for responsiveness */
   background: #1E0425;
   color: #fff;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   text-align: center; /* Center text */
 }
 .nextone h3 {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 24px; /* Adjust font size for responsiveness */
+  font-size: 30px; /* Adjust font size for responsiveness */
   font-weight: 700;
   line-height: 30px; /* Adjust line height for responsiveness */
   text-align: center;
@@ -200,16 +198,20 @@
   justify-content: center; /* Center items */
 }
 .changes > div {
-  flex: 1; /* Divide space evenly among child elements */
-  max-width: 200px; /* Limit maximum width of each item */
+  flex: 4; 
+  max-width: 400px; /* Limit maximum width of each item */
   margin: 10px; /* Adjust margin for spacing between items */
 }
 .changes h5 {
-  font-size: 16px; /* Adjust font size for responsiveness */
-  font-weight: 400;
+  font-size: 19px; /* Adjust font size for responsiveness */
+  font-weight: 700;
   line-height: 20px; /* Adjust line height for responsiveness */
   text-align: center;
   color: #FEFEFE;
+}
+.changes h4 {
+  font-size: 16px; 
+  font-weight: 400;
 }
 .card-container {
   display: flex;
@@ -238,7 +240,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
-.avatar {
+ .avatar {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -249,7 +251,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} 
 .review-content h3 {
   margin: 0;
   margin-bottom: 5px;
