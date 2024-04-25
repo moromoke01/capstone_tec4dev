@@ -108,58 +108,52 @@ const Home = () => {
         <Freq />
       </div>
       {/* review section */}
-      <div class="review">
-        <div class="reviewheading">
-          <h2>We’ve got a lot of testimonials. See what people <br/>have to say about our platform.</h2>
+      <div class="bg-[#27AE6024] px-5 ">
+        <div class="text-center mb-5">
+        <h2 className="text-4xl font-semibold leading-loose text-black">
+            We’ve got a lot of testimonials. See what people <br/>have to say about our platform.</h2>
           </div>
-          <div>
+          <div className="mr-6 grid grid-cols-1 md:grid-cols-2 gap-4 px-5">
+            {[
+                {
+                  img: foot_one,
+                  name: "Amaka Obi",
+                  review: "I was skeptical at first, but Insightify blew me away! The assessment was surprisingly accurate, and the personalized recommendations helped me navigate my tech career path with confidence.",
+                  stars: "★★★★",
+                },
+                {
+                  img: foot_two,
+                  name: "Oluwabukola Olayode",
+                  review: "As someone new to the tech world, Insightify was a game-changer for me. The assessments were engaging, and the recommendations were spot-on.",
+                  stars: "★★★★",
+                },
+                {
+                  img: foot_three,
+                  name: "Benedict Ayo",
+                  review: "Insightify helped me unlock my full potential! The assessment was thorough, and the personalized learning recommendations gave me the push I needed to pursue my tech dreams. Highly recommend!",
+                  stars: "★★★★",
+                },
+                {
+                  img: foot_one,
+                  name: "Ebere Umeh",
+                  review: "The assessment results were so insightful and helped me understand myself better. Plus, the platform's user-friendly interface made the whole experience a breeze!",
+                  stars: "★★★★",
+                },
+              ].map((testimonial, index) => (
+                <div key={index} className="m-5 bg-white rounded p-5 shadow-lg ">
+                  <div className="w-14 h-14 rounded-full overflow-hidden mb-2.5">
+                    <img src={testimonial.img} alt={`Person ${index + 1}`} className=" object-cover"/>
+                  </div>
+                  <div>
+                    <h3 className="m-0 mb-1.5">{testimonial.name}</h3>
+                    <p className="m-0 mb-2.5">{testimonial.review}</p>
+                    <div className="text-yellow-400 text-xl">{testimonial.stars}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+        </div>
 
-          </div>
-          <div>
-  <div class="card-container">
-    <div class="card">
-      <div class="avatar">
-        <img src={foot_one} alt="Person 1" />
-      </div>
-      <div class="review-content">
-        <h3>Amaka Obi</h3>
-        <p>"I was skeptical at first, but Insightify blew me away! The assessment was surprisingly accurate, and the personalized recommendations helped me navigate my tech career path with confidence."</p>
-        <div class="stars">★★★★</div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="avatar">
-        <img src={foot_two} alt="Person 2" />
-      </div>
-      <div class="review-content">
-        <h3>Joseph Olayode</h3>
-        <p>"As someone new to the tech world, Insightify was a game-changer for me. The assessments were engaging, and the recommendations were spot-on"</p>
-        <div class="stars">★★★★★</div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="avatar">
-        <img src={foot_three} alt="Person 3" />
-      </div>
-      <div class="review-content">
-        <h3>Benedicta Akindele</h3>
-        <p>"Insightify helped me unlock my full potential! The assessment was thorough, and the personalized learning recommendations gave me the push I needed to pursue my tech dreams. Highly recommend!"</p>
-        <div class="stars">★★★★★</div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="avatar">
-        <img src={foot_four} alt="Person 4" />
-      </div>
-      <div class="review-content">
-        <h3>Ebere Umeh</h3>
-        <p>"The assessment results were so insightful and helped me understand myself better. Plus, the platform's user-friendly interface made the whole experience a breeze!"</p>
-        <div class="stars">★★★★★</div>
-      </div>
-    </div>
-  </div>
-  </div>
-</div>
  {/* Newsletter Section */}
  <div className="newsletter-section">
           <h1>Subscribe to Our Newsletter</h1>
