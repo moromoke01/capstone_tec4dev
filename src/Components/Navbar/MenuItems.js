@@ -31,7 +31,7 @@ export const MenuItems = [
     },
     {
         title: 'Take Test',
-        url: '/quiz',
+        url: '/TestIntroPage',
         cName: 'nav-links-mobile-alone',
     }
 ]

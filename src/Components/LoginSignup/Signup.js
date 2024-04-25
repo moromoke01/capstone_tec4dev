@@ -1,184 +1,208 @@
 import React, { useState } from 'react';
-import './LoginSignup.css';
+import "./Auth.css";
+import logo from "../../Assets/logo.png";
+import { useNavigate } from 'react-router-dom';
 
-import user_icon from '../../Assets/person.png';
-import email_icon from '../../Assets/email.png';
-import password_icon from '../../Assets/password.png';
+export default function Signup() {
+  const navigate = useNavigate();
+  const [step, setStep] = useState(1);
+  const [formData, setFormData] = useState({
+    step1: { fullName: '', email: '', password: '', cpass: '' },
+    step2: { gender: '', age: '', education: '', occupation: '', career: '', factor: '' },
+  });
 
-const Signup = () => {
-  const [action, setAction] = useState("Sign Up");
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    const currentStepData = { ...formData[`step${step}`], [name]: value };
+    setFormData({ ...formData, [`step${step}`]: currentStepData });
+  };
 
-  const [ FormData, setFormData] = useState({
-     fname: "", lname: "", gender: "", education: "",location: "", age: "",email: "", password: ""
-  })
+  const handleSubmit = async () => {
+    const userData = {
+      fullName: formData.step1.fullName,
+      email: formData.step1.email,
+      password: formData.step1.password,
+      gender: formData.step2.gender,
+      birthdate: formData.step2.birthdate, // Collecting birthdate instead of age
+      education: formData.step2.education,
+      occupation: formData.step2.occupation,
+      career: formData.step2.career,
+      factor: formData.step2.factor,
+    };
+    try {
+      const response = await fetch('http://localhost:5000/signup', {
+        method: 'POST',
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+        body: JSON.stringify(userData),
+      });
 
-  function handleData(e){
-    setFormData(prevDataForm =>{
-      return{
-        ...prevDataForm,
-        [e.target.name]:e.target.value
+      if (response.ok) {
+        alert("User successfully registered");
+        console.log('User Account successfully created');
+        navigate('/Login');  // Use navigate to go to the login page
+      } else {
+        console.log("Account creation failed");
       }
-    })
-  }
+    } catch (error) {
+      console.log("fail to create account", error);
+    }
+  };
 
-
-  const handleSubmit = async(event)=>{
-      event.preventDefault();
-      try{
-        const SentData ={
-          fname: FormData.fname,
-          lname: FormData.lname,
-          gender: FormData.gender,
-          location: FormData.location,
-          education: FormData.education,
-          age: FormData.age,
-          email: FormData.email,
-          password: FormData.password
-        };
-
-        console.log("Firstname:", FormData.fname);
-        console.log("LastName:", FormData.lname)
-        console.log("email:", FormData.email)
-        console.log("password:", FormData.password)
-  
-
-        console.log(SentData);
-
-        const response = await fetch("http://localhost:5000/signup", {
-          method: "POST",
-          crossDomain: true,
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-            "Access-Control-Allow-Origin": "*"
-          },
-          body: JSON.stringify(SentData)
-        });
-       
-        if(response.ok){
-          const data = await response.json();
-          console.log(data.message);
-
-          alert("User successfully registered");
-          window.location.href ="./Login"
-        }else{
-          //if sign-up failed
-        const error = await response.json();
-        console.log(error.message);
-
-        alert("Sign-up failed")
-        }
-      }catch(e){
-        console.log(e);
-      }
-
-      // Reset form fields
-     setFormData({
-      fname: '', // Reset to an empty string
-      lname: '',
-      gender: '',
-      location: '',
-      education: '',
-      age: '',
-      email: '',
-      password: ''
-    });
+  const handleNext = () => {
+    if (step < 2) {
+      setStep(step + 1);
+    } else {
+      handleSubmit();
+    }
   };
 
   return (
-    <div className='body'>
-      <div className='container'>
-      <div className="header">
-        <div className="text">{action}</div>
-        <div className="underline"></div>
+    <div className="body">
+      <div className="auth-cont">
+        <div className="inputs-box ">
+          <h2 className="auth-headline">
+            <b>{step === 1 ? 'Create Account' : 'Continue your Registration'}</b>
+          </h2>
+          <p className="text-center text-black mb-5">
+          {step === 1 ? 'Yayyy? You made it to Insightify. Sign up to create your account and take your career psychometric Test' 
+          
+          : 'To give you a more accurate result, we will love to know you better. Kindly complete your registration to start your assessment with Insightify'}
+            
+          </p>
+
+          {step === 1 && (
+            <div className="grid grid-cols-2 gap-8 ">
+              <div className="auth-input">
+                <label>Full Name</label>
+                <input type="text" className='w-full' name="fullName" value={formData.step1.fullName} onChange={handleChange} 
+                placeholder='John Joe'/>
+              </div>
+              <div className="auth-input">
+                <label>Email Address</label>
+                <input type="text" className='w-full'  name="email" value={formData.step1.email} onChange={handleChange} placeholder='johnjoe@example.com'/>
+              </div>
+              <div className="auth-input">
+                <label>Password</label>
+                <input type="text" className='w-full'  name="password" value={formData.step1.password} onChange={handleChange} 
+                placeholder='********'/>
+                <p className='text-red-500 text-base mt-3 font-bold'>At least 8 characters including special Characters</p>
+              </div>
+              <div className="auth-input">
+                <label>Confirm Password</label>
+                <input type="text" className='w-full'  name="cpass" value={formData.step1.cpass} onChange={handleChange} 
+                placeholder='********'/>
+                <p className='text-red-500 text-base mt-3 font-semibold'>At least 8 characters including special Characters</p>
+              </div>
+
+              <div className='col-span-2 flex'>
+              <p className="text-center text-black">
+               <input type="checkbox" value="" className='w-4 h-4 mr-4' />
+                I agree with Insightify's term and
+                service privacy policy and default notification settings, <a href="/terms" className="text-blue">Read Policy</a>
+              </p>
+              </div>
+            </div>
+          )}
+          {step === 2 && (
+            <div className="grid grid-cols-2 gap-10 text-black mt-5">
+              
+             <div> <label>What is your gendar?</label>
+              <select name="gender" className='block  w-full border border-5-gray py-3 px-4 pr-8 rounded leading tight focus:outline-none ' value={formData.step2.gender} onChange={handleChange}>
+                <option value="">Select one</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+
+            {/* <div>
+              <label>What is your age range?</label>
+              <select name="age" className='block  w-full border border-5-gray py-3 px-4 pr-8 rounded leading tight focus:outline-none' value={formData.step2.age} onChange={handleChange}>
+                <option value="">Select one</option>
+                <option value="below 18">below 18 years</option>
+                <option value="20-25">18-25 years</option>
+                <option value="26-30">26-30 years</option>
+                <option value="31-40">26-30 years</option>
+                <option value="30-above">30 years-above</option>
+              </select>
+            </div> */}
+              {/* adjusted age input to fit backend */}
+              <div>
+                <label>Birthdate</label>
+                <input
+                  type="date"
+                  name="birthdate"
+                  className='block w-full border py-3 px-4 pr-8 rounded leading tight focus:outline-none'
+                  value={formData.step2.birthdate}
+                  onChange={handleChange}
+                  placeholder="YYYY-MM-DD"
+                />
+              </div>
+
+             <div >
+              <label>What is your highest qualification?</label>
+              <select name="education" className='block  w-full border border-5-gray py-3 px-4 pr-8 rounded leading tight focus:outline-none' value={formData.step2.education} onChange={handleChange}>
+              <option value="">Select one</option>
+                <option value="undergraduate">undergraduate</option>
+                <option value="Graduate">Graduate</option>
+                <option value="post-graduate">Post-graduate</option>            
+              </select>
+            </div> 
+
+            
+            <div >
+              <label>What is your occupation status?</label>
+              <select name="occupation" className='block  w-full border border-5-gray py-3 px-4 pr-8 rounded leading tight focus:outline-none' value={formData.step2.occupation} onChange={handleChange}>
+              <option value=""> Select one</option>
+                <option value="unemployed">unemployed</option>
+                <option value="employed">employed</option>
+                <option value="self-employed">self-employed</option>            
+              </select>
+            </div>
+
+            <div >
+              <label>Which of these tech career path interest you?</label>
+              <select name="career" className='block  w-full border border-5-gray py-3 px-4 pr-8 rounded leading tight focus:outline-none' value={formData.step2.career} onChange={handleChange}>
+              <option value="">Select one</option>
+                <option value="frontend development">frontend development</option>
+                <option value="backend development">backend development</option>
+                <option value="Product management">Product management</option>    
+                <option value="Product Design">Product Design</option>     
+                <option value="3D Animation-Modeling">3D Animation-Modeling</option>   
+                <option value="Data Science">Data Science</option> 
+                <option value="Mobile development">Mobile development</option>               
+              </select>
+            </div>
+
+            <div >
+              <label>What factor influences your career choice in Tech?</label>
+              <select name="factor" className='block  w-full border border-5-gray py-3 px-4 pr-8 rounded leading tight focus:outline-none' value={formData.step2.factor} onChange={handleChange}>
+              <option value="">Select one</option>
+                <option value="unemployed">unemployed</option>
+                <option value="employed">employed</option>
+                <option value="self-employed">self-employed</option>            
+              </select>
+            </div>
+
+            </div>
+          )}
+          <button className='submit-btn m-auto mt-5 focus:outline-none' onClick={handleNext}>{step < 2 ? 'Next' : 'Submit'}</button>
+        </div>
+        <div className="info-bar-right">
+          <div className="logoAndTagline">
+            <img src={logo} style={{ width: 150 }} alt="logo" />
+            <p>...the best online career compass</p>
+          </div>
+          <div className="auth-info-body">
+            <h3>We are glad you are back. Welcome!</h3>
+            <p className='font-light'>Already have an account with Insightify? Stay connected with us and log in here</p>
+            <button className="auth-btn-1">SIGN IN</button>
+          </div>
+        </div>
       </div>
-      <form >
-      <div className="inputs">
-
-        <div className="input">
-        <img src={user_icon} alt="" />
-          <input type="text"
-                 name="fname"
-                 value={FormData.fname}
-                 onChange={handleData} 
-                 placeholder='First Name' />
-        </div>
-
-        <div className="input">
-        <img src={user_icon} alt="" />
-          <input type="text" 
-                 name="lname"
-                 value={FormData.lname}
-                 onChange={handleData} 
-                placeholder='Last Name' />
-        </div>
-
-        <div className="input">
-          <input type="text" 
-                name="gender"
-                value={FormData.gender}
-                onChange={handleData} 
-                 placeholder='Gender' />
-        </div>
-
-        <div className="input">
-          <input type="text"
-                 name="location"
-                 value={FormData.location}
-                 onChange={handleData}  
-                placeholder='location' />
-        </div>
-
-        <div className="input">
-          <input type="text" 
-                 name="education"
-                 value={FormData.education}
-                 onChange={handleData} 
-                 placeholder='Level of Education' />
-        </div>
-
-        <div className="input">
-          <input type="date"
-                 name="age"
-                 value={FormData.age}
-                 onChange={handleData} 
-                 placeholder='Age' />
-        </div>
-
-        <div className="input">
-          <img src={email_icon} alt="" />
-          <input type="email" 
-                  name="email"
-                  value={FormData.email}
-                  onChange={handleData} 
-                  placeholder='Email' />
-        </div>
-        <div className="input">
-          <img src={password_icon} alt="" />
-          <input type="password" 
-                  name="password"
-                  value={FormData.password}
-                  onChange={handleData} 
-                  placeholder='Password' required />
-        </div>
-        {/* <div className="input">
-          <img src={password_icon} alt="" />
-          <input type="password" placeholder='Confirm Password' required />
-        </div> */}
-      </div>
-      {action==="Sign Up"?<div></div>:      <div className="forgot-password">Forgot Password? <span>Click Here!</span></div>
-}
-      <div className="submit-container">
-        <div key="login" className={action === "Sign Up" ? "submit gray" : "submit"} onClick={() => { setAction("Login") }}>Login</div>
-        <div type="submit" key="sign up" className={action === "Login" ? "submit gray" : "submit"} onClick={handleSubmit}>Sign Up</div>
-      </div>
-      </form>
     </div>
-    
-    </div>
-    
   );
 };
-
-
-export default Signup;
