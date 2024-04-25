@@ -124,57 +124,25 @@
   color: #09070A;
   margin-top: 5px; /* Add margin at the top to create space between stars and text */
 }
-/* #about {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 34px;
-  font-weight: 700;
-  line-height: 28px;
-  text-align: center;
-  color: #09070A;
-}
-.but {
-  background-color: #EB5757;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.but:hover {
-  background-color: white;
-  color: #806262;
-} */
-/* .two {
-  margin: auto;
-  max-width: 90%;
-  text-align: center;
-  margin-top: 40px;
-} */
-
-.card-container {
+.card-container1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #27AE60;
+  background-color:  #27AE6024;
+  width: 100%; /* Adjusted to occupy full width */
 }
-
 .par {
   display: flex;
   justify-content: center;
 }
-
 .paral {
   width: calc(50% - 40px); /* Adjust the width of each card */
   height: auto; /* Adjust height to fit content */
   margin: 20px; /* Adjust the spacing between cards */
   padding: 20px;
-  border: 1px solid #ccc; 
   border-radius: 8px; /* Add border radius for rounded corners */
   background: white;
 }
-
 .paral h2 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
@@ -185,7 +153,6 @@
   /* margin-bottom: auto; */
   margin-top: auto;
 }
-
 .paral h4 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
@@ -194,45 +161,20 @@
   text-align: left;
   color: #09070A;
 }
-
 /* Responsive styles */
 @media only screen and (max-width: 768px) {
   .paral h2 {
     font-size: 20px; /* Decrease font size for smaller screens */
     line-height: 24px; /* Adjust line height for smaller screens */
   }
-  
   .paral h4 {
     font-size: 14px; /* Decrease font size for smaller screens */
     line-height: 18px; /* Adjust line height for smaller screens */
   }
-  
   .paral {
     width: calc(100% - 40px); /* Adjusted to occupy full width on smaller screens */
   }
 }
-
-/* .score{
-  margin: auto 8%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0.1, 0.1);
-  border-radius: 10px;
-  width: 200px;
-  height: 200px;
-  border: 4px solid #ccc;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: conic-gradient(from 270deg at 50% 50%, #FFFFFF -46.91deg, #FEFBFB 7.04deg, #FFFFFF 83.73deg, #27AE60 85.74deg, #27AE60 131.4deg, #27AE60 174.26deg, #27AE60 244.8deg, #FFFFFF 313.09deg, #FEFBFB 367.04deg);
-} */
-/* .score h2 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14.65px;
-  font-weight: 600;
-  line-height: 18.41px;
-  text-align: left;
-  color: #09070A;
-} */
 .nextone {
   width: 100%; /* Make width responsive */
   padding: 40px 20px; /* Adjust padding for responsiveness */
@@ -243,7 +185,6 @@
   align-items: center;
   text-align: center; /* Center text */
 }
-
 .nextone h3 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px; /* Adjust font size for responsiveness */
@@ -253,19 +194,16 @@
   color: #FEFEFE;
   margin-bottom: 20px; /* Add spacing below heading */
 }
-
 .changes {
   display: flex;
   flex-wrap: wrap; /* Wrap items for responsiveness */
   justify-content: center; /* Center items */
 }
-
 .changes > div {
   flex: 1; /* Divide space evenly among child elements */
   max-width: 200px; /* Limit maximum width of each item */
   margin: 10px; /* Adjust margin for spacing between items */
 }
-
 .changes h5 {
   font-size: 16px; /* Adjust font size for responsiveness */
   font-weight: 400;
@@ -282,9 +220,8 @@
   background-color: #27AE6024;
   padding: 20px;
 }
-
 .reviewheading {
-  font-family: Source Sans Pro; 
+  font-family: 'Source Sans Pro', sans-serif; 
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
@@ -292,17 +229,15 @@
   margin-bottom: 20px;
   color: #000000;
 }
-
 .card {
   flex: 0 0 calc(50% - 50px);
   margin: 25px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  border: 0px;
+  border-radius: 5px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
 }
-
 .avatar {
   width: 60px;
   height: 60px;
@@ -310,23 +245,19 @@
   overflow: hidden;
   margin-bottom: 10px;
 }
-
 .avatar img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .review-content h3 {
   margin: 0;
   margin-bottom: 5px;
 }
-
 .review-content p {
   margin: 0;
   margin-bottom: 10px;
 }
-
 .stars {
   color: #E2B93B;
   font-size: 20px;
@@ -345,11 +276,9 @@
     margin: 10px 0;
   }
 }
-
 .frequent {
   text-align: center; /* Center the content horizontally */
 }
-
 .frequent .faq-item h3 {
   font-family: 'Source Sans Pro', sans-serif; /* Specify the font family */
   font-size: 30px; /* Specify the font size */
@@ -380,7 +309,6 @@ display: flex;
 .second-tolast {
   position: relative;
 }
-
 .ofour {
   width: 50px; 
   height: 50px; 
@@ -437,7 +365,6 @@ display: flex;
     text-align: center;
     font-size: 9px;
   }
-
   .last li {
     margin: 5px 0; /* Adjust the spacing between list items for small screens */
   }
@@ -453,7 +380,6 @@ display: flex;
   align-items: center;
   text-align: center;
 }
-
 .newsletter-section h1 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 32px;
@@ -461,7 +387,6 @@ display: flex;
   line-height: 40px;
   margin-bottom: 20px; /* Increase space below the heading for better readability */
 }
-
 .email-input {
   display: flex;
   flex-direction: column;
@@ -471,7 +396,6 @@ display: flex;
   border-bottom: 2px solid #9c13be; /* Add bottom border */
   margin-bottom: 20px; /* Add space below the input */
 }
-
 .email-label {
   font-weight: 600;
   font-size: 18px; /* Decrease font size for better alignment */
@@ -479,7 +403,6 @@ display: flex;
   margin-bottom: 10px; /* Increase margin for better spacing */
   color: #9c13be; /* Update color */
 }
-
 .email-input-box {
   width: 100%;
   padding: 10px;
@@ -488,7 +411,6 @@ display: flex;
   outline: none;
   box-sizing: border-box;
 }
-
 .subscribe-button {
   background-color: #9c13be;
   color: #fff;
@@ -499,34 +421,27 @@ display: flex;
   border: none;
   cursor: pointer;
 }
-
 .subscribe-button:hover {
   background-color: #7f0f98; /* Darken color on hover */
 }
-
 /* Responsive Styles */
 @media only screen and (max-width: 768px) {
   .newsletter-section h1 {
     font-size: 28px;
     line-height: 36px;
   }
-
   .email-label {
     font-size: 16px;
     line-height: 22px;
   }
-
   .subscribe-button {
     max-width: none; /* Remove max-width for responsiveness */
   }
 }
-
-
 .layer-three {
   width: 100%;
   box-sizing: border-box;
 }
-
 .footer {
   width: 100%;
   display: flex;
@@ -538,47 +453,34 @@ display: flex;
   padding: 20px; /* Add padding for better spacing */
   box-sizing: border-box;
 }
-
 .footer h3 {
   margin-bottom: 10px;
 }
-
 .footer ul {
   padding: 0;
   margin: 0;
 }
-
 .footer ul li {
   margin-bottom: 5px;
 }
-
 .footer ul li a {
   color: white;
   text-decoration: none;
 }
-
 .footer ul li a:hover {
   text-decoration: underline;
 }
-
-.insightify-section, .navigate-section, .connect-section {
+.insightify-section, .navigate-section, .connect-section, .p {
   flex: 1; /* Make sections evenly spaced */
   padding: 0 20px; /* Add padding to each section */
 }
-
-.insightify-section h3, .navigate-section h3, .connect-section h3 {
+.insightify-section h3, .navigate-section h3, .connect-section h3, .p {
   font-family: 'Andika New Basic', sans-serif;
   font-weight: 700;
   font-size: 24px; /* Decrease font size for better readability */
   line-height: 28px;
   margin-bottom: 10px;
 }
-
 .insightify-section p {
-  color: white;
+  color: rgba(255, 255, 255, 0.069);
 }
-
-
-
-
-/* Adjust the spacing and color of the border based on your design preferences */

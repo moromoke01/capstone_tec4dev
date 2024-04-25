@@ -5,9 +5,9 @@ import foot_one from '../../Assets/img1.jpeg';
 import foot_two from '../../Assets/img2.jpeg';
 import foot_three from '../../Assets/img3.jpeg';
 import Freq from '../FAQ/freq';
-import logo from '../../Assets/logo.png';
-import RoundProgressBar from '../progressbar/progress';
-import Footer from '../Footer/Footer';
+// import logo from '../../Assets/logo.png';
+// import RoundProgressBar from '../progressbar/progress';
+// import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
 
 const Home = () => {
@@ -32,7 +32,6 @@ const Home = () => {
         <div className='gh'></div>
         <div className='gh'></div>
       </div>
-
     {/* Avatar/rating Section */}
 <div className='layer-two'>
   <div className='dofooter'>
@@ -58,11 +57,8 @@ const Home = () => {
   </div>
 </div>
 
-{/* <div className='two'>
-  <h1 id='about'>ABOUT INSIGHTIFY</h1>
-</div> */}
 <div className='par'>
-      <div className="card-container">
+      <div className="card-container1">
         <div className="paral">
           <h2>Our Mission</h2> <br/>
           <h4>Our mission at Insightify is simple yet profound:<br/> <br/>To empower individuals like you to thrive in the fast-paced and dynamic field of technology.<br/> <br/> We are committed to providing you with the tools, resources, and insights needed to excel in your tech career and achieve your professional goals.</h4>
@@ -74,8 +70,8 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="card-container">
-        <div className="paral">
+      <div className="card-container1">
+      <div className="paral">
           <h2>Take Your Test</h2> <br/>
           <h4>Embark on your tech journey to unlock your full potential.<br/>Start exploring and delve into your behavior, strengths, and weaknesses to uncover the tech skills that align with you perfectly.<br /> <br/> Insightify carefully analyzes your individual traits to craft personalized learning paths that match your unique goals and aspirations.</h4>
         </div>
@@ -84,10 +80,6 @@ const Home = () => {
           <h4>Unlock your professional potential with our Accurate Career Recommendations. <br/><br/>Our advanced algorithm considers your skills, experiences, and career goals to offer personalized advice tailored just for you.<br /><br/>Say goodbye to guesswork and hello to a clear path forward with Insightify</h4>
         </div>
       </div>
-    {/* <div className='score'>
-          <h2>Your Score <i className="fa-solid fa-arrow-right"></i></h2>
-          <RoundProgressBar/>
-        </div> */}
       </div>
 
       <div className='nextone'>
@@ -116,17 +108,20 @@ const Home = () => {
       </div>
       {/* review section */}
       <div class="review">
-  <div class="reviewheading">
-    <h2>We’ve got a lot of testimonials. See what people <br/>have to say about our platform.</h2>
+        <div class="reviewheading">
+          <h2>We’ve got a lot of testimonials. See what people <br/>have to say about our platform.</h2>
   </div>
+  <div>
+  </div>
+  <div>
   <div class="card-container">
     <div class="card">
       <div class="avatar">
         <img src={foot_one} alt="Person 1" />
       </div>
       <div class="review-content">
-        <h3>John Doe</h3>
-        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, fugiat."</p>
+        <h3>Amaka Obi</h3>
+        <p>"I was skeptical at first, but Insightify blew me away! The assessment was surprisingly accurate, and the personalized recommendations helped me navigate my tech career path with confidence."</p>
         <div class="stars">★★★★</div>
       </div>
     </div>
@@ -135,8 +130,8 @@ const Home = () => {
         <img src={foot_two} alt="Person 2" />
       </div>
       <div class="review-content">
-        <h3>Jane Smith</h3>
-        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, fugiat."</p>
+        <h3>Oluwabukola Olayode</h3>
+        <p>"As someone new to the tech world, Insightify was a game-changer for me. The assessments were engaging, and the recommendations were spot-on"</p>
         <div class="stars">★★★★★</div>
       </div>
     </div>
@@ -145,8 +140,8 @@ const Home = () => {
         <img src={foot_three} alt="Person 3" />
       </div>
       <div class="review-content">
-        <h3>Michael Johnson</h3>
-        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, fugiat."</p>
+        <h3>Benedict Ayo</h3>
+        <p>"Insightify helped me unlock my full potential! The assessment was thorough, and the personalized learning recommendations gave me the push I needed to pursue my tech dreams. Highly recommend!"</p>
         <div class="stars">★★★★★</div>
       </div>
     </div>
@@ -155,16 +150,16 @@ const Home = () => {
         <img src={foot_three} alt="Person 4" />
       </div>
       <div class="review-content">
-        <h3>Michaella Johnson</h3>
-        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, fugiat."</p>
+        <h3>Ebere Umeh</h3>
+        <p>"The assessment results were so insightful and helped me understand myself better. Plus, the platform's user-friendly interface made the whole experience a breeze!"</p>
         <div class="stars">★★★★★</div>
       </div>
     </div>
   </div>
+  </div>
 </div>
-
-            {/* Newsletter Section */}
-        <div className="newsletter-section">
+ {/* Newsletter Section */}
+ <div className="newsletter-section">
           <h1>Subscribe to Our Newsletter</h1>
           <div className="email-input">
             <label htmlFor="email" className="email-label">Email Address</label>
