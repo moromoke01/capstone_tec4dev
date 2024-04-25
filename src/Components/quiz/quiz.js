@@ -4,7 +4,7 @@ import quizData from './quizData';
 import quizData1 from './quizData1'; 
 import quizData2 from './quizData2';
 import quizData3 from './quizData3';
-import Navbar from './Navbar';
+import Navbar from '../Navbar/Navbar';
 
 function Quiz() {
     const [quiz, setQuiz] = useState(quizData);

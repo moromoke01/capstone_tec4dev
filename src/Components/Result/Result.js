@@ -1,13 +1,13 @@
 import React from 'react'
-import logo from '../Assets/logo.png'
+import logo from '../../Assets/logo.png'
 import './Result.css';
-import youtube from '../Assets/4.png'
-import medium from '../Assets/5.png'
-import coursera from '../Assets/6.png';
-import udemy from '../Assets/7.png';
-import bootone from '../Assets/1.png'
-import boottwo from '../Assets/2.png'
-import bootthree from '../Assets/3.png'
+import youtube from '../../Assets/4.png'
+import medium from '../../Assets/5.png'
+import coursera from '../../Assets/6.png';
+import udemy from '../../Assets/7.png';
+import bootone from '../../Assets/1.png'
+import boottwo from '../../Assets/2.png'
+import bootthree from '../../Assets/3.png'
 const Result = () => {
   
   return (

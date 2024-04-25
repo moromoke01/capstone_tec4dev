@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
-import './LoginSignup.css';
-
-import user_icon from '../../Assets/person.png';
-import email_icon from '../../Assets/email.png';
-import password_icon from '../../Assets/password.png';
+import './Auth.css';
+import logo from '../../Assets/logo.png'
 
 const Login = () => {
-  const [action, setAction] = useState("Login");
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -58,49 +55,52 @@ const Login = () => {
 
   return (
     <div className='body'>
-      <div className='container'>
-      <div className="header">
-        <div className="text">{action}</div>
-        <div className="underline"></div>
-      </div>
-      <form>
-      <div className="inputs">
-        {/* {action === "Login" ? (
-          <div className="input">
-            <img src={user_icon} alt="" />
-            <input type="text" placeholder='Name' />
-            
-          </div>
-        ) : null} */}
+      <div className='auth-cont'>
+        
+        <div className="info-bar">
+       <div className='logoAndTagline'> <img src ={logo} style={{width:150}} alt="logo"/>
+           <p>...the best online career compass</p></div>
 
-        <div className="input">
-          <img src={email_icon} alt="" />
+      <div className='auth-info-body'>
+           <h3>You are here, Welcome to Insightify!</h3>
+           <p>Are you new here? Sign up to create an account with Insightify</p>
+
+           <button className='auth-btn-1'>SIGN UP</button>
+      </div>
+        </div>
+    
+    
+      <div className="inputs-box">
+       <form>
+        <h2 className='login-headline '><b> Continue with Insightify </b></h2>
+        <p className='text-center text-black'>Already have an account with us? Sign in to stay connected with us and continue to explore</p>
+
+        <div className="auth-input mt-10">
+        <label>Email Address</label>
           <input type="email" 
                  value={email}
                  onChange={handleEmailChange}
-                 placeholder='Enter your email' required/>
+                 placeholder='johnjoe@example.com' required/>
         </div>
 
-        <div className="input">
-          <img src={password_icon} alt="" />
+        <div className="auth-input mt-20">
+        <label>Password</label>
           <input type="password"
                   value={password} 
                   onChange={handlePasswordChange}
-                 placeholder='Enter your Password' required />
+                 placeholder='...........' required />
         </div>
-        {/* <div className="input">
-          <img src={password_icon} alt="" />
-          <input type="password" placeholder='Confirm Password' required />
-        </div> */}
+
+         <div className="forgot-pwd text-right mt-7 font-semibold">Forgot Password?</div>
+
+    <div className="submit-container">
+        <div type="submit" key="login" className="submit-btn mt-5" onClick={handleSubmit}>SIGN IN</div>
+
+             </div>
+          </form>
       </div>
-      {action==="Sign Up"?<div></div>:      <div className="forgot-password">Forgot Password? <span>Click Here!</span></div>
-}
-      <div className="submit-container">
-        <div type="submit" key="login" className={action === "Sign Up" ? "submit gray" : "submit"} onClick={handleSubmit}>Login</div>
-        <div key="sign up" className={action === "Login" ? "submit gray" : "submit"} onClick={() => { setAction("Sign Up") }} >Sign Up</div>
-      </div>
-      </form>
-    </div>
+    
+  </div>
     
     </div>
   );

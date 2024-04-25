@@ -6,7 +6,7 @@ import image3 from './3.png';
 import Footer from '../Footer/Footer';
 import iconLeft from './icon_left.svg';  // Path to your left arrow icon
 import iconRight from './icon_right.svg';
-import Navbar from '../quiz/Navbar';
+import Navbar from '../Navbar/Navbar';
 
 const slides = [
   {
@@ -96,7 +96,7 @@ const ExploreCarousel = () => {
   
     return (
       <>
-      <Navbar />
+     <Navbar />
         <div className="carousel-container relative w-full">
           {slides.map((slide, index) => (
             <div key={slide.id} className={`carousel-slide ${index === activeIndex ? 'active' : 'inactive'} absolute top-0 left-0 w-full h-full flex flex-col items-center justify-start transition-opacity duration-500 ease-in-out`}>

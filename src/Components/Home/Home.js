@@ -1,14 +1,14 @@
 import React from 'react';
 import './Home.css';
-import Navbar from './quiz/Navbar';
-import image from '../Assets/Img.png';
-import foot_one from '../Assets/img1.jpeg';
-import foot_two from '../Assets/img2.jpeg';
-import foot_three from '../Assets/img3.jpeg';
-import Freq from './FAQ/freq';
-import logo from '../Assets/logo.png';
-import RoundProgressBar from './progressbar/progress';
-import Footer from './Footer/Footer';
+import image from '../../Assets/Img.png';
+import foot_one from '../../Assets/img1.jpeg';
+import foot_two from '../../Assets/img2.jpeg';
+import foot_three from '../../Assets/img3.jpeg';
+import Freq from '../FAQ/freq';
+import logo from '../../Assets/logo.png';
+import RoundProgressBar from '../progressbar/progress';
+import Footer from '../Footer/Footer';
+import Navbar from '../Navbar/Navbar';
 
 const Home = () => {
   const progress = 80;

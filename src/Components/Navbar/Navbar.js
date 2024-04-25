@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MenuItems } from './MenuItems';
+import { MenuItems } from '../quiz/MenuItems';
 import './Navbar.css';
 import Logo from '../../Assets/Insightify Logo.png'; // Import your logo image
 
