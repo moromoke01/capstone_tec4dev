@@ -110,10 +110,11 @@ const Home = () => {
       <div class="review">
         <div class="reviewheading">
           <h2>We’ve got a lot of testimonials. See what people <br/>have to say about our platform.</h2>
-  </div>
-  <div>
-  </div>
-  <div>
+          </div>
+          <div>
+
+          </div>
+          <div>
   <div class="card-container">
     <div class="card">
       <div class="avatar">
@@ -198,11 +199,7 @@ const Home = () => {
     </div>
   </footer>
 </div>
-
-
-            
-            
-            </div>
+</div>
   );
 }
 
