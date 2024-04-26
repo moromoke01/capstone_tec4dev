@@ -1,161 +1,168 @@
-/* Result.css */
+.name {
+  margin-left: 30px;
+  font-weight: 20;
+  padding: 15px;
+  padding-right: 20px;
+}
 
-.container {
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add bottom border shadow */
+.your-result {
+  color: #2f80ed;
+  margin-top: 60px;
+}
 
-  }
-  
-  .logo {
-    max-width: 200px;
-  }
-  
-  .name{
-    margin-left: 30px;
-    font-weight: 20;
-    padding: 15px;
-    padding-right: 20px;
-  }
-  .your-result{
-    color: #2F80ED;
-    margin-top: 60px;
-  }
-  .pass{
-    font-size: 15px;
-  }
-  
- .after{
-    opacity: 50%;
-    margin: auto 30%; 
-    margin-top: 40px;
-    margin-bottom: 20px;
- }
- i{
-    cursor: pointer;
- }
- .track{
-    color:#9C13BE;
-    margin: auto 30%;
- }
- .container_two{
-    margin: auto 8%;
-    padding: auto 8%;
- }
-  
-  .result-analysis h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .result-analysis h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .result-analysis p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-  
-  
-  /* Recommended content section */
-  .recommended-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .cards{
-    display: flex;
-    flex-direction: row;
-  }
-  .card img {
-    width: 85%;
-    height: 50%;
-  }
-  .card {
-    width: 25%;
-    margin-bottom: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-right: 15px;
-    
-  }
-  
-  .card h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .card p {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
- /* CSS for styling the table */
+.pass {
+  font-size: 15px;
+}
+
+.after {
+  opacity: 50%;
+  margin: auto 30%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+i {
+  cursor: pointer;
+}
+
+.track {
+  color: #9c13be;
+  margin: auto 30%;
+}
+
+.container_two {
+  margin: auto 8%;
+  padding: auto 8%;
+}
+
+.result-analysis h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.result-analysis h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.result-analysis p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Recommended content section */
+.recommended-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+}
+
+.card img {
+  width: 85%;
+  height: 50%;
+}
+
+.card {
+  width: 25%;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 15px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* CSS for styling the table */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    
-  }
-  
-  th, td {
-    padding: 8px;
-    text-align: left;
-    width: 10%;
-    border-top: 1px solid #ddd; /* Add top border */
-    border-bottom: 1px solid #ddd; /* Add bottom border */;
-  }
-  
-  th:first-child, td:first-child {
-    border-left: 1px solid #ddd; /* Add left border to first column */
-  }
-  
-  th:last-child, td:last-child {
-    border-right: 1px solid #ddd; /* Add right border to last column */
-    align-items: center;
+  width: 100%;
+  border-collapse: collapse;
+}
 
-  }
-  
-  th {
-    background-color: #f2f2f2; /* Gray background color for table header */
-  }
-  
-  /* CSS for styling the progress percentage */
-  td h3 {
-    margin: 0;
-    font-size: 18px;
-  }
-  
-  /* CSS for styling the table content */
-  td {
-    font-size: 16px;
-  }
-  
-  /* CSS for styling the table header */
-  th, td:first-child {
-    font-weight: bold;
-  }
-  .progress-bar-container {
-    width: 100%;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    overflow: hidden;
-    height: 20px; /* Adjusted height */
-  }
-  
-  .progress-bar {
-    height: 100%;
-    width: 70%; /* Set default progress to 70% */
-    background-color: #4caf50; /* Green color for progress */
-    transition: width 0.5s ease-in-out; /* Smooth transition effect */
-  }
- .download{
-  color: #9C13BE;
- } 
- .span{
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  width: 10%;
+  border-top: 1px solid #ddd;
+  /* Add top border */
+  border-bottom: 1px solid #ddd;
+  /* Add bottom border */
+}
+
+th:first-child,
+td:first-child {
+  border-left: 1px solid #ddd;
+  /* Add left border to first column */
+}
+
+th:last-child,
+td:last-child {
+  border-right: 1px solid #ddd;
+  /* Add right border to last column */
+  align-items: center;
+}
+
+th {
+  background-color: #f2f2f2;
+  /* Gray background color for table header */
+}
+
+/* CSS for styling the progress percentage */
+td h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* CSS for styling the table content */
+td {
+  font-size: 16px;
+}
+
+/* CSS for styling the table header */
+th,
+td:first-child {
+  font-weight: bold;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 20px;
+  /* Adjusted height */
+}
+
+.progress-bar {
+  height: 100%;
+  width: 70%;
+  /* Set default progress to 70% */
+  background-color: #4caf50;
+  /* Green color for progress */
+  transition: width 0.5s ease-in-out;
+  /* Smooth transition effect */
+}
+
+.download {
+  color: #9c13be;
+}
+
+.span {
   display: flex;
   margin: auto 20%;
 }
@@ -192,23 +199,27 @@ table {
 .cards-Re p {
   margin-top: 10px;
 }
-.register{
-  color: #9C13BE;
+
+.register {
+  color: #9c13be;
 }
+
 @media only screen and (max-width: 768px) {
   .container_two {
     margin: auto;
-    padding: 0 20px; /* Adjust the padding as needed */
+    padding: 0 20px;
+    /* Adjust the padding as needed */
   }
-  
+
   .cards-Re-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .cards-Re {
-    width: 45%; /* Adjust the width as needed */
+    width: 45%;
+    /* Adjust the width as needed */
     margin: 10px;
     padding: 20px;
     border: 1px solid #ccc;
@@ -227,4 +238,96 @@ table {
   .cards-Re p {
     margin-top: 10px;
   }
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin-right: 0;
+  }
+}
+
+.overlay-container {
+  position: relative;
+}
+
+.blurry-content {
+  position: relative;
+  z-index: 1;
+}
+
+.feedback-button {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.blur-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  z-index: 0;
+}
+
+.feedback-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.feedback-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.feedback-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.feedback-options {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.feedback-option {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.feedback-option:last-child {
+  margin-right: 0;
+}
+.blur-effect {
+  backdrop-filter: blur(8px);
 }
