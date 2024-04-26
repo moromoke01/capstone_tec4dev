@@ -6,7 +6,7 @@ function Footer() {
       <div className="insightify-section mr-10 pr-10 border-r border-white">
         <h3 className="text-3xl font-bold mb-3">Insightify</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur.<br/> Morbi massa feugiat gravida a senectus sit cursus.<br/> Semper pulvinar sed tortor porta habitant congue morbi amet at. <br/> Dictumst ipsum orci est diam odio. <br/>Nibh ac dui nulla facilisis neque dui t diam odio.<br/> Nibh ac dui nulla facilisis neque dui t
+          Lorem ipsum dolor sit amet consectetur.<br/> Morbi massa feugiat gravida a senectus sit cursus.<br/> Semper pulvinar sed tortor porta habitant congue morbi amet at. <br/> Dictumst ipsum orci est diam odio.
         </p>
       </div>
       <div className="navigate-section mr-10">
