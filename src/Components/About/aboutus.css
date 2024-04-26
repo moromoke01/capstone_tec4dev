@@ -1,16 +1,19 @@
+User
 /* aboutus.css */
 
 /* Style for the main container */
 .about-us-container {
   padding: 20px;
+  margin: 0 auto;
 }
+
 .about-section {
   width: 100%;
-  height: 452px;
-  top: 155px;
+  height: auto; /* Adjusted to fit content */
   padding: 60px 100px;
   background-color: #F5F5F5;
 }
+
 .about-section .section-heading {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 30px;
@@ -19,21 +22,23 @@
   text-align: left;
   color: #09070A;
 }
+
 .about-section .section-content {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 28px;
   text-align: left;
+  line-height: 1.5;
   color: #09070A;
 }
-.about-section2{
+
+.about-section2 {
   width: 100%;
-  height: 452px;
-  top: 155px;
-  padding: 60px 100px;
+  height: auto; /* Adjusted to fit content */
   background-color: #F5F5F5;
+  padding: 60px 100px;
 }
+
 .about-section2 .section-heading {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 30px;
@@ -43,47 +48,51 @@
   color: #09070A;
 }
 
+.team__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 6 columns */
+  grid-template-rows: repeat(6, auto); /* 3 rows */
+  gap: 20px;
+}
 
+  .team__item {
+    display: flex; /* Use flexbox for positioning */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+    background-color: #FEFEFE;
+    border: 0.5px solid #A1A1A1;
+    border-radius: 10px;
+    padding: 50px; /* Adjusted padding */
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
 
+.team__item:hover {
+  transform: translateY(-5px); /* Added hover effect */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Added box shadow on hover */
+}
 
-
-/* Style for the paragraphs */
-.section-content {
-  font-size: 16px;
-  line-height: 1.5;
+.team__img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
   margin-bottom: 20px;
 }
 
-/* Style for the team grid */
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
-  gap: 20px; /* Gap between team members */
+.team__details h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #9C13BE;
 }
 
-/* Style for the team member cards */
-.team-member {
-  border: 1px solid #ccc;
-  padding: 20px;
-  text-align: center;
+.team__details {
+  text-align: center; /* Center text horizontally */
 }
 
-/* Style for team member images */
-.team-member img {
-  width: 100px; /* Adjust image size as needed */
-  height: 100px; /* Adjust image size as needed */
-  border-radius: 50%; /* Make the image round */
-  margin-bottom: 10px;
-}
-
-/* Style for team member names */
-.team-member h3 {
-  font-size: 18px;
-  margin-bottom: 5px;
-}
-
-/* Style for team member roles */
-.team-member p {
-  font-size: 14px;
-  color: #888;
+.team__details .description {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
 }
