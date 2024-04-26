@@ -40,7 +40,7 @@ const teamMembers = [
 
   {
       imgUrl: team04,
-      name: 'Oluwatoyin',
+      name: 'Oluwatoyin Ajayi',
       position: 'Product Designer'
   },
 

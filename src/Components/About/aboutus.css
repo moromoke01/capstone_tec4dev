@@ -1,4 +1,3 @@
-User
 /* aboutus.css */
 
 /* Style for the main container */
@@ -9,23 +8,22 @@ User
 
 .about-section {
   width: 100%;
-  height: auto; /* Adjusted to fit content */
-  padding: 60px 100px;
+  padding: 40px 20px; /* Adjusted padding for responsiveness */
   background-color: #F5F5F5;
 }
 
 .about-section .section-heading {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 30px;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 60px;
+  line-height: 1.5;
   text-align: left;
   color: #09070A;
 }
 
 .about-section .section-content {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 400;
   text-align: left;
   line-height: 1.5;
@@ -34,43 +32,53 @@ User
 
 .about-section2 {
   width: 100%;
-  height: auto; /* Adjusted to fit content */
+  padding: 40px 20px; /* Adjusted padding for responsiveness */
   background-color: #F5F5F5;
-  padding: 60px 100px;
 }
 
 .about-section2 .section-heading {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 30px;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 60px;
+  line-height: 1.5;
   text-align: left;
   color: #09070A;
 }
 
 .team__wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 6 columns */
-  grid-template-rows: repeat(6, auto); /* 3 rows */
+  grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
   gap: 20px;
 }
 
-  .team__item {
-    display: flex; /* Use flexbox for positioning */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: space-between; /* Align items vertically */
-    align-items: center; /* Center items horizontally */
-    background-color: #FEFEFE;
-    border: 0.5px solid #A1A1A1;
-    border-radius: 10px;
-    padding: 50px; /* Adjusted padding */
-    cursor: pointer;
-    transition: all 0.3s ease;
+@media (min-width: 768px) {
+  .team__wrapper {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
   }
+}
+
+@media (min-width: 1024px) {
+  .team__wrapper {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for desktops */
+  }
+}
+
+.team__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FEFEFE;
+  border: 0.5px solid #A1A1A1;
+  border-radius: 10px;
+  padding: 50px; /* Adjusted padding for responsiveness */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
 .team__item:hover {
-  transform: translateY(-5px); /* Added hover effect */
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Added box shadow on hover */
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .team__img img {
@@ -83,18 +91,18 @@ User
 
 .team__details h4 {
   margin: 0;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 600;
   color: #9C13BE;
 }
 
 .team__details {
-  text-align: center; /* Center text horizontally */
+  text-align: center;
 }
 
 .team__details .description {
   margin: 0;
-  font-size: 13px;
+  font-size: 1.4rem;
   font-weight: 540;
   color: #666;
 }
