@@ -5,11 +5,11 @@ import "./testStyle.css";
 const PersonalityTrait = () => {
   const [personalTraitQuestions, setPersonalTraitQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [selectedOption, setSelectedOption] = useState('');
+  const [selectedOptions, setSelectedOptions] = useState({});
   const [answeredQuestions, setAnsweredQuestions] = useState([]);
 
   useEffect(() => {
-    // Fetch cognitive ability questions from the backend
+    // Fetch personality trait questions from the backend
     fetchPersonalTraitQuestions();
   }, []);
 
@@ -44,19 +44,20 @@ const PersonalityTrait = () => {
   const handleNext = () => {
     if (currentQuestionIndex < personalTraitQuestions.length - 1) {
       setCurrentQuestionIndex(prevIndex => prevIndex + 1);
-      setSelectedOption('');
     }
   };
 
   const handlePrevious = () => {
     if (currentQuestionIndex > 0) {
       setCurrentQuestionIndex(prevIndex => prevIndex - 1);
-      setSelectedOption('');
     }
   };
 
   const handleOptionChange = (event) => {
-    setSelectedOption(event.target.value);
+    const newSelectedOptions = { ...selectedOptions };
+    newSelectedOptions[currentQuestionIndex] = event.target.value;
+    setSelectedOptions(newSelectedOptions);
+
     // Update answeredQuestions array to mark current question as answered
     const updatedAnsweredQuestions = [...answeredQuestions];
     updatedAnsweredQuestions[currentQuestionIndex] = true;
@@ -64,6 +65,7 @@ const PersonalityTrait = () => {
   };
 
   const currentQuestion = personalTraitQuestions[currentQuestionIndex];
+  const selectedOption = selectedOptions[currentQuestionIndex] || '';
 
   return (
     <div className="quiz-container">

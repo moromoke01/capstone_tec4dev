@@ -26,6 +26,8 @@ const AptitudeQuestion = () => {
       const shuffledQuestions = shuffleArray(aptitudeQuestions);
       
       setAptitudeQuestions(shuffledQuestions);
+      // Initialize answeredQuestions array with false for each question
+      setAnsweredQuestions(new Array(shuffledQuestions.length).fill(false));
     } catch (error) {
       console.error('Error fetching questions:', error);
     }
@@ -43,33 +45,29 @@ const AptitudeQuestion = () => {
   const handleNext = () => {
     if (currentQuestionIndex < aptitudeQuestions.length - 1) {
       setCurrentQuestionIndex(prevIndex => prevIndex + 1);
-      setSelectedOption(''); // Reset selected option when navigating to the next question
     }
   };
 
   const handlePrevious = () => {
     if (currentQuestionIndex > 0) {
       setCurrentQuestionIndex(prevIndex => prevIndex - 1);
-      setSelectedOption(''); // Reset selected option when navigating to the previous question
     }
   };
 
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
-  };
-
-  const handleAnswer = () => {
-    const selectedAnswer = selectedOption;
-    // Handle user's answer selection
-    // Compare selectedAnswer with correctAnswer to determine correctness
-    // Update UI to reflect user's choice
+    // Update answeredQuestions array to mark current question as answered
+    const updatedAnsweredQuestions = [...answeredQuestions];
+    updatedAnsweredQuestions[currentQuestionIndex] = true;
+    setAnsweredQuestions(updatedAnsweredQuestions);
   };
 
   const currentQuestion = aptitudeQuestions[currentQuestionIndex];
+  const answeredQuestionIndex = answeredQuestions.findIndex(answered => answered);
 
   return (
     <div className="quiz-container">
-      <h1>Aptitude Questions</h1>
+      
       <div className="header">
         <img src={logo} style={{ width: 150 }} alt="logo" />
         <h4>
@@ -86,7 +84,7 @@ const AptitudeQuestion = () => {
         {aptitudeQuestions.map((question, index) => (
           <div
             key={index}
-            className={`pagination-circle ${answeredQuestions[index] ? 'answered' : 'unanswered'}`}
+            className={`pagination-circle ${index === answeredQuestionIndex ? 'answered' : 'unanswered'}`}
             onClick={() => setCurrentQuestionIndex(index)}
           >
             {index + 1}

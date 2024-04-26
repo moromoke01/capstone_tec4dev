@@ -30,6 +30,7 @@
 
 .quiz-container .questions{
   padding:3em;
+  
 }
 
 ul li{
@@ -66,18 +67,18 @@ ul li{
 
 .que-options {
     display: flex;
-    align-items: center; /* Center options vertically */
-    margin-bottom: 10px; /* Add margin between options */
+    align-items: center; 
+    margin-bottom: 10px; 
   }
   
   .options {
-    font-size: 16px; /* Decrease font size for options */
+    font-size: 16px; 
     margin-left: -27em;
   }
   
   /* Styling for radio buttons */
   input[type="radio"] {
-    margin-inline-start: -27em; /* Add margin between radio button and label */
+    margin-inline-start: -27em; 
   }
   
 
@@ -102,6 +103,8 @@ ul li{
 .pagination {
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap; /* Add this to make circles wrap to the next line */
+    /* justify-content: center;  */
     margin-top: 40px;
     gap: 20px;
     row-gap: 15px;
@@ -121,16 +124,25 @@ ul li{
     cursor: pointer;
   }
   
-  .pagination-circle.answered {
-    background-color: purple; /* Color for answered questions */
+  /* .pagination-circle.answered {
+    background-color: purple; 
     color: #ffffff;
-  }
+  } */
   
+  .answered {
+    background-color: purple; 
+    color: #ffffff;
+  } 
+
+  .unanswered {
+    background-color: #424141; 
+    color: white ;
+  } */
 
 /* TestIntroPage styling */
-.testMainPageBox{
-    width:100%;
-    max-width:80%;
+.testIntroPageBox{
+    width:80%;
+    /* max-width:80%; */
     background-color: #ffffff;
     margin:auto;
     margin-top: 1em;
@@ -139,12 +151,13 @@ ul li{
 }
 .content-area{
     padding-left: 45px;
+    
 }
 
 .content-area ul li{
-    list-style-type:circle;
-   
+    list-style-type:circle;  
 }
+
 .content-area ul{
     padding-left: 15px;
 }
@@ -196,3 +209,55 @@ ul li{
     /* margin-block-end: -300px; */
     top: -10%;   
 }
+
+
+/* Media query to maintain the size of pagination circles */
+@media screen and (max-width: 768px) {
+    .pagination-circle {
+      width: 20px;
+      height: 20px;
+      margin: 3px; /* Adjust the margin as needed */
+    }
+
+    .side-oval-shape {
+        display: none;
+    }
+
+    .content-area{
+        padding: 15px;
+        margin: auto;
+        
+    }
+
+    .header{
+        width:100%;
+        /* height: 50px; */
+        
+        padding: 10px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #dddddd;
+        background-color: #ffffff;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* flex-direction: column; */
+        justify-content: left;
+        align-items: left;
+        /* justify-content: space-between; */
+        font-size: 16px;
+    }
+
+    .pagination {
+        display: flex;
+        /* justify-content: flex-start; */
+        flex-wrap: wrap; /* Add this to make circles wrap to the next line */
+        /* justify-content: center;  */
+        margin-top: 7em;
+        gap: 20px;
+        row-gap: 15px;
+        margin-left: 20px;
+      }
+      .quiz-container .questions{
+        padding:3em 10px;
+        
+      }
+  }
