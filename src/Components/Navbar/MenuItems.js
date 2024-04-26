@@ -21,8 +21,13 @@ export const MenuItems = [
     },
     {
         title: 'Contact Us',
+
+        url: '/contact',
+        cName: 'nav-links',
+=======
         url: '#',
         cName: 'hover:purple-600 p-2 rounded-md w-full block text-center',
+>>>>>>> 17b1f2e2c39c185f8a9000583a824f1fc42817d5
     },
     {
         title: 'Sign Up',
