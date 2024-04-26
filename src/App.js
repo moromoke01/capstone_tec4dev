@@ -29,20 +29,12 @@ function App() {
           <Route path="/signin" element={<SigninPage />} /> */}
           <Route path="/verify" element={<VerificationPage />} />
           <Route path="/terms" element={<Terms/>} />
-<<<<<<< HEAD
-          <Route path="/signup" element={<Signup/>} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/testMainPage" element={<TestMainPage/>} />
-          <Route path="/testIntroPage" element={<TestIntroPage/>} />
-          <Route path="/explore" element={<ExploreCarousel/>} />
-=======
           <Route path="/Signup" element={<Signup/>} />
           <Route path="/Login" element={<Login/>} />
           <Route path="/TestMainPage" element={<TestMainPage/>} />
           <Route path="/TestIntroPage" element={<TestIntroPage/>} />
           
           <Route path="/Explore" element={<ExploreCarousel/>} />
->>>>>>> 17b1f2e2c39c185f8a9000583a824f1fc42817d5
           <Route path="/about" element={<AboutUs/>} />
           <Route path="/contact" element={<Contact />} /> {/* Add this line */}
         </Routes>
