@@ -25,7 +25,7 @@ User
 
 .about-section .section-content {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   text-align: left;
   line-height: 1.5;
@@ -83,7 +83,8 @@ User
 
 .team__details h4 {
   margin: 0;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 600;
   color: #9C13BE;
 }
 
@@ -94,5 +95,6 @@ User
 .team__details .description {
   margin: 0;
   font-size: 13px;
+  font-weight: 540;
   color: #666;
 }

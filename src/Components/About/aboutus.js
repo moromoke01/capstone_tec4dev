@@ -10,9 +10,9 @@ import team05 from '../About/Assets/Hamidat Mohammed.jpeg'
 import team06 from '../About/Assets/Chioma Enunwoke.jpg'
 import team07 from '../About/Assets/Ibinabo Adiela.jpg'
 import team08 from '../About/Assets/Janet Omokhunu.png'
-import team09 from '../About/Assets/Dummy.png'
-import team10 from '../About/Assets/Dummy.png'
-import team11 from '../About/Assets/Dummy.png'
+import team09 from '../About/Assets/Moromoke .jpg'
+import team10 from '../About/Assets/Iyanuoluwa A. Hassan.jpg'
+import team11 from '../About/Assets/Amarachi Nwakaibeya.jpg'
 import team12 from '../About/Assets/Dummy.png'
 import team13 from '../About/Assets/Dummy.png'
 import team14 from '../About/Assets/Dummy.png'
@@ -53,7 +53,7 @@ const teamMembers = [
 {
   imgUrl: team06,
   name: 'Chioma Enunwoke',
-  position: 'Cybersecurity'
+  position: 'Cybersecurity Analyst'
 },
 
 {
@@ -69,23 +69,23 @@ const teamMembers = [
 },
 {
   imgUrl: team09,
-  name: 'Memuna Saaani',
-  position: 'Frontend Developer'
-},
-{
-  imgUrl: team10,
-  name: 'Modesta Ugwu',
-  position: 'Product Manager'
-},
-{
-  imgUrl: team11,
   name: 'Moromoke Bello',
   position: 'Product Manager'
 },
 {
-  imgUrl: team12,
+  imgUrl: team10,
   name: 'Iyanuoluwa Hassan',
   position: 'Product Designer'
+},
+{
+  imgUrl: team11,
+  name: 'Amarachi Nwakaibeya',
+  position: 'Mobile App Developer'
+},
+{
+  imgUrl: team12,
+  name: 'Modesta Ugwu',
+  position: 'Product Manager'
 },
 {
   imgUrl: team13,
@@ -94,13 +94,13 @@ const teamMembers = [
 },
 {
   imgUrl: team14,
-  name: 'Amarachi Nwakalbeyo',
-  position: 'Mobile App Developer'
+  name: 'Memuna Saaani',
+  position: 'Frontend Developer'
 },
 {
   imgUrl: team15,
   name: 'Chinanu Uhegbu',
-  position: 'Cubersecurity'
+  position: 'Cybersecurity Analyst'
 },
 {
   imgUrl: team16,
