@@ -4,21 +4,21 @@ import image from '../../Assets/Img.png';
 import foot_one from '../../Assets/img1.jpeg';
 import foot_two from '../../Assets/img2.jpeg';
 import foot_three from '../../Assets/img3.jpeg';
-import foot_four from '../../Assets/Frame 57.png';
+// import foot_four from '../../Assets/Frame 57.png';
 import Freq from '../FAQ/freq';
 import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
 
 const Home = () => {
-  const progress = 80;
+  // const progress = 80;
 
-  function getRandomPosition() {
-    const maxX = window.innerWidth - 100;
-    const maxY = window.innerHeight - 100;
-    const randomX = Math.random() * maxX;
-    const randomY = Math.random() * maxY;
-    return { left: randomX, top: randomY };
-  }
+  // function getRandomPosition() {
+  //   const maxX = window.innerWidth - 100;
+  //   const maxY = window.innerHeight - 100;
+  //   const randomX = Math.random() * maxX;
+  //   const randomY = Math.random() * maxY;
+  //   return { left: randomX, top: randomY };
+  // }
 
   return (
     <>
@@ -121,13 +121,13 @@ const Home = () => {
             },
             {
               img: foot_two,
-              name: "Oluwabukola Olayode",
+              name: "Joseph Olayode",
               review: "As someone new to the tech world, Insightify was a game-changer for me. The assessments were engaging, and the recommendations were spot-on.",
               stars: "★★★★",
             },
             {
               img: foot_three,
-              name: "Benedict Ayo",
+              name: "Benedicta Ayorinde",
               review: "Insightify helped me unlock my full potential! The assessment was thorough, and the personalized learning recommendations gave me the push I needed to pursue my tech dreams. Highly recommend!",
               stars: "★★★★",
             },
