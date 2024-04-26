@@ -13,6 +13,7 @@ import ExploreCarousel from './Components/Explore/ExploreCarousel';
 import AboutUs from './Components/About/aboutus';
 import Home from './Components/Home/Home';
 import Result from './Components/Result/Result';
+import Contact from './Components/Contact/contact';
 
 function App() {
   return (
@@ -26,12 +27,13 @@ function App() {
           <Route path="/signin" element={<SigninPage />} />
           <Route path="/verify" element={<VerificationPage />} />
           <Route path="/terms" element={<Terms/>} />
-          <Route path="/Signup" element={<Signup/>} />
-          <Route path="/Login" element={<Login/>} />
-          <Route path="/TestMainPage" element={<TestMainPage/>} />
-          <Route path="/TestIntroPage" element={<TestIntroPage/>} />
-          <Route path="/Explore" element={<ExploreCarousel/>} />
+          <Route path="/signup" element={<Signup/>} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/testMainPage" element={<TestMainPage/>} />
+          <Route path="/testIntroPage" element={<TestIntroPage/>} />
+          <Route path="/explore" element={<ExploreCarousel/>} />
           <Route path="/about" element={<AboutUs/>} />
+          <Route path="/contact" element={<Contact />} /> {/* Add this line */}
         </Routes>
       </Router>
     </div>
