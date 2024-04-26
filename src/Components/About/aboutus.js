@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import './aboutus.css'; 
 import Footer from '../Footer/Footer';
-import team01 from '../About/Assets/Mojisola O. Akinrelere.png'
+import team01 from '../About/Assets/Akinrelere Mojisola Oluwami (1).png'
 import team02 from '../About/Assets/Habiba.jpg'
 import team03 from '../About/Assets/IFUNANYA EGBUNIWE.jpg'
 import team04 from '../About/Assets/Oluwatoyin O. Ajayi.jpeg'
@@ -13,8 +13,8 @@ import team08 from '../About/Assets/Janet Omokhunu.png'
 import team09 from '../About/Assets/Moromoke .jpg'
 import team10 from '../About/Assets/Iyanuoluwa A. Hassan.jpg'
 import team11 from '../About/Assets/Amarachi Nwakaibeya.jpg'
-import team12 from '../About/Assets/Dummy.png'
-import team13 from '../About/Assets/Dummy.png'
+import team12 from '../About/Assets/Modesta U.png'
+import team13 from '../About/Assets/Memuna.jpeg'
 import team14 from '../About/Assets/Dummy.png'
 import team15 from '../About/Assets/Dummy.png'
 import team16 from '../About/Assets/Dummy.png'
@@ -89,13 +89,13 @@ const teamMembers = [
 },
 {
   imgUrl: team13,
-  name: 'Morenikeji Ofongo',
-  position: 'Product Manager'
+  name: 'Memuna Saaani',
+  position: 'Frontend Developer'
 },
 {
   imgUrl: team14,
-  name: 'Memuna Saaani',
-  position: 'Frontend Developer'
+  name: 'Morenikeji Ofongo',
+  position: 'Product Manager'
 },
 {
   imgUrl: team15,
