@@ -36,7 +36,7 @@ function TestIntroPage() {
         <p>You need to complete all the questions in each section before proceeding to the next section</p>
 
 
-        <button className='start-btn'><Link to="/TestMainPage">Start Assessment</Link></button>
+        <button className='start-btn'><Link to="/">Start Assessment</Link></button>
     </div>
 
     <div className='side-oval-shape'></div>

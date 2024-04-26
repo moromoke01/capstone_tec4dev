@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css';
 import Terms from './Components/terms';
 import Quiz from './Components/quiz/quiz';
 // import { SignupForm, SigninForm } from './Components/LoginSignup/LoginSignup';
