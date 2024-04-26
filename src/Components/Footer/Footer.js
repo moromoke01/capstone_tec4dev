@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className="bg-purple-700 text-white p-5 flex justify-around">
+    <footer className="bg-customPurple text-white p-5 flex justify-around"> {/* Updated background color */}
       <div className="insightify-section mr-10 pr-10 border-r border-white">
         <h3 className="text-3xl font-bold mb-3">Insightify</h3>
         <p>
