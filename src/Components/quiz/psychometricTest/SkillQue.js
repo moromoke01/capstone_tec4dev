@@ -5,11 +5,11 @@ import logo from '../../../Assets/logo.png';
 const SkillsAndInterest = () => {
   const [skillQuestions, setSkillQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [selectedOption, setSelectedOption] = useState('');
+  const [selectedOptions, setSelectedOptions] = useState({});
   const [answeredQuestions, setAnsweredQuestions] = useState([]);
 
   useEffect(() => {
-    // Fetch  questions from the backend
+    // Fetch skill and interest questions from the backend
     fetchSkillQuestions();
   }, []);
 
@@ -25,6 +25,8 @@ const SkillsAndInterest = () => {
       const shuffledQuestions = shuffleArray(skillQuestions);
       
       setSkillQuestions(shuffledQuestions);
+      // Initialize answeredQuestions array with false for each question
+      setAnsweredQuestions(new Array(shuffledQuestions.length).fill(false));
     } catch (error) {
       console.error('Error fetching questions:', error);
     }
@@ -42,19 +44,20 @@ const SkillsAndInterest = () => {
   const handleNext = () => {
     if (currentQuestionIndex < skillQuestions.length - 1) {
       setCurrentQuestionIndex(prevIndex => prevIndex + 1);
-      setSelectedOption(''); // Reset selected option when navigating to the next question
     }
   };
 
   const handlePrevious = () => {
     if (currentQuestionIndex > 0) {
       setCurrentQuestionIndex(prevIndex => prevIndex - 1);
-      setSelectedOption(''); // Reset selected option when navigating to the previous question
     }
   };
 
   const handleOptionChange = (event) => {
-    setSelectedOption(event.target.value);
+    const newSelectedOptions = { ...selectedOptions };
+    newSelectedOptions[currentQuestionIndex] = event.target.value;
+    setSelectedOptions(newSelectedOptions);
+
     // Update answeredQuestions array to mark current question as answered
     const updatedAnsweredQuestions = [...answeredQuestions];
     updatedAnsweredQuestions[currentQuestionIndex] = true;
@@ -62,6 +65,7 @@ const SkillsAndInterest = () => {
   };
 
   const currentQuestion = skillQuestions[currentQuestionIndex];
+  const selectedOption = selectedOptions[currentQuestionIndex] || '';
 
   return (
     <div className="quiz-container">

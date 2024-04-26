@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "./Auth.css";
 import logo from "../../Assets/logo.png";
 import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom"
 
 export default function Signup() {
   const navigate = useNavigate();
@@ -198,7 +199,7 @@ export default function Signup() {
           <div className="auth-info-body">
             <h3>We are glad you are back. Welcome!</h3>
             <p className='font-light'>Already have an account with Insightify? Stay connected with us and log in here</p>
-            <button className="auth-btn-1">SIGN IN</button>
+            <button className="auth-btn-1"> <Link to="/login">SIGN IN</Link></button>
           </div>
         </div>
       </div>

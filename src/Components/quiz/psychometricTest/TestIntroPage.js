@@ -1,10 +1,11 @@
 import React from 'react'
 import logo from '../../../Assets/logo.png'
 import "./testStyle.css";
+import { Link } from 'react-router-dom';
 
 function TestIntroPage() {
   return (
-    <div className="testMainPageBox">
+    <div className="testIntroPageBox">
 
      <div className='flex'>
      <div className='content-area'>
@@ -35,7 +36,7 @@ function TestIntroPage() {
         <p>You need to complete all the questions in each section before proceeding to the next section</p>
 
 
-        <button className='start-btn'>Start Assessment</button>
+        <button className='start-btn'><Link to="/TestMainPage">Start Assessment</Link></button>
     </div>
 
     <div className='side-oval-shape'></div>

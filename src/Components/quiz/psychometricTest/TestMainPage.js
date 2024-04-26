@@ -1,17 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CognitiveQue from './CognitiveQue';
 import PersonalityTrait from './PersonalityTrait';
 import CreativityQue from './CreativityQue';
 import Aptitude from './AptitudeQue';
 import SkillQue from './SkillQue';
+import UseAuth from '../../UseAuth'; // Import UseAuth component
+import { useNavigate } from 'react-router-dom';
 
-// Import all your question components
-
-function TestPage() {
+function TestMainPage() {
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [responses, setResponses] = useState({});
-  const [learningTrack, setLearningTrack] = useState(null); // State to hold predicted learning track
-  const totalQuestions = 5; // Total number of questions
+  const [learningTrack, setLearningTrack] = useState(null);
+  const totalQuestions = 5;
+
+  const loggedIn = UseAuth(); // Get the logged-in status from UseAuth
+  const navigate = useNavigate();
+
+  // useEffect(() => {
+  //   if (!loggedIn) {
+  //     navigate('/Login');
+  //   }
+  // }, [loggedIn, navigate]);
+
+  if (!loggedIn) {
+    navigate('/Login');
+    return null;
+  }
+
+  
+
 
   const handleNext = () => {
     setCurrentQuestion(currentQuestion + 1);
@@ -23,37 +40,46 @@ function TestPage() {
 
   const handleSubmit = async () => {
     try {
-      const modelURL = 'https://cors-anywhere.herokuapp.com/https://psychometric-test-ai-model-11ccf748825c.herokuapp.com/predict';
- // Replace with your deployed model URL
-      const response = await fetch(modelURL, {
+      // Send the responses to the server
+      const response = await fetch('http://localhost:3000/question/submitResponses', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ responses })
+        body: JSON.stringify({ responses }),
       });
       const data = await response.json();
-      console.log('Predicted learning track:', data.learningTrack);
-      setLearningTrack(data.learningTrack); // Set predicted learning track in state
+      console.log('Response from server:', data);
+
+      // Update the learning track based on the response from the server
+      setLearningTrack(data.learningTrack);
     } catch (error) {
-      console.error('Error predicting learning track:', error);
+      console.error('Error submitting responses:', error);
     }
   };
 
+  if (!loggedIn) {
+    // Redirect user to login page or show login form
+    return <p>Please log in to access this page</p>;
+  }
+
   return (
-    <div className='testMainPage'>
-      {currentQuestion === 1 && <CognitiveQue onChange={response => handleResponseChange(1, response)} />}
-      {currentQuestion === 2 && <PersonalityTrait onChange={response => handleResponseChange(2, response)} />}
-      {currentQuestion === 3 && <CreativityQue onChange={response => handleResponseChange(3, response)} />}
-      {currentQuestion === 4 && <Aptitude onChange={response => handleResponseChange(4, response)} />}
-      {currentQuestion === 5 && <SkillQue onChange={response => handleResponseChange(5, response)} />}
-      {/* Render all your question components */}
-      
+    <div className="testMainPage">
+      {currentQuestion === 1 && <CognitiveQue onChange={(response) => handleResponseChange(1, response)} />}
+      {currentQuestion === 2 && <PersonalityTrait onChange={(response) => handleResponseChange(2, response)} />}
+      {currentQuestion === 3 && <CreativityQue onChange={(response) => handleResponseChange(3, response)} />}
+      {currentQuestion === 4 && <Aptitude onChange={(response) => handleResponseChange(4, response)} />}
+      {currentQuestion === 5 && <SkillQue onChange={(response) => handleResponseChange(5, response)} />}
+
       {currentQuestion < totalQuestions ? (
-        <button className="nexted-section-btn" onClick={handleNext}>Next Section</button>
+        <button className="nexted-section-btn" onClick={handleNext}>
+          Next Section
+        </button>
       ) : (
         <>
-          <button className="nexted-section-btn" onClick={handleSubmit}>Submit</button>
+          <button className="nexted-section-btn" onClick={handleSubmit}>
+            Submit
+          </button>
           {learningTrack && <p>Predicted Learning Track: {learningTrack}</p>}
         </>
       )}
@@ -61,4 +87,4 @@ function TestPage() {
   );
 }
 
-export default TestPage;
+export default TestMainPage;
