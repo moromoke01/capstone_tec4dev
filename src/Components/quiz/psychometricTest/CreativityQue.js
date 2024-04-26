@@ -5,7 +5,7 @@ import logo from '../../../Assets/logo.png';
 const CreativityQues = () => {
   const [creativityQuestions, setCreativityQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [selectedOption, setSelectedOption] = useState('');
+  const [selectedOptions, setSelectedOptions] = useState({});
   const [answeredQuestions, setAnsweredQuestions] = useState([]);
 
   useEffect(() => {
@@ -25,6 +25,9 @@ const CreativityQues = () => {
       // Shuffle the array of questions
       const shuffledQuestions = shuffleArray(creativityQues);
       
+      // Initialize answeredQuestions array with false for each question
+      setAnsweredQuestions(new Array(shuffledQuestions.length).fill(false));
+
       setCreativityQuestions(shuffledQuestions);
     } catch (error) {
       console.error('Error fetching questions:', error);
@@ -43,33 +46,28 @@ const CreativityQues = () => {
   const handleNext = () => {
     if (currentQuestionIndex < creativityQuestions.length - 1) {
       setCurrentQuestionIndex(prevIndex => prevIndex + 1);
-      setSelectedOption(''); // Reset selected option when navigating to the next question
     }
   };
 
   const handlePrevious = () => {
     if (currentQuestionIndex > 0) {
       setCurrentQuestionIndex(prevIndex => prevIndex - 1);
-      setSelectedOption(''); // Reset selected option when navigating to the previous question
     }
   };
 
   const handleOptionChange = (event) => {
-    setSelectedOption(event.target.value);
+    const newSelectedOptions = { ...selectedOptions };
+    newSelectedOptions[currentQuestionIndex] = event.target.value;
+    setSelectedOptions(newSelectedOptions);
+
     // Update answeredQuestions array to mark current question as answered
     const updatedAnsweredQuestions = [...answeredQuestions];
     updatedAnsweredQuestions[currentQuestionIndex] = true;
     setAnsweredQuestions(updatedAnsweredQuestions);
   };
 
-  const handleAnswer = () => {
-    const selectedAnswer = selectedOption;
-    // Handle user's answer selection
-    // Compare selectedAnswer with correctAnswer to determine correctness
-    // Update UI to reflect user's choice
-  };
-
   const currentQuestion = creativityQuestions[currentQuestionIndex];
+  const selectedOption = selectedOptions[currentQuestionIndex] || '';
 
   return (
     <div className="quiz-container">
