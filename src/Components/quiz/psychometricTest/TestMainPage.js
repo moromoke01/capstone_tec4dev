@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import CognitiveQue from './CognitiveQue';
 import PersonalityTrait from './PersonalityTrait';
 import CreativityQue from './CreativityQue';
@@ -22,10 +22,10 @@ function TestMainPage() {
   //   }
   // }, [loggedIn, navigate]);
 
-  if (!loggedIn) {
-    navigate('/Login');
-    return null;
-  }
+  // if (!loggedIn) {
+  //   navigate('/Login');
+  //   return null;
+  // }
 
   
 
