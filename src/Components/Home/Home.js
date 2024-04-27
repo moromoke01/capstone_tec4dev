@@ -166,8 +166,6 @@ const Home = () => {
     <button className="subscribe-button">SUBSCRIBE</button>
   </div>
 </div>
-
-
   <Footer />
 </>
   );
