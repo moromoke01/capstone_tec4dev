@@ -16,7 +16,7 @@ const PersonalityTrait = () => {
   const fetchPersonalTraitQuestions = async () => {
     try {
       // Simulate fetching data from a URL
-      const response = await fetch('http://localhost:5000/question/questions');
+      const response = await fetch('https://insignify-backend.onrender.com/questions');
       const data = await response.json();
       // Filter questions by section 
       const traitQuestions = data.filter(question => question.section === "Personality Trait");
@@ -70,7 +70,7 @@ const PersonalityTrait = () => {
   return (
     <div className="quiz-container">
       <div className="header">
-        <img src={logo} style={{ width: 150 }} alt="logo" />
+        <img src={logo} style={{ width: 130 }} alt="logo" />
         <h4><b>Section B: Personal Trait Questions</b></h4>
         <span>
           <b>59:49</b>

@@ -7,7 +7,7 @@
   margin: auto;
   background: linear-gradient(to top, #e773eb, #f2aff5, #fac4ee, #e965d3);
   backdrop-filter: blur(5px);
-  font-family: 'Source Sans Pro', sans-serif;;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .auth-cont {
