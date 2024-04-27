@@ -124,8 +124,8 @@ const Home = () => {
               stars: "★★★★",
             },
             {
-              img: foot_two,
-              name: "Joseph Olayode",
+              img: foot_three,
+              name: "Justina Olayode",
               review: "As someone new to the tech world, Insightify was a game-changer for me. The assessments were engaging, and the recommendations were spot-on.",
               stars: "★★★★",
             },
@@ -155,15 +155,19 @@ const Home = () => {
           ))}
         </div>
       </div>
-    {/* Newsletter Section */}
-    <div className="newsletter-section">
-      <h1>Subscribe to Our Newsletter</h1>
-      <div className="email-input">
-        <label htmlFor="email" className="email-label">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email address" className="email-input-box" />
-      </div>
-      <button className="subscribe-button">SUBSCRIBE</button>
+
+  <div className="newsletter-section">
+  <h1>Subscribe to Our Newsletter</h1>
+  <div className="form-container">
+    <div className="email-input">
+      <label htmlFor="email" className="email-label">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" className="email-input-box" />
     </div>
+    <button className="subscribe-button">SUBSCRIBE</button>
+  </div>
+</div>
+
+
   <Footer />
 </>
   );
