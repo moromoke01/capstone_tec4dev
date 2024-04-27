@@ -32,7 +32,7 @@ export default function Signup() {
       factor: formData.step2.factor,
     };
     try {
-      const response = await fetch('http://localhost:5000/signup', {
+      const response = await fetch('https://insignify-backend.onrender.com/signup', {
         method: 'POST',
         headers: {
           "Content-Type": "application/json",

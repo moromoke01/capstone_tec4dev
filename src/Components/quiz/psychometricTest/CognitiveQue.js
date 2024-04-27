@@ -16,7 +16,7 @@ const CognitiveQuestions = () => {
   const fetchCognitiveAbilityQuestions = async () => {
     try {
       // Simulate fetching data from a URL
-      const response = await fetch('http://localhost:5000/question/questions');
+      const response = await fetch('https://insignify-backend.onrender.com/questions');
       const data = await response.json();
       
       // Filter questions by section "Cognitive Abilities"
@@ -72,7 +72,7 @@ const CognitiveQuestions = () => {
   return (
     <div className="quiz-container">
       <div className="header">
-        <img src={logo} style={{ width: 150 }} alt="logo" />
+        <img src={logo} style={{ width: 130 }} alt="logo" />
         <h4><b>Section A: Cognitive Ability Questions</b></h4>
         <span>
           <b>59:49</b>

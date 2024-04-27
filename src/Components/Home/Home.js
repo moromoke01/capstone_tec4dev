@@ -24,8 +24,12 @@ const Home = () => {
     <>
       <Navbar />
       <div className='containerbody'>
-        <h1>Unleashing Your Tech Skills Potential</h1>
-        <h2>Welcome to Insightify, your ultimate destination for unlocking your true potential in the vast world of technology. <br />At Insightify, we believe that every individual possesses unique talents and abilities waiting to be discovered and harnessed. <br />With our cutting-edge psychometric tests tailored specifically for tech skills, <br />we are dedicated to helping you understand your strengths, identify areas for growth, <br />and embark on a journey of continuous improvement. </h2>
+        <div className='hero-section-content'>
+          <h1>Unleashing Your Tech Skills Potential</h1>
+          <h2>Welcome to Insightify, your ultimate destination for unlocking your true potential in the vast world of technology. At Insightify, we believe that every individual possesses unique talents and abilities waiting to be discovered and harnessed. 
+          With our cutting-edge psychometric tests tailored specifically for tech skills, we are dedicated to helping you understand your strengths, identify areas for growth, and embark on a journey of continuous improvement. </h2>
+
+        </div>
         <div><button className='but'>Take Test</button></div>
         <div><img src={image} alt="Home Groupie" /></div>
         <div className='gh'></div>
@@ -120,8 +124,8 @@ const Home = () => {
               stars: "★★★★",
             },
             {
-              img: foot_two,
-              name: "Joseph Olayode",
+              img: foot_three,
+              name: "Justina Olayode",
               review: "As someone new to the tech world, Insightify was a game-changer for me. The assessments were engaging, and the recommendations were spot-on.",
               stars: "★★★★",
             },
@@ -151,15 +155,19 @@ const Home = () => {
           ))}
         </div>
       </div>
-    {/* Newsletter Section */}
-    <div className="newsletter-section">
-      <h1>Subscribe to Our Newsletter</h1>
-      <div className="email-input">
-        <label htmlFor="email" className="email-label">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email address" className="email-input-box" />
-      </div>
-      <button className="subscribe-button">SUBSCRIBE</button>
+
+  <div className="newsletter-section">
+  <h1>Subscribe to Our Newsletter</h1>
+  <div className="form-container">
+    <div className="email-input">
+      <label htmlFor="email" className="email-label">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" className="email-input-box" />
     </div>
+    <button className="subscribe-button">SUBSCRIBE</button>
+  </div>
+</div>
+
+
   <Footer />
 </>
   );

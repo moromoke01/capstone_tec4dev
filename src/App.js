@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css';
 import Terms from './Components/terms';
 import Quiz from './Components/quiz/quiz';
 // import { SignupForm, SigninForm } from './Components/LoginSignup/LoginSignup';
@@ -13,6 +12,7 @@ import ExploreCarousel from './Components/Explore/ExploreCarousel';
 import AboutUs from './Components/About/aboutus';
 import Home from './Components/Home/Home';
 import Result from './Components/Result/Result';
+import Contact from './Components/Contact/contact';
 
 
 
@@ -36,6 +36,7 @@ function App() {
           
           <Route path="/Explore" element={<ExploreCarousel/>} />
           <Route path="/about" element={<AboutUs/>} />
+          <Route path="/contact" element={<Contact />} /> {/* Add this line */}
         </Routes>
       </Router>
     </div>

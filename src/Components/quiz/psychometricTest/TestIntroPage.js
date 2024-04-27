@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function TestIntroPage() {
   return (
-    <div className="testIntroPageBox">
+    <div className="intro-box">
 
      <div className='flex'>
      <div className='content-area'>

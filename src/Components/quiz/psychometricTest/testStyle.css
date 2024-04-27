@@ -1,263 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
-.quiz-container{
-    width:100%;
-    max-width:80%;
-    background-color: #ffffff;
-    margin:auto;
-    margin-top: 1em;
+*{
+  font-family: 'Source Sans Pro', sans-serif;
+
 }
 
-.header{
-    width:100%;
-    height: 50px;
-    padding: 10px;
-    border-bottom: 2px solid #dddddd;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.quiz-container {
+  width: 100%;
+  max-width: 80%;
+  background-color: #ffffff;
+  margin: auto;
+  margin-top: 1em;
 }
 
-.header button{
-    background-color: #c2bdbd;
-    border: none;
-    font-size: small;
-    margin-left:10px ;
-    color: #ffffff;
-    padding: 8px;
-    border-radius: 5px;
+.intro-box {
+  width: 100%;
+  max-width: 80%;
+  background-color: #ffffff;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 2px 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.quiz-container .questions{
-  padding:3em;
-  
+.header {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  border-bottom: 2px solid #dddddd;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-ul li{
-  list-style:none;
+.header button {
+  background-color: #c2bdbd;
+  border: none;
+  font-size: small;
+  margin-left: 10px;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 5px;
 }
 
-.question h4{
-    margin-bottom:2em;
-}
-.options{
-    font-size: 20px;
-    margin-left:1em;
-    line-height: 24px;
-}
-.option-div{
-    display:flex;
+.quiz-container .questions {
+  padding: 3em;
 }
 
-.bottom-buttons{
-    display:flex;
-    flex-direction: row;
-    justify-content:space-between;
-    margin-top:4em;
-    
+
+ul li {
+  list-style: none;
 }
-.btn{
-    width: 6em;
-    color: #ffffff;
-    display:block;
-    padding:10px;
-    background-color: #7c0594;
-    border: none;
+
+.question h4 {
+  margin-top: -20px;
+  margin-bottom: 2em;
+  font-size: 16px;
+}
+
+.options {
+  font-size: 20px;
+  margin-left: 1em;
+  line-height: 24px;
+}
+
+.option-div {
+  display: flex;
+}
+
+.bottom-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 4em;
+}
+
+.btn {
+  width: 6em;
+  color: #ffffff;
+  display: block;
+  padding: 10px;
+  background-color: #7c0594;
+  border: none;
 }
 
 .que-options {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.options {
+  font-size: 16px;
+  margin-left: -29em;
+}
+
+/* Styling for radio buttons */
+input[type="radio"] {
+  margin-inline-start: -30em;
+}
+
+.testMainPage {
+  width: 100%;
+  height: 110vh;
+  background-color: #999898;
+}
+
+.nexted-section-btn {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  background: #070594;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 20px;
+  row-gap: 15px;
+  margin-left: 20px;
+}
+
+.pagination-circle {
+  width: 29px;
+  height: 28px;
+  border-radius: 50%;
+  color: #e2dcdc;
+  background-color: #7e7c7c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.answered {
+  background-color: purple;
+  color: #ffffff;
+}
+
+.unanswered {
+  background-color: #424141;
+  color: white;
+}
+
+/* TestIntroPage styling */
+.testIntroPageBox {
+  width: 80%;
+  background-color: #ffffff;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 2px 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.content-area {
+  padding-left: 45px;
+}
+
+.content-area ul li {
+  list-style-type: circle;
+}
+
+.content-area ul {
+  padding-left: 15px;
+}
+
+.head-intro {
+  width: 100%;
+  color: #24051b;
+  text-transform: uppercase;
+  text-align: left;
+  align-content: flex-start;
+  border-bottom: 2px solid #7c0594;
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+
+.head-intro h2 {
+  color: #460634;
+  font-size: 24px;
+  font-weight: 1000;
+  padding-bottom: 10px;
+}
+
+.flex {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.start-btn {
+  margin-top: 3em;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  display: block;
+  padding: 10px;
+  background-color: #7c0594;
+}
+
+.side-oval-shape {
+  display: block;
+  width: 40%;
+  height: 95vh;
+  margin-right: 0;
+  padding-right: 0;
+  background-color: #f79de5;
+  border-radius: 44% 0 0 44%;
+  margin-inline-end: -150px;
+  top: -10%;
+}
+
+/* Media query to maintain the size of pagination circles */
+@media screen and (max-width: 768px) {
+ 
+  
+  .pagination-circle {
+      width: 20px;
+      height: 20px;
+      margin: 3px;
+  }
+
+  .side-oval-shape {
+      display: none;
+  }
+
+  .content-area {
+      padding: 15px;
+      margin: auto;
+  }
+
+  .header {
+      width: 100%;
+      height: 130px;
+      padding: 10px;
+      padding-bottom: 30px;
+      border-bottom: 2px solid #dddddd;
+      background-color: #ffffff;
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: left;
+      align-items: left;
+      font-size: 16px;
+      row-gap: 10px;
+  }
+
+  .pagination {
+      display: flex;
+      margin-top: 2em;
+      gap: 20px;
+      row-gap: 15px;
+      margin-left: 20px;
+  }
+
+  .quiz-container .questions {
+      padding: 3em 10px;
+  }
+
+  .que-options {
     display: flex;
-    align-items: center; 
-    margin-bottom: 10px; 
+    align-items: center;
+    margin-bottom: 10px;
   }
   
   .options {
-    font-size: 16px; 
-    margin-left: -27em;
+    font-size: 16px;
+    margin-left: -10em;
   }
   
   /* Styling for radio buttons */
   input[type="radio"] {
-    margin-inline-start: -27em; 
+    margin-inline-start: -10em;
   }
-  
-
-.testMainPage{
-    width: 100%;
-    height: 100vh;
-    background-color: #999898;
 }
-
-.nexted-section-btn{
-    display:block;
-    margin:auto;
-    margin-top:10px;
-    padding:10px;
-    justify-content:center;
-    align-items: center;
-    background: #070594;
-    color: #ffffff;
-    border-radius: 5px;
-}
-
-.pagination {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap; /* Add this to make circles wrap to the next line */
-    /* justify-content: center;  */
-    margin-top: 40px;
-    gap: 20px;
-    row-gap: 15px;
-    margin-left: 20px;
-  }
-  
-  .pagination-circle {
-    width: 29px;
-    height: 28px;
-    border-radius: 50%;
-    color:#e2dcdc;
-    background-color: #7e7c7c; /* Default color for unanswered questions */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    cursor: pointer;
-  }
-  
-  /* .pagination-circle.answered {
-    background-color: purple; 
-    color: #ffffff;
-  } */
-  
-  .answered {
-    background-color: purple; 
-    color: #ffffff;
-  } 
-
-  .unanswered {
-    background-color: #424141; 
-    color: white ;
-  } */
-
-/* TestIntroPage styling */
-.testIntroPageBox{
-    width:80%;
-    /* max-width:80%; */
-    background-color: #ffffff;
-    margin:auto;
-    margin-top: 1em;
-    margin-bottom: 2em;
-    box-shadow: 0 4px 8px 0 rgba(0,0, 0,0.2) ,2px 6px 20px 0 rgba(0,0,0, 0.19);
-}
-.content-area{
-    padding-left: 45px;
-    
-}
-
-.content-area ul li{
-    list-style-type:circle;  
-}
-
-.content-area ul{
-    padding-left: 15px;
-}
-.head-intro{
-    width: 100%;
-    color: #24051b;
-    text-transform: uppercase;
-    /* padding: 15px; */
-    text-align: left;
-    align-content: flex-start;
-    border-bottom: 2px solid #7c0594;
-    margin-bottom: 25px;
-    margin-top: 30px;
-}
-.head-intro h2{
-    color: #460634;
-    font-size: 24px;
-    font-weight: 1000;
-    padding-bottom: 10px;   
-}
-.flex{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* position: relative; */
-    overflow: hidden; 
-}
-
-.start-btn{
-    margin-top: 3em;
-    border-radius: 5px;
-    border: none;
-    color: #ffffff;
-    display:block;
-    padding:10px;
-    background-color: #7c0594;
-}
-
-.side-oval-shape {
-    display: block;
-    /* position: absolute; */
-    width: 30%;
-    height: 95vh;
-    background-color: #f79de5;
-    border-radius: 44% 0 0 44%;
-    margin-inline-end: -100px;
-    /* margin-block-end: -300px; */
-    top: -10%;   
-}
-
-
-/* Media query to maintain the size of pagination circles */
-@media screen and (max-width: 768px) {
-    .pagination-circle {
-      width: 20px;
-      height: 20px;
-      margin: 3px; /* Adjust the margin as needed */
-    }
-
-    .side-oval-shape {
-        display: none;
-    }
-
-    .content-area{
-        padding: 15px;
-        margin: auto;
-        
-    }
-
-    .header{
-        width:100%;
-        /* height: 50px; */
-        
-        padding: 10px;
-        padding-bottom: 20px;
-        border-bottom: 2px solid #dddddd;
-        background-color: #ffffff;
-        display: grid;
-        grid-template-columns: 1fr;
-        /* flex-direction: column; */
-        justify-content: left;
-        align-items: left;
-        /* justify-content: space-between; */
-        font-size: 16px;
-    }
-
-    .pagination {
-        display: flex;
-        /* justify-content: flex-start; */
-        flex-wrap: wrap; /* Add this to make circles wrap to the next line */
-        /* justify-content: center;  */
-        margin-top: 7em;
-        gap: 20px;
-        row-gap: 15px;
-        margin-left: 20px;
-      }
-      .quiz-container .questions{
-        padding:3em 10px;
-        
-      }
-  }

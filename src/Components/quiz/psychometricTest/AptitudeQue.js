@@ -16,7 +16,7 @@ const AptitudeQuestion = () => {
   const fetchAptitudeQuestions = async () => {
     try {
       // Simulate fetching data from a URL
-      const response = await fetch('http://localhost:5000/question/questions');
+      const response = await fetch('https://insignify-backend.onrender.com/questions');
       const data = await response.json();
       
       // Filter questions by section
@@ -55,21 +55,22 @@ const AptitudeQuestion = () => {
   };
 
   const handleOptionChange = (event) => {
+    const selectedIndex = event.target.id.split('-')[1];
     setSelectedOption(event.target.value);
     // Update answeredQuestions array to mark current question as answered
-    const updatedAnsweredQuestions = [...answeredQuestions];
-    updatedAnsweredQuestions[currentQuestionIndex] = true;
+    const updatedAnsweredQuestions = answeredQuestions.map((answer, index) => {
+      return index === parseInt(selectedIndex) ? true : answer;
+    });
     setAnsweredQuestions(updatedAnsweredQuestions);
   };
 
   const currentQuestion = aptitudeQuestions[currentQuestionIndex];
-  const answeredQuestionIndex = answeredQuestions.findIndex(answered => answered);
 
   return (
     <div className="quiz-container">
       
       <div className="header">
-        <img src={logo} style={{ width: 150 }} alt="logo" />
+        <img src={logo} style={{ width: 130 }} alt="logo" />
         <h4>
           <b>Section D: Aptitude Questions</b>
         </h4>
@@ -84,7 +85,7 @@ const AptitudeQuestion = () => {
         {aptitudeQuestions.map((question, index) => (
           <div
             key={index}
-            className={`pagination-circle ${index === answeredQuestionIndex ? 'answered' : 'unanswered'}`}
+            className={`pagination-circle ${answeredQuestions[index] ? 'answered' : 'unanswered'}`}
             onClick={() => setCurrentQuestionIndex(index)}
           >
             {index + 1}
