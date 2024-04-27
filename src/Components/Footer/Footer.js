@@ -1,16 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; // Import Link from React Router
-
+import './footer.css'
 import { MenuItems } from '../../Components/Navbar/MenuItems'; // Assuming MenuItems is defined in a separate file
 
 function Footer() {
   return (
-    <footer className="bg-customPurple text-white p-5 flex flex-col md:flex-row justify-around">
-      <div className="insightify-section mb-6 md:mb-0 pr-10 md:border-r md:border-white">
+    <footer className="bg-[#9C13BE] text-white  p-25  flex flex-col md:flex-row justify-around">
+      <div className="insightify-section p-25  mb-6 md:mb-0 pr-10 md:border-r md:border-white">
         <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-4">Insightify</h3>
-        <p className="text-sm md:text-base">
-          Lorem ipsum dolor sit amet consectetur. Morbi massa feugiat gravida a senectus sit cursus.
-          Semper pulvinar sed tortor porta habitant congue morbi amet at. Dictumst ipsum orci est diam odio.
+        <p className="text-md md:text-base">
+          At Insightify, excellence is not just a goal, it is our standard. We are dedicated to upholding the highest standards of quality, integrity, and professionism in everything we do.
         </p>
       </div>
 

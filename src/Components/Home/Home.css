@@ -1,10 +1,18 @@
 .containerbody {
-  background: linear-gradient(104.37deg, rgba(245, 245, 245, 0.8) 3.85%, rgba(199, 129, 217, 0.29) 29.35%, rgba(156, 19, 190, 0.14) 61.15%, rgba(161, 33, 193, 0.16) 68.99%, rgba(178, 76, 204, 0.14) 81.9%, rgba(245, 245, 245, 0.8) 96.03%);
+  background: rgb(255,255,255);
+background: linear-gradient(301deg, rgba(255,255,255,0.5130427170868348) 0%, rgba(249,92,241,0.4514180672268907) 12%, rgba(208,55,205,0.49343487394957986) 81%, rgba(255,255,255,1) 100%);
   padding: 80px 20px 0; /* Adjusted padding */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.hero-section-content{
+  width: 70%;
+  margin: auto;
+  justify-content: center;
+  text-align: justify;
+
 }
 .containerbody h1 {
     font-family: 'Source Sans Pro', sans-serif;
@@ -16,6 +24,7 @@
     padding: 20px; /* Add padding for better readability */
 }
 .containerbody h2 {
+   text-align: justify;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -26,11 +35,13 @@
     text-align: center;
 }
 .containerbody button {
+  margin: auto;
+  text-align: center;
   width: 200px; /* Fixed width */
   height: 48px; /* Fixed height */
   padding: 16px 40px; /* Padding values */
-  background-color:#9C13BE; /* Background color */
-  color: #FFFFFF; /* Text color */
+  background-color:#91017d; /* Background color */
+  color: #ffffff; /* Text color */
   border: none;
   gap: 20px; /* Gap between elements */
   border-radius: 8px 8px 8px 8px; /* Border radius */ 
@@ -58,7 +69,8 @@
   width: 100%; /* Adjust width to 100% for responsiveness */
   height: auto; /* Allow height to adjust based on content */
   padding: 20px 10px; /* Adjusted padding for better spacing */
-  background: linear-gradient(90deg, #FFFFFF 0%, #FAEAFE 100%);
+  background: rgb(216,119,251);
+background: linear-gradient(301deg, rgba(216,119,251,0.7203256302521008) 0%, rgba(249,92,241,0.4738270308123249) 37%, rgba(255,249,255,0.29175420168067223) 85%);
   box-shadow: 0px 4px 8px 0px #720E8B33;
 }
 .dofooter {

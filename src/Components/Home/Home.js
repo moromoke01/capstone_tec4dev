@@ -24,8 +24,12 @@ const Home = () => {
     <>
       <Navbar />
       <div className='containerbody'>
-        <h1>Unleashing Your Tech Skills Potential</h1>
-        <h2>Welcome to Insightify, your ultimate destination for unlocking your true potential in the vast world of technology. <br />At Insightify, we believe that every individual possesses unique talents and abilities waiting to be discovered and harnessed. <br />With our cutting-edge psychometric tests tailored specifically for tech skills, <br />we are dedicated to helping you understand your strengths, identify areas for growth, <br />and embark on a journey of continuous improvement. </h2>
+        <div className='hero-section-content'>
+          <h1>Unleashing Your Tech Skills Potential</h1>
+          <h2>Welcome to Insightify, your ultimate destination for unlocking your true potential in the vast world of technology. At Insightify, we believe that every individual possesses unique talents and abilities waiting to be discovered and harnessed. 
+          With our cutting-edge psychometric tests tailored specifically for tech skills, we are dedicated to helping you understand your strengths, identify areas for growth, and embark on a journey of continuous improvement. </h2>
+
+        </div>
         <div><button className='but'>Take Test</button></div>
         <div><img src={image} alt="Home Groupie" /></div>
         <div className='gh'></div>

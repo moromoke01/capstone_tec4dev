@@ -2,36 +2,36 @@ export const MenuItems = [
     {
         title: 'Home',
         url: '/',
-        cName: 'hover:purple-600 p-2 rounded-md  w-full block text-center',
+        cName: 'nav-links',
     },
     {
         title: 'Explore ', // New menu item
         url: '/explore', 
-        cName: 'hover:purple-600 p-2 rounded-md w-full block text-center',
+        cName: 'nav-links',
     },
     {
         title: 'Result', // New menu item
         url: '/', // Update the URL accordingly
-        cName: 'hover:purple-600 p-2 rounded-md w-full block text-center',
+        cName: 'nav-links',
     },
     {
         title: 'About Us',
         url: '/about',
-        cName:'hover:purple-600 p-2 rounded-md w-full block text-center',
+        cName:'nav-links',
     },
     {
         title: 'Contact Us',
         url: '/contact',
-        cName: 'hover:purple-600 p-2 rounded-md w-full block text-center',
+        cName: 'nav-links',
     },
     {
         title: 'Sign Up',
         url: '/signup',
-        cName: 'bg-[#9C13BE] hover:purple-600 p-2 text-white rounded-md w-full block text-center',
+        cName: ' nav-links nav-links-mobile'
     },
     {
         title: 'Take Test',
         url: '/TestIntroPage',
-        cName: 'hover:purple-600 p-2 rounded-md w-full block text-center',
+        cName: 'nav-links nav-links-mobile-alone',
     }
 ]
