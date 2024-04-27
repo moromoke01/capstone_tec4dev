@@ -285,9 +285,8 @@
 .email-input-box {
   width: 100%;
   padding: 30px;
-  background-color: none; /* Change background color */
   outline: none; /* Remove input field outline */
-  border-bottom: 1px solid transparent;
+  /* border-bottom: 1px solid transparent; */
   box-sizing: border-box;
   border: none;
 }
