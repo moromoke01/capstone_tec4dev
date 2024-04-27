@@ -1,6 +1,5 @@
 .containerbody {
-  background: rgb(255,255,255);
-background: linear-gradient(301deg, rgba(255,255,255,0.5130427170868348) 0%, rgba(249,92,241,0.4514180672268907) 12%, rgba(208,55,205,0.49343487394957986) 81%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(104.37deg, rgba(245, 245, 245, 0.8) 3.85%, rgba(199, 129, 217, 0.29) 29.35%, rgba(156, 19, 190, 0.14) 61.15%, rgba(161, 33, 193, 0.16) 68.99%, rgba(178, 76, 204, 0.14) 81.9%, rgba(245, 245, 245, 0.8) 96.03%);
   padding: 80px 20px 0; /* Adjusted padding */
   display: flex;
   flex-direction: column;
@@ -12,7 +11,6 @@ background: linear-gradient(301deg, rgba(255,255,255,0.5130427170868348) 0%, rgb
   margin: auto;
   justify-content: center;
   text-align: justify;
-
 }
 .containerbody h1 {
     font-family: 'Source Sans Pro', sans-serif;
@@ -40,7 +38,7 @@ background: linear-gradient(301deg, rgba(255,255,255,0.5130427170868348) 0%, rgb
   width: 200px; /* Fixed width */
   height: 48px; /* Fixed height */
   padding: 16px 40px; /* Padding values */
-  background-color:#91017d; /* Background color */
+  background-color:#9C13BE; /* Background color */
   color: #ffffff; /* Text color */
   border: none;
   gap: 20px; /* Gap between elements */
@@ -69,9 +67,8 @@ background: linear-gradient(301deg, rgba(255,255,255,0.5130427170868348) 0%, rgb
   width: 100%; /* Adjust width to 100% for responsiveness */
   height: auto; /* Allow height to adjust based on content */
   padding: 20px 10px; /* Adjusted padding for better spacing */
-  background: rgb(216,119,251);
-background: linear-gradient(301deg, rgba(216,119,251,0.7203256302521008) 0%, rgba(249,92,241,0.4738270308123249) 37%, rgba(255,249,255,0.29175420168067223) 85%);
-  box-shadow: 0px 4px 8px 0px #720E8B33;
+  background: linear-gradient(90deg, #FFFFFF 0%, #FAEAFE 100%);
+  box-shadow: 0px 4px 8px 0px rgba(114, 14, 139, 0.2);
 }
 .dofooter {
   position: relative;
@@ -140,7 +137,7 @@ background: linear-gradient(301deg, rgba(216,119,251,0.7203256302521008) 0%, rgb
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color:  #27AE6024;
+  background-color: #FEFEFE;
   width: 100%; /* Adjusted to occupy full width */
 }
 .par {
@@ -225,75 +222,6 @@ background: linear-gradient(301deg, rgba(216,119,251,0.7203256302521008) 0%, rgb
   font-size: 16px; 
   font-weight: 400;
 }
-/* .card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.review {
-  background-color: #27AE6024;
-  padding: 20px;
-}
-.reviewheading {
-  font-family: 'Source Sans Pro', sans-serif; 
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 52px;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #000000;
-}
-.card {
-  flex: 0 0 calc(50% - 50px);
-  margin: 25px;
-  border: 0px;
-  border-radius: 5px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-}
- .avatar {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-.avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.card img {
-  width: 100% !important;
-  height: 100% !important;
-}
-.review-content h3 {
-  margin: 0;
-  margin-bottom: 5px;
-}
-.review-content p {
-  margin: 0;
-  margin-bottom: 10px;
-}
-.stars {
-  color: #E2B93B;
-  font-size: 20px;
-} */
-/* Responsive adjustments */
-/* @media screen and (max-width: 768px) {
-  .card {
-    flex-basis: calc(50% - 20px);
-    margin: 10px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .card {
-    flex-basis: calc(100% - 20px);
-    margin: 10px 0;
-  }
-} */
 .frequent {
   text-align: center; /* Center the content horizontally */
 }
@@ -309,83 +237,6 @@ background: linear-gradient(301deg, rgba(216,119,251,0.7203256302521008) 0%, rgb
   font-family: 'Source Sans Pro', sans-serif; /* Specify the font family */
   font-size: 40px; /* Specify the font size */
   text-align: center; /* Center the text horizontally */
-  /* background-color: #EB5757; Specify the background color  */
-}
-.second-tolast{
-  background: conic-gradient(from 32.78deg at 32.07% 54.51%, #090909 -199.79deg, #0B0B0B 106.47deg, #525252 114.54deg, #6E6E6E 155.73deg, #090909 160.21deg, #0B0B0B 466.47deg);
-height: 350px;
-color: #ccc;
-display: flex;
-}
-.second-tolast h1{
-  margin: auto 20px;
-  padding-top: 6%;
-}
-.second-tolast .but{
-  margin : 50px;
-}
-.second-tolast {
-  position: relative;
-}
-.ofour {
-  width: 50px; 
-  height: 50px; 
-  border-radius: 50%; 
-  position: absolute; 
-  margin-left: 70%;
-}
-.othree{
-  width: 50px; 
-  height: 50px; 
-  border-radius: 50%; 
-  position: absolute;
-  margin-left: 50%;
-}
-.otwo{
-  width: 50px; 
-  height: 50px; 
-  border-radius: 50%; 
-  position: absolute;
-  margin-left: 30%;
-}
-.one{
-  width: 50px; 
-  height: 50px; 
-  border-radius: 50%; 
-  position: absolute;
-  margin-left: 90%;
-}
-.last{
-  display: flex;
-  gap: 40%;
-  font-size: 30px;
-  flex-direction: row;
-}
-.last ul{
-  display: flex;
-  text-decoration: none;
-  gap: 40px;
-  list-style-type: none;
-}
-@media screen and (max-width: 768px) {
-  .last {
-    flex-direction: row;
-    align-items: center;
-    gap: 5px;
-  }
-
-  .last img {
-    margin-bottom: 10px; /* Add some space between logo and list on small screens */
-  }
-
-  .last ul {
-    flex-direction: row;
-    text-align: center;
-    font-size: 9px;
-  }
-  .last li {
-    margin: 5px 0; /* Adjust the spacing between list items for small screens */
-  }
 }
 /* Newsletter Section */
 .newsletter-section {
@@ -398,6 +249,7 @@ display: flex;
   align-items: center;
   text-align: center;
 }
+
 .newsletter-section h1 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 32px;
@@ -405,15 +257,22 @@ display: flex;
   line-height: 40px;
   margin-bottom: 20px; /* Increase space below the heading for better readability */
 }
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
 .email-input {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center align items for responsiveness */
   width: 100%;
+  background: transparent;
   max-width: 400px; /* Limit width to prevent overflowing */
   border-bottom: 2px solid #9c13be; /* Add bottom border */
-  margin-bottom: 20px; /* Add space below the input */
 }
+
 .email-label {
   font-weight: 600;
   font-size: 18px; /* Decrease font size for better alignment */
@@ -421,45 +280,55 @@ display: flex;
   margin-bottom: 10px; /* Increase margin for better spacing */
   color: #9c13be; /* Update color */
 }
+
 .email-input-box {
   width: 100%;
   padding: 10px;
   border: none;
   border-bottom: 1px solid transparent; /* Make border not visible */
-  outline: none;
+  outline: auto; /* Remove input field outline */
+  outline-color: transparent;
   box-sizing: border-box;
 }
+
 .subscribe-button {
   background-color: #9c13be;
   color: #fff;
-  width: 100%; /* Make button width 100% for responsiveness */
-  max-width: 200px; /* Limit button width to prevent overflowing */
+  width: 200px; /* Set button width */
   height: 48px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
+  margin-top: 20px;
 }
+
 .subscribe-button:hover {
   background-color: #7f0f98; /* Darken color on hover */
 }
+
 /* Responsive Styles */
 @media only screen and (max-width: 768px) {
   .newsletter-section h1 {
     font-size: 28px;
     line-height: 36px;
   }
+
   .email-label {
     font-size: 16px;
     line-height: 22px;
   }
+
+  .form-container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: stretch; /* Stretch items to full width */
+  }
+
   .subscribe-button {
-    max-width: none; /* Remove max-width for responsiveness */
+    width: 100%; /* Make button width full on smaller screens */
+    max-width: 100%; /* Ensure button does not exceed container width */
   }
 }
-.layer-three {
-  width: 100%;
-  box-sizing: border-box;
-}
+
 .footer {
   width: 100%;
   display: flex;
