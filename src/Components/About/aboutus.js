@@ -112,8 +112,9 @@ const teamMembers = [
 const AboutUs = () => {
   return (
     <>
+     <Navbar />
       <div className="about-us-container">
-        <Navbar />
+
         <section className="about-section">
           <h1 className="section-heading">WHO WE ARE</h1>
           <p className="section-content">

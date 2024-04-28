@@ -102,7 +102,7 @@ const ExploreCarousel = () => {
   return (
     <>
       <Navbar />
-      <div className="carousel-container relative w-full">
+      <div className="carousel-container z-[-1] relative w-full">
         {slides.map((slide, index) => (
           <div key={slide.id} className={`carousel-slide ${index === activeIndex ? 'active' : 'inactive'} w-full md:w-1/2 flex flex-col items-center transition-opacity duration-500 ease-in-out`}>
             <img src={slide.imageUrl} alt={slide.altText} className="carousel-image w-full h-auto md:h-96 object-cover" />
