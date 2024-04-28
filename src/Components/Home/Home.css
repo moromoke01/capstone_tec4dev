@@ -248,8 +248,8 @@
 /* Newsletter Section */
 .newsletter-section {
   background-color: white;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 10px;
+  border-radius: 0px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
@@ -268,14 +268,15 @@
 .form-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   position: relative;
+  margin: 0px;
 }
 
 .email-input {
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /* Allow the input field to grow and fill available space */
+  flex-grow: 1.5; /* Allow the input field to grow and fill available space */
   max-width: 400px; /* Limit width to prevent overflowing */
   width: 100%;
   padding: 20px;
@@ -301,12 +302,14 @@
 .subscribe-button {
   background-color: #9c13be;
   color: #fff;
+  padding: 0%;
   width: 100%; /* Set button width */
   height: 40px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
   margin-top: 20px;
+  margin-left: 0%;
 }
 
 .subscribe-button:hover {
@@ -326,13 +329,15 @@
   }
 
   .form-container {
-    flex-direction: column; /* Stack items vertically on smaller screens */
-    align-items: stretch; /* Stretch items to full width */
+    flex-direction:row; /* Stack items vertically on smaller screens */
+    align-items: center; /* Stretch items to full width */
   }
 
   .subscribe-button {
-    width: 100%; /* Make button width full on smaller screens */
-    max-width: 100%; /* Ensure button does not exceed container width */
+    width: auto; /* Make button width full on smaller screens */
+    justify-self: center;
+    font-size: small;
+    padding: 2px;
   }
 
   .hero-section-content{
