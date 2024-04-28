@@ -23,10 +23,12 @@
 .inputs-box {
     border-radius: 5px;
   padding-top: 1em;
+  padding-bottom: 1em;
   width: 65%;
   color: #9c13be;
   position: relative;
   padding: 0 30px 0 30px;
+
   /* background: #ffffff; */
 }
 
@@ -229,10 +231,10 @@ input{
 
  .auth-cont {
   background: #ffffff;
-  width: 90%;
+  max-width: 90%;
   margin: auto;
   /* height: 90vh; */
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: row;
   border-radius: 5px;
@@ -241,6 +243,7 @@ input{
 label{
   font-size: 16px;
 }
+
 }
 
 

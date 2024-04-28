@@ -43,8 +43,8 @@ const Navbar = () => {
             <a className="hover:text-bg-[9C13BE] px-2 font-bold text-md mx-2" href="/Contact">Contact Us</a>
             <button className="text-white bg-[#9C13BE] text-md px-6 py-2.5 rounded-md font-bold mb-5"><a href="/signUp" >Sign Up</a></button>
             <button class="relative mx-5 inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-md font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
-              <span class="relative  px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-              <a href="/signUp" >Take Test</a>
+              <span class="relative  px-5 py-2.5 transition-all ease-in duration-75 bg-white  rounded-md group-hover:bg-opacity-0">
+              <a href="/TestIntropage" >Take Test</a>
               </span>
               </button>
           </div>         

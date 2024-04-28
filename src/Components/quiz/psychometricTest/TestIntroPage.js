@@ -15,7 +15,7 @@ function TestIntroPage() {
   if (!loggedIn) {
     // Redirect user to login page or show login form
     // return <p>Please log in to access this page</p>;
-    // navigate('/Login');
+    navigate('/Login');
   }
 
   return (
