@@ -36,11 +36,11 @@ const Navbar = () => {
         {/* Desktop menu */}
         {isDesktopViewActive && (
           <div className="ml-12 mr-0 items-end justify-between text-black items-center py-5 space-y-3">
-            <a className="hover:text-bg-[9C13BE] px-2 mx-2" href="/">Homes</a>
-            <a className="hover:text-bg-[9C13BE] px-2 mx-2" href="/">Explore</a>
-            <a className="hover:text-bg-[9C13BE] px-2 mx-2" href="/">Result</a>
-            <a className="hover:text-bg-[9C13BE] px-2 mx-2"href="/">Contact Us</a>
-            <a className="hover:text-bg-[9C13BE] px-2 mx-2" href="/">Contact Us</a>
+            <a className="hover:text-bg-[9C13BE] px-2 mx-2" href="/">Home</a>
+            <a className="hover:text-bg-[9C13BE] px-2 mx-2" href="/Explore">Explore</a>
+            <a className="hover:text-bg-[9C13BE] px-2 mx-2" href="/Result">Result</a>
+            <a className="hover:text-bg-[9C13BE] px-2 mx-2"href="/About">About Us</a>
+            <a className="hover:text-bg-[9C13BE] px-2 mx-2" href="/Contact">Contact Us</a>
             <a href="/signUp" className="text-white bg-[#9C13BE] px-6 py-2 rounded-md font-bold mb-5">Sign Up</a>
             <a href="/signUp" className="text-black bg-outline-[#9C13BE] px-6 py-2 rounded-md font-bold mb-5">Take Test</a>
 
@@ -54,10 +54,10 @@ const Navbar = () => {
         {isHamburgerActive && (
           <div className="absolute  top-full    w-full bg-white text-black  flex-col items-center py-5 space-y-3 md:hidden">
             <a className="block w-full  mb-4 px-[40%] hover:text-bg-[#9C13BE]" href="/">Home</a>
-            <a className="block w-full mb-4 px-[40%]  hover:text-bg-[#9C13BE]" href="/">Explore</a>
-            <a className="block w-full mb-4 px-[40%]  hover:text-bg-[#9C13BE]" href="/">Result</a>
-            <a className="block w-full mb-4 px-[40%]  hover:text-bg-[#9C13BE]" href="/">About </a>
-            <a className="block w-full mb-5  px-[40%]  hover:text-bg-[#9C13BE]" href="/">Contact </a>
+            <a className="block w-full mb-4 px-[40%]  hover:text-bg-[#9C13BE]" href="/Explore">Explore</a>
+            <a className="block w-full mb-4 px-[40%]  hover:text-bg-[#9C13BE]" href="/Result">Result</a>
+            <a className="block w-full mb-4 px-[40%]  hover:text-bg-[#9C13BE]" href="/About">About Us </a>
+            <a className="block w-full mb-5  px-[40%]  hover:text-bg-[#9C13BE]" href="/Contact">Contact </a>
             <a href="/signUp" className="block text-white  mb-5 mx-[40%] mt-4 bg-purple-600 rounded-md font-bold " onClick={handleHamburgerClick}>Sign Up</a>      
             <a href="/signUp" className=" block w-full mb-5  px-[40%] mt-4 border-purple-600 rounded-md font-bold " onClick={handleHamburgerClick}>Take Test</a>          
             </div>
