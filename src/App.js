@@ -13,13 +13,14 @@ import AboutUs from './Components/About/aboutus';
 import Home from './Components/Home/Home';
 import Result from './Components/Result/Result';
 import Contact from './Components/Contact/contact';
+import { GoToTop } from "go-to-top-react";
 
 
 
 function App() {
   return (
     <div className="App">
-     
+     <GoToTop />
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
