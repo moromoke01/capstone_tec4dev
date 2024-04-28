@@ -73,9 +73,11 @@ ul li {
 
 .bottom-buttons {
   display: flex;
+  margin: auto;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 4em;
+  align-items: center;
 }
 
 .btn {
@@ -107,6 +109,7 @@ input[type="radio"] {
   width: 100%;
   height: 100vh;
   margin-top: 4.35em;
+  padding-bottom: 20px;
   background-color: #999898;
 }
 
@@ -243,9 +246,10 @@ input[type="radio"] {
 @media screen and (max-width: 768px) {
   .quiz-container {
     max-width: 100%;
-    /* height: 90vh; */
+    height: 150vh;
     padding: 10px;
-    padding-bottom: 25px;
+    padding-bottom: 1em;
+    /* padding-block-end: 2em; */
     background-color: #ffffff;
     margin: auto;
     margin-top: 1em;
@@ -253,17 +257,10 @@ input[type="radio"] {
 
   .intro-box {
     /* width: 100%; */
-    max-width: 100%;
+   width: 100%;
     background-color: #ffffff;
     margin: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 2px 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  .testMainPage {
-    max-width: 100%;
-    padding-bottom: 15px;
-    /* height: 110vh; */
-    background-color: #999898;
   }
   
 
@@ -323,16 +320,37 @@ input[type="radio"] {
   
   .options {
     font-size: 16px;
-    margin-left: -13em;
+    margin-left: -12em;
   }
   
   /* Styling for radio buttons */
   input[type="radio"] {
-    margin-inline-start: -10em;
+    margin-inline-start: -13em;
   }
   .hide-on-desktop{
    display: block;
    margin: auto;
    margin-top: 10px;
   }
+
+  .bottom-buttons {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3em;
+    padding-bottom: 1em;
+    margin-left: -12em;
+    align-items: center;
+  }
+
+  .testMainPage {
+    width: 100%;
+    height: 100vh;
+    margin-top: 4.35em;
+    padding-bottom: 6em;
+    background-color: #999898;
+  }
+  
 }
+
