@@ -2,19 +2,35 @@ import React from 'react'
 import logo from '../../../Assets/logo.png'
 import "./testStyle.css";
 import { Link } from 'react-router-dom';
+import Navbar from '../../Navbar/Navbar';
+import UseAuth from '../../UseAuth'; // Import UseAuth component
+import { useNavigate } from 'react-router-dom';
 
 function TestIntroPage() {
+
+  const loggedIn = UseAuth(); // Get the logged-in status from UseAuth
+  const navigate = useNavigate();
+
+
+  if (!loggedIn) {
+    // Redirect user to login page or show login form
+    // return <p>Please log in to access this page</p>;
+    navigate('/Login');
+  }
+
   return (
+    <div>
+    <Navbar />
     <div className="intro-box">
 
      <div className='flex'>
      <div className='content-area'>
-      <div className="header">
+      {/* <div className="header">
          <img src ={logo} style={{width:150}} alt="logo"/>
-       </div>
+       </div> */}
 
        <div className='head-intro'>
-        <h2>insightify career <br /> psychometric assessment</h2>
+        <h2><b>insightify career <br /> psychometric assessment</b></h2>
        </div>
 
        <p><b>Hi Jane Cooper</b></p>
@@ -39,7 +55,8 @@ function TestIntroPage() {
         <button className='start-btn'><Link to="/TestMainPage">Start Assessment</Link></button>
     </div>
 
-    <div className='side-oval-shape'></div>
+          <div className='side-oval-shape'></div>
+       </div>
    </div>
  </div>
   );

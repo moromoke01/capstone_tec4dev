@@ -6,6 +6,7 @@ import Aptitude from './AptitudeQue';
 import SkillQue from './SkillQue';
 import UseAuth from '../../UseAuth'; // Import UseAuth component
 import { useNavigate } from 'react-router-dom';
+import Navbar from '../../Navbar/Navbar';
 
 function TestMainPage() {
   const [currentQuestion, setCurrentQuestion] = useState(1);
@@ -41,7 +42,7 @@ function TestMainPage() {
   const handleSubmit = async () => {
     try {
       // Send the responses to the server
-      const response = await fetch('http://localhost:3000/question/submitResponses', {
+      const response = await fetch('https://insignify-backend.onrender.com/submitResponses', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -60,11 +61,13 @@ function TestMainPage() {
 
   if (!loggedIn) {
     // Redirect user to login page or show login form
-    return <p>Please log in to access this page</p>;
+    // return <p>Please log in to access this page</p>;
+    navigate('/Login');
   }
 
   return (
     <div className="testMainPage">
+      <Navbar />
       {currentQuestion === 1 && <CognitiveQue onChange={(response) => handleResponseChange(1, response)} />}
       {currentQuestion === 2 && <PersonalityTrait onChange={(response) => handleResponseChange(2, response)} />}
       {currentQuestion === 3 && <CreativityQue onChange={(response) => handleResponseChange(3, response)} />}

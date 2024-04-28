@@ -70,7 +70,7 @@ const PersonalityTrait = () => {
   return (
     <div className="quiz-container">
       <div className="header">
-        <img src={logo} style={{ width: 130 }} alt="logo" />
+        {/* <img src={logo} style={{ width: 130 }} alt="logo" /> */}
         <h4><b>Section B: Personal Trait Questions</b></h4>
         <span>
           <b>59:49</b>
