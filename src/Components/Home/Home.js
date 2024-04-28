@@ -29,7 +29,7 @@ const Home = () => {
           <h2>Welcome to Insightify, your ultimate destination for unlocking your true potential in the vast world of technology. At Insightify, we believe that every individual possesses unique talents and abilities waiting to be discovered and harnessed. 
           With our cutting-edge psychometric tests tailored specifically for tech skills, we are dedicated to helping you understand your strengths, identify areas for growth, and embark on a journey of continuous improvement. </h2>
         </div>
-        <div><button className='but'>Take Test</button></div>
+       <div><a href="/signUp" ><button type="button" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Take Test</button></a></div>
         <div><img src={image} alt="Home Groupie" /></div>
         <div className='gh'></div>
         <div className='gh'></div>
@@ -58,47 +58,53 @@ const Home = () => {
           </span>
         </div>
       </div>
+       {/* Mission Statement Section */}
+      <div className="bg-[#27AE6024] px-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-5">
+          <div className="m-5 bg-white rounded-lg p-6 shadow-lg">
+            <h2 className="font-bold text-3xl md:text-4xl mb-4">Our Mission</h2>
+            <h4 className="text-lg md:text-xl">
+              Our mission at Insightify is simple yet profound: To empower individuals like you to thrive in the fast-paced and dynamic field of technology. We are committed to providing you with the tools, resources, and insights needed to excel in your tech career and achieve your professional goals.
+            </h4>
+          </div>
+          <div className="m-5 bg-white rounded-lg p-6 shadow-lg">
+            <h2 className="font-bold text-3xl md:text-4xl mb-4">Our Commitment To Excellence</h2>
+            <h4 className="text-lg md:text-xl">
+              At Insightify, excellence is not just a goal; it's our standard. We are dedicated to upholding the highest standards of quality, integrity, and professionalism in everything we do. Whether you're a seasoned tech professional looking to level up your skills or a newcomer eager to break into the industry, Insightify is here to support you every step of the way.
+            </h4>
+          </div>
+          <div className="m-5 bg-white rounded-lg p-6 shadow-lg">
+            <h2 className="font-bold text-3xl md:text-4xl mb-4">Take Your Test</h2>
+            <h4 className="text-lg md:text-xl">
+              Embark on your tech journey to unlock your full potential. Start exploring and delve into your behavior, strengths, and weaknesses to uncover the tech skills that align with you perfectly. Insightify carefully analyzes your individual traits to craft personalized learning paths that match your unique goals and aspirations.
+            </h4>
+          </div>
+          <div className="m-5 bg-white rounded-lg p-6 shadow-lg">
+            <h2 className="font-bold text-3xl md:text-4xl mb-4">Accurate Career Recommendations</h2>
+            <h4 className="text-lg md:text-xl">
+              Unlock your professional potential with our Accurate Career Recommendations. Our advanced algorithm considers your skills, experiences, and career goals to offer personalized advice tailored just for you. Say goodbye to guesswork and hello to a clear path forward with Insightify.
+            </h4>
+          </div>
+        </div>
+      </div>
 
-      <div class='flex justify-center'>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-    <div class="bg-white rounded-lg p-6">
-      <h2 class="font-bold text-3xl md:text-4xl mb-4">Our Mission</h2>
-      <h4 class="text-lg md:text-xl">Our mission at Insightify is simple yet profound:<br/><br/>To empower individuals like you to thrive in the fast-paced and dynamic field of technology.<br/><br/>We are committed to providing you with the tools, resources, and insights needed to excel in your tech career and achieve your professional goals.</h4>
+    <div class="nextone w-full py-8 px-4 bg-purple-900 text-white text-center">
+      <div><h3 class="text-2xl md:text-3xl font-bold mb-4">Join Insightify to get proven results</h3></div>
+      <div class="flex flex-wrap justify-center">
+        <div class="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
+          <h5 class="text-lg font-semibold">10,000+</h5>
+          <h4 class="text-base">Registered<br/>Users</h4>
+        </div>
+        <div class="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
+          <h5 class="text-lg font-semibold">92%</h5>
+          <h4 class="text-base">Career Match<br/>Accuracy</h4>
+        </div>
+        <div class="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
+          <h5 class="text-lg font-semibold">5,000+</h5>
+          <h4 class="text-base">Who have successfully <br/>transitioned into tech</h4>
+        </div>
+      </div>
     </div>
-    <div class="bg-white rounded-lg p-6">
-      <h2 class="font-bold text-3xl md:text-4xl mb-4">Our Commitment To Excellence</h2>
-      <h4 class="text-lg md:text-xl">At Insightify, excellence is not just a goal; it's our standard. We are dedicated to upholding the highest standards of quality, integrity, and professionalism in everything we do.<br/><br/>Whether you're a seasoned tech professional looking to level up your skills or a newcomer eager to break into the industry, Insightify is here to support you every step of the way.</h4>
-    </div>
-    <div class="bg-white rounded-lg p-6">
-      <h2 class="font-bold text-3xl md:text-4xl mb-4">Take Your Test</h2>
-      <h4 class="text-lg md:text-xl">Embark on your tech journey to unlock your full potential.<br/>Start exploring and delve into your behavior, strengths, and weaknesses to uncover the tech skills that align with you perfectly.<br/><br/>Insightify carefully analyzes your individual traits to craft personalized learning paths that match your unique goals and aspirations.</h4>
-    </div>
-    <div class="bg-white rounded-lg p-6">
-      <h2 class="font-bold text-3xl md:text-4xl mb-4">Accurate Career Recommendations</h2>
-      <h4 class="text-lg md:text-xl">Unlock your professional potential with our Accurate Career Recommendations.<br/><br/>Our advanced algorithm considers your skills, experiences, and career goals to offer personalized advice tailored just for you.<br/><br/>Say goodbye to guesswork and hello to a clear path forward with Insightify</h4>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="nextone w-full py-8 px-4 bg-purple-900 text-white text-center">
-  <div><h3 class="text-2xl md:text-3xl font-bold mb-4">Join Insightify to get proven results</h3></div>
-  <div class="flex flex-wrap justify-center">
-    <div class="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
-      <h5 class="text-lg font-semibold">10,000+</h5>
-      <h4 class="text-base">Registered<br/>Users</h4>
-    </div>
-    <div class="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
-      <h5 class="text-lg font-semibold">92%</h5>
-      <h4 class="text-base">Career Match<br/>Accuracy</h4>
-    </div>
-    <div class="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
-      <h5 class="text-lg font-semibold">5,000+</h5>
-      <h4 class="text-base">Who have successfully <br/>transitioned into tech</h4>
-    </div>
-  </div>
-</div>
 
       {/* FAQ Section */}
       <div className='frequent'>
