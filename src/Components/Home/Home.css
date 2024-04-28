@@ -248,6 +248,9 @@
   align-items: center;
   text-align: center;
 }
+.newsletter-section h1 {
+  font-size: x-large;
+}
 
 /* .newsletter-section h1 {
   font-family: 'Source Sans Pro', sans-serif;
