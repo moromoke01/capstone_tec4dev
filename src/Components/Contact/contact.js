@@ -1,41 +1,47 @@
 import React, { useState } from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import './contact.css'; // Import CSS file for styling
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import ContactImg from './Contact Page Image.png';
 
 const ContactUsPage = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
+  const [state, handleSubmit] = useForm("xrgnjgjr");
+  if (state.succeeded) {
+    console.log("success!");
+        document.getElementById("contact-form").reset();
+}
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   email: '',
+  //   subject: '',
+  //   message: ''
+  // });
 
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  // const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData({
+  //     ...formData,
+  //     [name]: value
+  //   });
+  // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
     // Handle form submission here, e.g., send data to backend
-    console.log(formData);
+    // console.log(formData);
     // Clear form fields after submission
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
+    // setFormData({
+    //   name: '',
+    //   email: '',
+    //   subject: '',
+    //   message: ''
+    // });
     // Set submission status to true
-    setIsSubmitted(true);
-  };
+  //   setIsSubmitted(true);
+  // };
 
   return (
     <>
@@ -43,19 +49,21 @@ const ContactUsPage = () => {
       <div className="contact-us-container">
         <div className="contact-info">
           <h4>Get in Touch with us</h4>
-          {isSubmitted ? (
+          {/* {isSubmitted ? ( */}
             <p>Your message was sent successfully. We will respond to you shortly.</p>
-          ) : (
-            <form onSubmit={handleSubmit}>
+          {/* ) : ( */}
+            <form 
+            id="contact-form"
+            onSubmit={handleSubmit}>
               <div className="form-group">
                 <label htmlFor="name">Name</label>
                 <input
-                  type="text"
+                  type="name"
                   id="name"
                   name="name"
                   placeholder="Enter your name"
-                  value={formData.name}
-                  onChange={handleChange}
+                  // value={formData.name}
+                  // onChange={handleChange}
                   required
                 />
               </div>
@@ -66,9 +74,14 @@ const ContactUsPage = () => {
                   id="email"
                   name="email"
                   placeholder="Enter your email"
-                  value={formData.email}
-                  onChange={handleChange}
+                  // value={formData.email}
+                  // onChange={handleChange}
                   required
+                />
+                 <ValidationError 
+                  prefix="Email" 
+                  field="email"
+                  errors={state.errors}
                 />
               </div>
               <div className="form-group">
@@ -78,8 +91,8 @@ const ContactUsPage = () => {
                   id="subject"
                   name="subject"
                   placeholder="Enter your subject"
-                  value={formData.subject}
-                  onChange={handleChange}
+                  // value={formData.subject}
+                  // onChange={handleChange}
                   required
                 />
               </div>
@@ -89,14 +102,20 @@ const ContactUsPage = () => {
                   id="message"
                   name="message"
                   placeholder="Enter your message"
-                  value={formData.message}
-                  onChange={handleChange}
+                  // value={formData.message}
+                  // onChange={handleChange}
                   required
-                ></textarea>
+                >
+                  <ValidationError 
+                    prefix="Message" 
+                    field="message"
+                    errors={state.errors}
+                    />
+                </textarea>
               </div>
-              <button type="submit">SEND A MESSAGE</button>
+              <button type="submit" disabled={state.submitting}>SEND A MESSAGE</button>
             </form>
-          )}
+          {/* )} */}
         </div>
         <div className="contact-image">
           <img src={ContactImg} alt="Contact Us" />

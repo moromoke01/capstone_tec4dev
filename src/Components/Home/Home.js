@@ -159,14 +159,15 @@ const Home = () => {
           ))}
         </div>
       </div>
-
+      {/* newsletter  */}
   <div className="newsletter-section">
   <h1>Subscribe to Our Newsletter</h1>
   <div className="form-container">
-    <div className="email-input">
+    <div className="email-input ">
       <label htmlFor="email" className="email-label">Email Address</label>
       <input type="email" id="email" name="email" placeholder="Enter your email address" className="email-input-box" />
     </div>
+
     <button className="subscribe-button">SUBSCRIBE</button>
   </div>
 </div>
