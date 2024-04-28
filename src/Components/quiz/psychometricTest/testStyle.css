@@ -27,7 +27,8 @@
 .header {
   width: 100%;
   height: 50px;
-  padding: 10px;
+  padding: 20px 10px;
+  padding-bottom: 2em;
   border-bottom: 2px solid #dddddd;
   background-color: #ffffff;
   display: flex;
@@ -94,17 +95,18 @@ ul li {
 
 .options {
   font-size: 16px;
-  margin-left: -29em;
+  margin-left: -25em;
 }
 
 /* Styling for radio buttons */
 input[type="radio"] {
-  margin-inline-start: -30em;
+  margin-inline-start: -27em;
 }
 
 .testMainPage {
   width: 100%;
-  height: 110vh;
+  height: 100vh;
+  margin-top: 4.35em;
   background-color: #999898;
 }
 
@@ -242,6 +244,7 @@ input[type="radio"] {
   .quiz-container {
     max-width: 100%;
     /* height: 90vh; */
+    padding: 10px;
     padding-bottom: 25px;
     background-color: #ffffff;
     margin: auto;
@@ -320,7 +323,7 @@ input[type="radio"] {
   
   .options {
     font-size: 16px;
-    margin-left: -10em;
+    margin-left: -13em;
   }
   
   /* Styling for radio buttons */

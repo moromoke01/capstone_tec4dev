@@ -112,7 +112,7 @@ export default function Signup() {
           {step === 2 && (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-black mt-5">
               
-             <div className="md:w-64"> <label>What is your gender?</label>
+             <div > <label>What is your gender?</label>
               <select name="gender" className='w-full border-b-2 border-purple-600 py-3 px-4 pr-8 rounded-t leading tight focus:outline-none ' value={formData.step2.gender} onChange={handleChange}>
                 <option value="">Select one</option>
                 <option value="male">Male</option>
@@ -120,7 +120,7 @@ export default function Signup() {
               </select>
             </div>
 
-            <div className="md:w-64">
+            <div >
               <label>What is your age range?</label>
               <select name="age" className='w-full border-b-2 border-purple-600 py-3 px-4 pr-8 rounded-t leading tight focus:outline-none' value={formData.step2.age} onChange={handleChange}>
                 <option value="">Select one</option>
@@ -132,7 +132,7 @@ export default function Signup() {
               </select>
             </div>
 
-             <div className="md:w-64">
+             <div >
               <label>What is your highest qualification?</label>
               <select name="education" className='w-full border-b-2 border-purple-600 py-3 px-4 pr-8 rounded-t leading tight focus:outline-none' value={formData.step2.education} onChange={handleChange}>
               <option value="">Select one</option>
@@ -143,7 +143,7 @@ export default function Signup() {
             </div> 
 
             
-            <div className="md:w-64">
+            <div >
               <label>What is your occupation status?</label>
               <select name="occupation" className='w-full border-b-2 border-purple-600 py-3 px-4 pr-8 rounded-t leading tight focus:outline-none' value={formData.step2.occupation} onChange={handleChange}>
               <option value=""> Select one</option>
@@ -153,7 +153,7 @@ export default function Signup() {
               </select>
             </div>
 
-            <div className="md:w-64">
+            <div >
               <label>Which of these tech career path interest you?</label>
               <select name="career" className='w-full border-b-2 border-purple-600 py-3 px-4 pr-8 rounded-t leading tight focus:outline-none' value={formData.step2.career} onChange={handleChange}>
               <option value="">Select one</option>
@@ -167,7 +167,7 @@ export default function Signup() {
               </select>
             </div>
 
-            <div className="md:w-64">
+            <div >
               <label>What factor influences your career choice in Tech?</label>
               <select name="factor" className='w-full border-b-2 border-purple-600 py-3 px-4 pr-8 rounded-t leading tight focus:outline-none' value={formData.step2.factor} onChange={handleChange}>
               <option value="">Select one</option>
