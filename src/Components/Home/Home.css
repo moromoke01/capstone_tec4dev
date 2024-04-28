@@ -264,13 +264,14 @@
   justify-content: space-between;
   position: relative;
 }
+
 .email-input {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  background: transparent;
+  flex-grow: 1; /* Allow the input field to grow and fill available space */
   max-width: 400px; /* Limit width to prevent overflowing */
-  border-bottom: 2px solid #9c13be; /* Add bottom border */
+  width: 100%;
+  padding: 20px;
 }
 
 .email-label {
@@ -283,19 +284,18 @@
 
 .email-input-box {
   width: 100%;
-  padding: 10px;
-  border: none;
-  border-bottom: 1px solid transparent; /* Make border not visible */
-  outline: auto; /* Remove input field outline */
-  outline-color: transparent;
+  padding: 30px;
+  outline: none; /* Remove input field outline */
+  /* border-bottom: 1px solid transparent; */
   box-sizing: border-box;
+  border: none;
 }
 
 .subscribe-button {
   background-color: #9c13be;
   color: #fff;
-  width: 200px; /* Set button width */
-  height: 48px;
+  width: 100%; /* Set button width */
+  height: 40px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
@@ -328,6 +328,8 @@
     max-width: 100%; /* Ensure button does not exceed container width */
   }
 }
+
+
 
 .footer {
   width: 100%;
