@@ -219,6 +219,21 @@ input{
   text-align: center;
   margin-top: 15px;
  }
+
+ .auth-cont {
+  background: #ffffff;
+  width: 90%;
+  margin: auto;
+  /* height: 90vh; */
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+}
+
+label{
+  font-size: 16px;
+}
 }
 
 
@@ -260,13 +275,20 @@ input{
         display: none;
     }
 
-    .auth-cont {
-        padding: 0 10px 0 10px;
-    }
     .auth-headline{
         text-align: center;
         margin-top: 1em;
         margin-bottom: 15px;
         font-size: 24px;
+      }
+      .auth-cont {
+        background: #ffffff;
+        width: 90%;
+        margin: auto;
+        padding: 0 10px 0 10px;
+        /* height: 90vh; */
+        display: flex;
+        flex-direction: row;
+        border-radius: 5px;
       }
 }

@@ -182,7 +182,7 @@ export default function Signup() {
           )}
           <button className='submit-btn m-auto mt-5 focus:outline-none' onClick={handleNext}>{step < 2 ? 'Next' : 'Submit'}</button>
 
-          <p className='hide-on-desktop'>Already have an account with Insightify? <span class="redirect"><Link>SignIn</Link></span></p>
+          <p className='hide-on-desktop'>Already have an account with Insightify? <span class="redirect"><Link to="/Login">SignIn</Link></span></p>
         </div>
         <div className="info-bar-right">
           <div className="logoAndTagline">
@@ -192,7 +192,7 @@ export default function Signup() {
           <div className="auth-info-body">
             <h3>We are glad you are back. Welcome!</h3>
             <p className='font-light'>Already have an account with Insightify? Stay connected with us and log in here</p>
-            <button className="auth-btn-1"> <Link to="/login">SIGN IN</Link></button>
+            <button className="auth-btn-1"> <Link to="/Login">SIGN IN</Link></button>
           </div>
         </div>
 

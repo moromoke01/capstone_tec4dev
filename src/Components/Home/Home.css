@@ -183,6 +183,13 @@
   .paral {
     width: calc(100% - 40px); /* Adjusted to occupy full width on smaller screens */
   }
+
+  .hero-section-content{
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    text-align: justify;
+  }
 }
 .nextone {
   width: 100%; /* Make width responsive */
@@ -326,6 +333,13 @@
   .subscribe-button {
     width: 100%; /* Make button width full on smaller screens */
     max-width: 100%; /* Ensure button does not exceed container width */
+  }
+
+  .hero-section-content{
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    text-align: justify;
   }
 }
 
