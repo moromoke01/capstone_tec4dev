@@ -15,9 +15,10 @@ body{
     align-items: center;
     padding: 20px;
     background-color: #fff;
-    margin-top: 80px;
+    margin-top: 90px;
     margin-bottom: 20px;
-    width: 70%;
+    width: 60%;
+    margin-left: 250px;
   }
   
   .contact-info {
@@ -51,28 +52,44 @@ body{
   label {
     display: block;
     margin-bottom: 5px;
+    font-size: 18px;
+    color:#09070A;
+    font-family: Source Sans Pro;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
   }
   
   input[type="text"],
-  input[type="email"],
+  input[type="email"]
+   {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: none;
+    border-bottom: 2px solid #9C13BE ;
+   }
+
+
+   
+
   textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 3px solid #9C13BE;
     border-radius: 5px;
-  }
-  
-  textarea {
     height: 150px;
   }
   
   button {
     background-color: #9C13BE;
     color: #fff;
+    font-weight: 600;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 200px;
     transition: background-color 0.3s ease;
   }
   
