@@ -8,10 +8,16 @@ import foot_three from '../../Assets/img3.jpeg';
 import Freq from '../FAQ/freq';
 import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
+import { useForm, ValidationError } from '@formspree/react';
+
 
 const Home = () => {
-  // const progress = 80;
-
+  const [state, handleSubmit] = useForm("mjvnlvdd");
+  if (state.succeeded) {
+    console.log("success!");
+        document.getElementById("contact-form").reset();
+}
+  // const progress = 80; bikonu whats this cpode for?
   // function getRandomPosition() {
   //   const maxX = window.innerWidth - 100;
   //   const maxY = window.innerHeight - 100;
@@ -29,7 +35,7 @@ const Home = () => {
           <h2>Welcome to Insightify, your ultimate destination for unlocking your true potential in the vast world of technology. At Insightify, we believe that every individual possesses unique talents and abilities waiting to be discovered and harnessed. 
           With our cutting-edge psychometric tests tailored specifically for tech skills, we are dedicated to helping you understand your strengths, identify areas for growth, and embark on a journey of continuous improvement. </h2>
         </div>
-       <div><a href="/signUp" ><button type="button" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Take Test</button></a></div>
+       <div><a href="/signUp" ><button type="button" className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Take Test</button></a></div>
         <div><img src={image} alt="Home Groupie" /></div>
         <div className='gh'></div>
         <div className='gh'></div>
@@ -88,20 +94,20 @@ const Home = () => {
         </div>
       </div>
 
-    <div class="nextone w-full py-8 px-4 bg-purple-900 text-white text-center">
-      <div><h3 class="text-2xl md:text-3xl font-bold mb-4">Join Insightify to get proven results</h3></div>
-      <div class="flex flex-wrap justify-center">
-        <div class="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
-          <h5 class="text-lg font-semibold">10,000+</h5>
-          <h4 class="text-base">Registered<br/>Users</h4>
+    <div className="nextone w-full py-8 px-4 bg-purple-900 text-white text-center">
+      <div><h3 className="text-2xl md:text-3xl font-bold mb-4">Join Insightify to get proven results</h3></div>
+      <div className="flex flex-wrap justify-center">
+        <div className="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
+          <h5 className="text-lg font-semibold">10,000+</h5>
+          <h4 className="text-base">Registered<br/>Users</h4>
         </div>
-        <div class="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
-          <h5 class="text-lg font-semibold">92%</h5>
-          <h4 class="text-base">Career Match<br/>Accuracy</h4>
+        <div className="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
+          <h5 className="text-lg font-semibold">92%</h5>
+          <h4 className="text-base">Career Match<br/>Accuracy</h4>
         </div>
-        <div class="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
-          <h5 class="text-lg font-semibold">5,000+</h5>
-          <h4 class="text-base">Who have successfully <br/>transitioned into tech</h4>
+        <div className="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
+          <h5 className="text-lg font-semibold">5,000+</h5>
+          <h4 className="text-base">Who have successfully <br/>transitioned into tech</h4>
         </div>
       </div>
     </div>
@@ -159,18 +165,35 @@ const Home = () => {
           ))}
         </div>
       </div>
+      
       {/* newsletter  */}
-  <div className="newsletter-section">
-  <h1>Subscribe to Our Newsletter</h1>
-  <div className="form-container">
-    <div className="email-input ">
-      <label htmlFor="email" className="email-label">Email Address</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email address" className="email-input-box" />
+      <aside className="newsletter-section p-4 my-8 bg-white border  rounded-lg shadow-md sm:p-6 lg:p-8 "
+    >
+      <h1 className="mb-3 text-xl font-medium text-gray-900 dark:text-white">Subscribe to Our Newsletter</h1>
+      <form id="contact-form" onSubmit={handleSubmit}>
+    <div data-style="clean" className="flex items-center mb-3">
+    <div data-element="fields" data-stacked="false"
+      className="flex items-center w-full seva-fields formkit-fields">
+      <div className="relative w-full mr-3 formkit-field">
+        
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter Your Email"
+          className="formkit-input bg-transparent border-none border-b-2 border-purple-500 text-gray-900 text-md focus:ring-0 focus:border-purple-500 block w-full pl-3 p-2.5  dark:text-white"
+        />
+        <ValidationError 
+          prefix="Email" 
+          field="email"
+          errors={state.errors}
+        />
+      </div>
+      <button type='submit' disabled={state.submitting} className="px-5 py-3 text-sm font-medium text-center text-white bg-purple-700 rounded-lg cursor-pointer hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 ml-0">SUBSCRIBE</button>
     </div>
-
-    <button className="subscribe-button">SUBSCRIBE</button>
   </div>
-</div>
+</form>
+</aside>
   <Footer />
 </>
   );
