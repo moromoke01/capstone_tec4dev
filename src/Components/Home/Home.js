@@ -35,7 +35,7 @@ const Home = () => {
           <h2>Welcome to Insightify, your ultimate destination for unlocking your true potential in the vast world of technology. At Insightify, we believe that every individual possesses unique talents and abilities waiting to be discovered and harnessed. 
           With our cutting-edge psychometric tests tailored specifically for tech skills, we are dedicated to helping you understand your strengths, identify areas for growth, and embark on a journey of continuous improvement. </h2>
         </div>
-       <div><a href="/signUp" ><button type="button" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Take Test</button></a></div>
+       <div><a href="/signUp" ><button type="button" className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Take Test</button></a></div>
         <div><img src={image} alt="Home Groupie" /></div>
         <div className='gh'></div>
         <div className='gh'></div>
@@ -94,20 +94,20 @@ const Home = () => {
         </div>
       </div>
 
-    <div class="nextone w-full py-8 px-4 bg-purple-900 text-white text-center">
-      <div><h3 class="text-2xl md:text-3xl font-bold mb-4">Join Insightify to get proven results</h3></div>
-      <div class="flex flex-wrap justify-center">
-        <div class="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
-          <h5 class="text-lg font-semibold">10,000+</h5>
-          <h4 class="text-base">Registered<br/>Users</h4>
+    <div className="nextone w-full py-8 px-4 bg-purple-900 text-white text-center">
+      <div><h3 className="text-2xl md:text-3xl font-bold mb-4">Join Insightify to get proven results</h3></div>
+      <div className="flex flex-wrap justify-center">
+        <div className="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
+          <h5 className="text-lg font-semibold">10,000+</h5>
+          <h4 className="text-base">Registered<br/>Users</h4>
         </div>
-        <div class="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
-          <h5 class="text-lg font-semibold">92%</h5>
-          <h4 class="text-base">Career Match<br/>Accuracy</h4>
+        <div className="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
+          <h5 className="text-lg font-semibold">92%</h5>
+          <h4 className="text-base">Career Match<br/>Accuracy</h4>
         </div>
-        <div class="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
-          <h5 class="text-lg font-semibold">5,000+</h5>
-          <h4 class="text-base">Who have successfully <br/>transitioned into tech</h4>
+        <div className="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
+          <h5 className="text-lg font-semibold">5,000+</h5>
+          <h4 className="text-base">Who have successfully <br/>transitioned into tech</h4>
         </div>
       </div>
     </div>
@@ -167,24 +167,21 @@ const Home = () => {
       </div>
       
       {/* newsletter  */}
-      <aside
-    class="newsletter-section p-4 my-8 bg-white border  rounded-lg shadow-md sm:p-6 lg:p-8 "
+      <aside className="newsletter-section p-4 my-8 bg-white border  rounded-lg shadow-md sm:p-6 lg:p-8 "
     >
-      
-      <h1 class="mb-3 text-xl font-medium text-gray-900 dark:text-white">Subscribe to Our Newsletter</h1>
-
+      <h1 className="mb-3 text-xl font-medium text-gray-900 dark:text-white">Subscribe to Our Newsletter</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
-  <div data-style="clean" class="flex items-center mb-3">
+    <div data-style="clean" className="flex items-center mb-3">
     <div data-element="fields" data-stacked="false"
-      class="flex items-center w-full seva-fields formkit-fields">
-      <div class="relative w-full mr-3 formkit-field">
+      className="flex items-center w-full seva-fields formkit-fields">
+      <div className="relative w-full mr-3 formkit-field">
         
         <input
           type="email"
           id="email"
           name="email"
           placeholder="Enter Your Email"
-          class="formkit-input bg-transparent border-none border-b-2 border-purple-500 text-gray-900 text-md focus:ring-0 focus:border-purple-500 block w-full pl-3 p-2.5  dark:text-white"
+          className="formkit-input bg-transparent border-none border-b-2 border-purple-500 text-gray-900 text-md focus:ring-0 focus:border-purple-500 block w-full pl-3 p-2.5  dark:text-white"
         />
         <ValidationError 
           prefix="Email" 
@@ -197,44 +194,6 @@ const Home = () => {
   </div>
 </form>
 </aside>
-
-{/* <aside
-    class="newsletter-section p-4 my-8 bg-white border border-gray-200 rounded-lg shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700"
-    >
-   
-    <form>
-        <div data-style="clean" class="flex items-end mb-3">
-            <div data-element="fields" data-stacked="false"
-                class="flex items-center w-full max-w-md mb-3 seva-fields formkit-fields">
-                <div class="relative w-full mr-3 formkit-field">
-                    <label for="member_email" 
-                    class="hidden block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-                      Email address</label>
-                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                        </svg>
-                    </div>
-                    <input id="member_email"
-                     class=" formkit-input bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                      name="email_address" aria-label="Email Address" 
-                      placeholder="Your email address..." required="" type="email" />
-                </div>
-                <span
-                 class="px-5 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg cursor-pointer hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Subscribe</span>
-            </div>
-        </div>
-    </form>
-
-    <div class="text-sm font-medium text-gray-500 dark:text-gray-300">By subscribing, you agree with ConvertKit's <a
-            href="#" class="text-blue-600 hover:underline dark:text-blue-500">Terms of Service</a> and
-        <a class="text-blue-600 hover:underline dark:text-blue-500" href="#">Privacy
-            Policy
-        </a>.
-    </div>
-</aside> */}
   <Footer />
 </>
   );
