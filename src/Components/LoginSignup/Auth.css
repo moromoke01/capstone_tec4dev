@@ -5,7 +5,7 @@
   width: 100%;
   max-width: 80%;
   margin: auto;
-  background: linear-gradient(to top, #e773eb, #f2aff5, #fac4ee, #e965d3);
+  background: linear-gradient(to top, #a445a7bd, #f5dff7, #eecae7, #be41cfb2);
   backdrop-filter: blur(5px);
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -23,7 +23,7 @@
     border-radius: 5px;
   padding-top: 1em;
   width: 65%;
-  color: #990674;
+  color: #9c13be;
   position: relative;
   padding: 0 30px 0 30px;
   /* background: #ffffff; */
@@ -36,8 +36,8 @@
     margin-right: 0;
     padding: 0;
     width: 35%;
-    height: 90vh;
-  background: #990674;
+    /* height: 90vh; */
+  background: #9c13be;
   color: #e9e5e5;
   border-radius: 0 5px 0 0;
   --top: linear-gradient(#000 0 0) top/100% calc(100% - 50px) no-repeat,
@@ -48,8 +48,8 @@
 
 .info-bar {
   width: 32%;
-  height: 90vh;
-  background: #990674;
+  /* height: 90vh; */
+  background: #9c13be;
   margin-right: 1em;
   /* border-radius: 0 0 20% 0; */
   display: block;
@@ -150,7 +150,7 @@
 }
 
 ::placeholder{
-    color: #990674;
+    color: #9c13be;
     opacity: 0.7;
     font-size: small;
 }
@@ -161,7 +161,7 @@ input{
   /* margin-top: 10px; */
   background: transparent;
   border: none;
-  border-bottom: 1px solid #990674;
+  border-bottom: 1px solid #9c13be;
   font-size: 16px;
   outline: none;
   color: #000;
@@ -172,7 +172,7 @@ input{
   align-items: center;
   width: 10em;
   height: 40px;
-  background: #990674;
+  background: #9c13be;
   color: #fff;
   border-radius: 5px;
   font-size: 16px;
@@ -195,7 +195,7 @@ input{
 .body {
   max-width: 100%;
   /* margin: auto; */
-  background: linear-gradient(to top, #e773eb, #f2aff5, #fac4ee, #e965d3);
+  background: linear-gradient(to top, #a445a7bd, #f5dff7, #eecae7, #be41cfb2);
   backdrop-filter: blur(5px);
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -216,7 +216,8 @@ input{
 .hide-on-desktop{
   display: block;
   margin: auto;
-  margin-top: 10px;
+  text-align: center;
+  margin-top: 15px;
  }
 }
 
@@ -225,7 +226,7 @@ input{
   .body {
     max-width: 100%;
     /* margin: auto; */
-    background: linear-gradient(to top, #e773eb, #f2aff5, #fac4ee, #e965d3);
+    background: linear-gradient(to top, #a445a7bd, #f5dff7, #eecae7, #be41cfb2);
     backdrop-filter: blur(5px);
     font-family: 'Source Sans Pro', sans-serif;
   }

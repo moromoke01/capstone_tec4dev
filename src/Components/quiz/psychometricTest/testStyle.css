@@ -82,7 +82,7 @@ ul li {
   color: #ffffff;
   display: block;
   padding: 10px;
-  background-color: #7c0594;
+  background-color: #9c13be;
   border: none;
 }
 
@@ -181,7 +181,7 @@ input[type="radio"] {
   text-transform: uppercase;
   text-align: left;
   align-content: flex-start;
-  border-bottom: 2px solid #7c0594;
+  border-bottom: 2px solid #9c13be;
   margin-bottom: 25px;
   margin-top: 30px;
   font-weight: 700;
@@ -210,7 +210,7 @@ input[type="radio"] {
   color: #ffffff;
   display: block;
   padding: 10px;
-  background-color: #7c0594;
+  background-color: #9c13be;
 }
 
 .side-oval-shape {

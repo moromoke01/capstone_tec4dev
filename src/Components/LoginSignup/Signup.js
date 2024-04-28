@@ -3,7 +3,7 @@ import './Auth.css';
 import logo from '../../Assets/logo.png';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import Login from './Login';
+
 
 export default function Signup() {
   const navigate = useNavigate();
@@ -74,34 +74,37 @@ export default function Signup() {
           </p>
 
           {step === 1 && (
-            <div className="housing">
+            <div className="grid md:grid-cols-2 gap-10 text-black mt-5">
               <div className="auth-input">
-                <label>Full Name</label>
+                <label className="block mb-2">Full Name</label>
                 <input type="text"  name="fullName" value={formData.step1.fullName} onChange={handleChange} 
-                placeholder='John Joe'/>
+                placeholder='John Joe' required/>
               </div>
+
               <div className="auth-input">
-                <label>Email Address</label>
-                <input type="text"   name="email" value={formData.step1.email} onChange={handleChange} placeholder='johnjoe@example.com'/>
+                <label>Email</label>
+                <input type="text" className='w-full'  name="email" value={formData.step1.email} onChange={handleChange} placeholder='johnjoe@example.com' required/>
               </div>
+
               <div className="auth-input">
                 <label>Password</label>
                 <input type="text"   name="password" value={formData.step1.password} onChange={handleChange} 
-                placeholder='********'/>
+                placeholder='********' required/>
                 <p className='text-red-500 text-base mt-3 font-bold'>At least 8 characters including special Characters</p>
               </div>
+              
               <div className="auth-input">
                 <label>Confirm Password</label>
-                <input type="text"   name="cpass" value={formData.step1.cpass} onChange={handleChange} 
+                <input type="text" className='w-full'  name="cpass" value={formData.step1.cpass} onChange={handleChange} 
                 placeholder='********'/>
-                <p className='text-red-500 text-base mt-3 font-semibold'>At least 8 characters including special Characters</p>
+                <p className='text-red-500 text-base mt-3 font-bold'>At least 8 characters including special Characters</p>
               </div>
 
               <div className='col-span-2 flex'>
                 <p className="text-center text-black">
                   <input type="checkbox" value="" className='w-4 h-4 mr-4' />
                   I agree with Insightify's term and
-                  service privacy policy and default notification settings, <a href="/terms" className="text-blue">Read Policy</a>
+                  service privacy policy and default notification settings, <Link to="/terms" className="redirect">Read Policy</Link>
                 </p>
               </div>
             </div>
@@ -168,9 +171,10 @@ export default function Signup() {
               <label>What factor influences your career choice in Tech?</label>
               <select name="factor" className='w-full border-b-2 border-purple-600 py-3 px-4 pr-8 rounded-t leading tight focus:outline-none' value={formData.step2.factor} onChange={handleChange}>
               <option value="">Select one</option>
-                <option value="unemployed">unemployed</option>
-                <option value="employed">employed</option>
-                <option value="self-employed">self-employed</option>            
+                <option value="upskilling">upskilling</option>
+                <option value="personal interest">personal interest</option>
+                <option value="Job security">Job security</option>
+                <option value="Career transition">Career transition</option>             
               </select>
             </div>
 
@@ -178,7 +182,7 @@ export default function Signup() {
           )}
           <button className='submit-btn m-auto mt-5 focus:outline-none' onClick={handleNext}>{step < 2 ? 'Next' : 'Submit'}</button>
 
-          <p className='hide-on-desktop'>Already have an account with Insightify? <span class="redirect" onClick={Login}>SignIn</span></p>
+          <p className='hide-on-desktop'>Already have an account with Insightify? <span class="redirect"><Link>SignIn</Link></span></p>
         </div>
         <div className="info-bar-right">
           <div className="logoAndTagline">
