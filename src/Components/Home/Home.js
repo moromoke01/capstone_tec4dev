@@ -169,7 +169,7 @@ const Home = () => {
       {/* newsletter  */}
       <aside className="newsletter-section p-4 my-8 bg-white border  rounded-lg shadow-md sm:p-6 lg:p-8 "
     >
-      <h1 className="mb-3 text-xl font-medium text-gray-900 dark:text-white">Subscribe to Our Newsletter</h1>
+      <h1 className="mb-3 text-md  font-bold">Subscribe to Our Newsletter</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
     <div data-style="clean" className="flex items-center mb-3">
     <div data-element="fields" data-stacked="false"
