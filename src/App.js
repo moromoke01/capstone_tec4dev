@@ -39,6 +39,8 @@ function App() {
           <Route path="/contact" element={<Contact />} /> {/* Add this line */}
         </Routes>
       </Router>
+
+      
     </div>
   );
 }

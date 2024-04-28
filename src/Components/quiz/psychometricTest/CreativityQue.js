@@ -72,7 +72,7 @@ const CreativityQues = () => {
   return (
     <div className="quiz-container">
       <div className="header">
-        <img src={logo} style={{ width: 130 }} alt="logo" />
+        {/* <img src={logo} style={{ width: 130 }} alt="logo" /> */}
         <h4>
           <b>Section C: Creativity and innovation Questions</b>
         </h4>
