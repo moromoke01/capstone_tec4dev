@@ -26,10 +26,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className="bg-white items-stretch w-full fixed top-0 ">
-      <nav className="h-[60px] w-auto mx-auto flex justify-between items-center ">
+    <header className="ml-0 pr- bg-white  w-full fixed top-0 ">
+      <nav className="h-[60px] ml-0 mr-8  flex justify-between items-center ">
         {/* Logo and hamburger icon */}
-        <div className="flex-col ml-4 mr-2 items-center cursor-pointer" onClick={handleHamburgerClick}>
+        <div className="flex-col ml-4 mr-0 items-center cursor-pointer" onClick={handleHamburgerClick}>
           <img src={Logo} width={100} height={100} alt="Logo" />
           <h2 className="text-sm mr-8 font-medium ml-3">...the best online career compass</h2>
         </div>
