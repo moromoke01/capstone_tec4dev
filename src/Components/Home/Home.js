@@ -189,7 +189,7 @@ const Home = () => {
           errors={state.errors}
         />
       </div>
-      <button type='submit' disabled={state.submitting} className="px-5 py-3 text-sm font-medium text-center text-white bg-purple-700 rounded-lg cursor-pointer hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 ml-0">SUBSCRIBE</button>
+      <button type='submit' disabled={state.submitting} className="px-5 py-3 text-sm font-medium text-center text-white bg-customPurple rounded-lg cursor-pointer hover:bg-purple-800 focus:ring-4 focus:ring-bg-customPurple ml-0">SUBSCRIBE</button>
     </div>
   </div>
 </form>
