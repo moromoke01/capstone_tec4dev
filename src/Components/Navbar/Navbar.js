@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import Logo from '../../Assets/Insightify Logo.png';
 
@@ -9,6 +9,7 @@ const Navbar = () => {
   const handleHamburgerClick = () => {
     setIsHamburgerActive(!isHamburgerActive);
   };
+  
   const checkWindowSize = () => {
     if (window.innerWidth > 768) {
       setIsDesktopViewActive(true);
@@ -48,7 +49,6 @@ const Navbar = () => {
               </span>
               </button>
           </div>         
-
         )}
         {/* Mobile menu toggle icon */}
         <div className="md:hidden" onClick={handleHamburgerClick}>
@@ -72,6 +72,7 @@ const Navbar = () => {
       </nav>
     </header>
   );
+
 };
 
 export default Navbar;
