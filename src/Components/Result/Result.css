@@ -2,41 +2,36 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #ccc; /* Grey background */
+  background-color: #F5F5F5; /* Light grey background */
 }
 
 .coming-soon-container {
-  display: grid; /* Use CSS Grid */
-  grid-template-columns: 1fr; /* Single column layout by default */
-  gap: 30px; /* Add some spacing between elements */
-  padding: 20px;
-  background-color: #fff;
-  margin-top: 80px;
-  margin-bottom: 10px;
-  width: 100%; /* Adjust container width */
-  max-width: 450px; /* Set max-width */
-  justify-items: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
 }
 
 .content {
-  background-color: transparent; /* White container background */
-  padding: 20px;
+  background-color: #fff; /* White container background */
+  padding: 40px;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
 }
 
 h1 {
-  font-size: 55px;
+  font-size: 48px;
   font-weight: 700;
-  color: #9C13BE; /* Dark text color */
-  margin-top: 80px;
+  color: #9C13BE; /* Dark purple text color */
+  margin-bottom: 20px;
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
-  margin-top: 70px;
-  color: #100712; /* Medium dark text color */
+  color: #333; /* Dark grey text color */
+  margin-bottom: 20px;
 }
 
 .back-to-home-button {
@@ -54,13 +49,18 @@ p {
   background-color: #7F0D99; /* Darker shade of the button color on hover */
 }
 
-.back-to-home-button:active {
-  background-color: #958b97; /* Even darker shade of the button color when pressed */
-}
-
-@media screen and (max-width: 768px) {
-  .coming-soon-container {
-    margin-top: 50px;
-    padding: 10px;
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .content {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  p {
+    font-size: 16px;
   }
 }
+

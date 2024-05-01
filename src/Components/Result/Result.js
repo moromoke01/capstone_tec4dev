@@ -196,7 +196,7 @@ const ComingSoon = () => {
       <div className="coming-soon-container">
         <div className="content">
           <h1>COMING SOON</h1>
-          <p>This Result Page is under construction. Thank you for your patience. Please check back later!</p>
+          <p>We're currently working on the result page. Thank you for your patience! <br/>In the meantime, you can explore other sections of our website.</p>
           <Link to="/">
             <button className="back-to-home-button">BACK TO HOME</button>
           </Link>
@@ -208,6 +208,7 @@ const ComingSoon = () => {
 };
 
 export default ComingSoon;
+
 
 
 
