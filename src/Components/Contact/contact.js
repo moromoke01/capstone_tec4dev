@@ -3,6 +3,7 @@ import './contact.css'; // Import CSS file for styling
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import ContactImg from './Contact Page Image.png';
+import { useForm } from '@formspree/react';
 
 const ContactUsPage = () => {
   const [formData, setFormData] = useState({
@@ -22,19 +23,24 @@ const ContactUsPage = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const [state, handleSubmit] = useForm("xyyrojwb");
+  
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here, e.g., send data to backend
-    console.log(formData);
-    // Clear form fields after submission
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
-    // Set submission status to true
-    setIsSubmitted(true);
+    try {
+      await handleSubmit(e);
+      // Clear form fields after successful submission
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+      // Set submission status to true
+      setIsSubmitted(true);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
@@ -49,7 +55,7 @@ const ContactUsPage = () => {
           {isSubmitted ? (
             <p className='message'>Your message was sent successfully. We will respond to you shortly.</p>
           ) : (
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleFormSubmit}>
               <div className="form-group">
                 <label htmlFor="name">Name</label>
                 <input
