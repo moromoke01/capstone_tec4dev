@@ -68,11 +68,11 @@ textarea {
 
 input[type="text"],
 input[type="email"] {
-  border-bottom: 2px solid #9c13be;
+  border-bottom: 2px solid black;
 }
 
 textarea {
-  border: 3px solid #9c13be;
+  border: 3px solid black;
   height: 120px; /* Reduced height for smaller screens */
 }
 
