@@ -35,35 +35,36 @@ const Home = () => {
           <h2>Welcome to Insightify, your ultimate destination for unlocking your true potential in the vast world of technology. At Insightify, we believe that every individual possesses unique talents and abilities waiting to be discovered and harnessed. 
           With our cutting-edge psychometric tests tailored specifically for tech skills, we are dedicated to helping you understand your strengths, identify areas for growth, and embark on a journey of continuous improvement. </h2>
         </div>
-       <div><a href="/signUp" ><button type="button" className="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Take Test</button></a></div>
+       <div><a href="/signUp" ><button type="button" className="focus:outline-none text-white bg-customPurple hover:bg-customDarkPurple focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Take Test</button></a></div>
         <div><img src={image} alt="Home Groupie" /></div>
         <div className='gh'></div>
         <div className='gh'></div>
       </div>
       {/* Avatar/rating Section */}
-      <div className='layer-two'>
-        <div className='dofooter'>
-          <span><img src={foot_one} alt="Footer 1" /></span>
-          <span><img src={foot_two} alt="Footer 2" /></span>
-          <span><img src={foot_three} alt="Footer 3" /></span>
-        </div>
-        <div className='pancon'>
-          <span>
-            <h3>10M+ Community</h3>
-            <h6>You can be a member</h6>
-          </span>
-        </div>
-        <div className='stars'>
-          <span>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <h6>20,000 rated</h6>
-          </span>
-        </div>
-      </div>
+ <div className='layer-two'>
+  <div className='dofooter'>
+    <span><img src={foot_one} alt="Footer 1" /></span>
+    <span><img src={foot_two} alt="Footer 2" /></span>
+    <span><img src={foot_three} alt="Footer 3" /></span>
+  </div>
+  <div className='pancon'>
+    <span>
+      <h3>10M+ Community</h3>
+      <h6>You can be a member</h6>
+    </span>
+  </div>
+  <div className='stars'>
+    <span>
+      <i className="fa-solid fa-star"></i>
+      <i className="fa-solid fa-star"></i>
+      <i className="fa-solid fa-star"></i>
+      <i className="fa-solid fa-star"></i>
+      <i className="fa-solid fa-star"></i>
+      <h6>20,000 rated</h6>
+    </span>
+  </div>
+</div>
+
        {/* Mission Statement Section */}
       <div className="bg-[#27AE6024] px-5">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-5">

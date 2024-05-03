@@ -35,7 +35,7 @@
 .containerbody button {
   margin: auto;
   text-align: center;
-  width: 200px; /* Fixed width */
+  width: 170px; /* Fixed width */
   height: 48px; /* Fixed height */
   padding: 16px 40px; /* Padding values */
   background-color:#9C13BE; /* Background color */
@@ -64,75 +64,79 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; /* Adjust width to 100% for responsiveness */
-  height: auto; /* Allow height to adjust based on content */
-  padding: 20px 10px; /* Adjusted padding for better spacing */
+  width: 100%;
+  padding: 20px 10px;
   background: linear-gradient(90deg, #FFFFFF 0%, #FAEAFE 100%);
   box-shadow: 0px 4px 8px 0px rgba(114, 14, 139, 0.2);
 }
+
 .dofooter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   position: relative;
-  display: flex; /* Use flexbox layout */
-  align-items: center; /* Align items vertically */
-  width: auto;
-  height: 76px; /* Hug height*/
-  padding: 8px 16px; /*Padding values */
-  gap: 8px; /* Gap between elements */   
 }
+
 .dofooter img {
-  /* position: absolute; */
-   border-radius: 50%;
-   height: 40px;
-   width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
 }
+
 .dofooter img:nth-child(2) {
   position: absolute;
-  left: 20px; /* Adjust position to overlap */
+  left: 20px;
 }
 
 .dofooter img:nth-child(3) {
   position: absolute;
-  left: 40px; /* Adjust position to overlap */
+  left: 40px;
 }
+
 .pancon {
   display: flex;
   align-items: center;
-  flex-grow: 1; /* Allow the pancon to take up remaining space */
+  flex-grow: 1;
 }
 
 .pancon h3 {
-  font-family: 'Source Sans Pro' sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
-  text-align: left;
-  margin-right: 10px; /* Add margin to create space between h3 and h6 */
+  margin-right: 10px;
 }
+
 .pancon h6 {
-  font-family: 'Source Sans Pro' sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  text-align: left;
 }
+
 .stars {
   display: flex;
   justify-content: flex-end;
-  align-items: center; /* Center items vertically */
+  align-items: center;
 }
+
 .stars i {
-  color: #E2B93B; 
-  font-size: 20px; 
-  margin-left: 5px; 
+  color: #E2B93B;
+  font-size: 20px;
+  margin-left: 5px;
 }
+
 .stars h6 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   font-weight: 550;
   line-height: 18px;
   color: #09070A;
-  margin-left: 40px;
+  margin-left: 10px;
 }
+
+
+
 .card-container1 {
   display: flex;
   flex-wrap: wrap;
