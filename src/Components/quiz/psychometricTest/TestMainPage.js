@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import CognitiveQue from './CognitiveQue';
 import PersonalityTrait from './PersonalityTrait';
 import CreativityQue from './CreativityQue';
@@ -17,11 +17,11 @@ function TestMainPage() {
   const loggedIn = UseAuth(); // Get the logged-in status from UseAuth
   const navigate = useNavigate();
 
-  useEffect(() => {
+  
     if (!loggedIn) {
       navigate('/Login');
     }
-  }, [loggedIn, navigate]);
+  
 
   const handleNext = () => {
     setCurrentQuestion(currentQuestion + 1);

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import logo from '../../../Assets/logo.png';
 import "./testStyle.css";
 import { Link, useNavigate } from 'react-router-dom';
@@ -8,11 +8,10 @@ function TestIntroPage() {
   const loggedIn = UseAuth(); // Get the logged-in status from UseAuth
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (!loggedIn) {
-      navigate('/Login');
-    }
-  }, [loggedIn, navigate]);
+  if (!loggedIn) {
+    navigate('/Login');
+  }
+
 
   return (
     <div>

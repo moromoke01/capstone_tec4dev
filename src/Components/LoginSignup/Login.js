@@ -133,6 +133,8 @@ const Login = () => {
               >
                 SIGN IN
               </div>
+
+              <p className="hide-on-desktop">No Account yet? <span><Link to="/signup">Signup</Link></span></p>
             </div>
           </form>
         </div>
