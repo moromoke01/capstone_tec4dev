@@ -70,7 +70,7 @@ const AptitudeQuestion = () => {
     <div className="quiz-container">
       
       <div className="header">
-        {/* <img src={logo} style={{ width: 130 }} alt="logo" /> */}
+        <img src={logo} style={{ width: 130 }} alt="logo" />
         <h4>
           <b>Section D: Aptitude Questions</b>
         </h4>
@@ -97,7 +97,9 @@ const AptitudeQuestion = () => {
         <h4>{currentQuestionIndex + 1}. {currentQuestion && currentQuestion.question}</h4>
         <form>
           {currentQuestion && currentQuestion.options.map((option, index) => (
-            <div key={index}>
+            <div className="options" key={index}>
+              <ul>
+                <li>
               <input
                 type="radio"
                 id={`option-${index}`}
@@ -106,7 +108,10 @@ const AptitudeQuestion = () => {
                 checked={selectedOption === option}
                 onChange={handleOptionChange}
               />
-              <label htmlFor={`option-${index}`}  className="options">{option}</label>
+              <div><label htmlFor={`option-${index}`} className="options-text" >{option}</label></div>
+
+                </li>
+              </ul>
             </div>
           ))}
         </form>
