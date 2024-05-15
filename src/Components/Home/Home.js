@@ -41,7 +41,6 @@ const Home = () => {
         <div className='gh'></div>
       </div>
       {/* Avatar/rating Section */}
-<<<<<<< HEAD
       <div className='layer-two'>
         <div className='dofooter'>
           <span><img src={foot_one} alt="Footer 1" /></span>
@@ -86,7 +85,6 @@ const Home = () => {
     </div>
   </div>
 </div>
-=======
  <div className='layer-two'>
   <div className='dofooter'>
     <span><img src={foot_one} alt="Footer 1" /></span>
@@ -140,7 +138,6 @@ const Home = () => {
           </div>
         </div>
       </div>
->>>>>>> upstream/main
 
     <div className="nextone w-full py-8 px-4 bg-purple-900 text-white text-center">
       <div><h3 className="text-2xl md:text-3xl font-bold mb-4">Join Insightify to get proven results</h3></div>

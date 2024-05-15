@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Auth.css';
-import logo from '../../Assets/logo.png';
+import logo from '../../Assets/Main_logo.png';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
@@ -69,16 +69,16 @@ const Login = () => {
 
   return (
     <div className="body">
-      <div className="auth-cont">
+      <div className="auth-cont-1">
         <div className="info-bar">
           <div className="logoAndTagline">
             <img src={logo} style={{ width: 150 }} alt="logo" />
-            <p>...the best online career compass</p>
+            <p className='text-white'>...the best online career compass</p>
           </div>
 
           <div className="auth-info-body">
-            <h3>You are here, Welcome to Insightify!</h3>
-            <p>
+            <h3 className='text-white'>You are here, Welcome to Insightify!</h3>
+            <p className='text-white'>
               Are you new here? Sign up to create an account with Insightify
             </p>
 
