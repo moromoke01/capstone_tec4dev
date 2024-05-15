@@ -1,21 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
-*{
+body {
   font-family: 'Source Sans Pro', sans-serif;
   /* box-sizing: border-box; */
-
 }
 
 .quiz-container {
   width: 100%;
   max-width: 80%;
   height: 90vh;
-  padding:0 15px 15px;
+  padding: 0 15px 15px;
   background-color: #ffffff;
   margin: auto;
   margin-top: 1em;
 }
-
 
 .header {
   width: 100%;
@@ -43,26 +41,26 @@
   padding: 3em;
 }
 
-
 ul li {
   list-style: none;
 }
 
 .question h4 {
-  margin-top: -20px;
+  margin-top: 0;  /* Removed negative margin */
   margin-bottom: 2em;
   font-size: 16px;
 }
 
-
-ul{
- list-style-type:none;
+ul {
+  list-style-type: none;
 }
-.options{
-  display:flex;
+
+.options {
+  display: flex;
   flex-direction: row;
   word-wrap: break-word;
 }
+
 .option-div {
   display: flex;
 }
@@ -73,7 +71,6 @@ ul{
   text-align: center;
   justify-items: center;
   padding-left: 0;
-  /* margin-left: -3em; */
   flex-direction: row;
   justify-content: space-between;
   margin-top: 4em;
@@ -91,34 +88,32 @@ ul{
 
 .que-options {
   display: flex;
-  align-items: left;
-  justify-items: left;
+  align-items: flex-start;
+  justify-items: flex-start;
   text-align: left;
   margin-bottom: 10px;
 }
 
 .options {
   font-size: 16px;
-  margin-left: -25em;
+  margin-left: 0;  /* Adjusted to prevent large negative margin */
   display: flex;
-  align-items: left;
-  justify-items: left;
+  align-items: flex-start;
+  justify-items: flex-start;
   text-align: left;
-} 
+}
 
 /* Styling for radio buttons */
- input[type="radio"] {
-  margin-inline-start: -27em;
+input[type="radio"] {
+  margin-inline-start: 0;  /* Adjusted to prevent large negative margin */
   display: flex;
-  align-items: left;
-  justify-items: left;
+  align-items: flex-start;
+  justify-items: flex-start;
   text-align: left;
 }
 
 .testMainPage {
   width: 100%;
-  /* height: 100vh; */
-  /* margin-top: 4.35em; */
   padding-top: 10px;
   padding-bottom: 1.2em;
   background-color: #999898;
@@ -171,7 +166,7 @@ ul{
 
 /* TestIntroPage styling */
 .testIntroPageBox {
- width: 100%;
+  width: 100%;
   max-width: 900px;
   background-color: #ffffff;
   margin: auto;
@@ -227,8 +222,8 @@ ul{
   border: none;
   color: #ffffff;
   display: block;
-  align-items: left;
-  justify-content: left;
+  align-items: flex-start;
+  justify-content: flex-start;
   padding: 10px;
   background-color: #9c13be;
   text-align: left;
@@ -239,25 +234,21 @@ ul{
   width: 500px;
   padding: 0;
   margin: 0;
-  /* height: 95vh; */
-  margin-right: 0;
-  padding-right: 0;
   background-color: #f79de5;
   border-radius: 44% 0 0 44%;
   margin-inline-end: -150px;
   top: -10%;
 }
 
-
-
-.hide-on-desktop{
+.hide-on-desktop {
   display: none;
 }
 
-.redirect{
+.redirect {
   color: blue;
   font-weight: 600;
 }
+
 /* Media query to maintain the size of pagination circles */
 @media screen and (max-width: 768px) {
   .quiz-container {
@@ -265,7 +256,6 @@ ul{
     height: 150vh;
     padding: 10px;
     padding-bottom: 1em;
-    /* padding-block-end: 2em; */
     background-color: #ffffff;
     margin: auto;
     margin-top: 1em;
@@ -286,70 +276,70 @@ ul{
   }
 
   .intro-box {
-    /* width: 100%; */
-   width: 1000px;
-   padding: 15px;
-   margin-top: 1em;
+    width: 100%;
+    padding: 15px;
+    margin-top: 1em;
     background-color: #ffffff;
     margin: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 2px 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-  
-  .intro-div{
-    width:500px;
+
+  .intro-div {
+    width: 100%;
     padding: 15px;
     margin-top: 1em;
-     background-color: #ffffff;
-     margin: auto;
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 2px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #ffffff;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 2px 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-  .housing{
+  .housing {
     display: grid !important;
     grid-template-columns: 1fr !important;
     gap: 15px;
   }
-  
+
   .pagination-circle {
-      width: 20px;
-      height: 20px;
-      margin: 3px;
+    width: 20px;
+    height: 20px;
+    margin: 3px;
   }
 
   .side-oval-shape {
-      display: none;
+    display: none;
   }
 
   .content-area {
-      padding: 15px;
-      margin: auto;
+    padding: 15px;
+    margin: auto;
   }
 
   .header {
-      width: 100%;
-      height: 100px;
-      padding: 10px;padding-top: 15px;
-      padding-bottom: 30px;
-      border-bottom: 2px solid #dddddd;
-      background-color: #ffffff;
-      display: grid;
-      grid-template-columns: 1fr;
-      justify-content: left;
-      align-items: left;
-      font-size: 16px;
-      row-gap: 10px;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #dddddd;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: left;
+    align-items: left;
+    font-size: 16px;
+    row-gap: 10px;
   }
 
   .pagination {
-      display: flex;
-      margin-top: 2em;
-      gap: 20px;
-      row-gap: 15px;
-      margin-left: 20px;
+    display: flex;
+    margin-top: 2em;
+    gap: 20px;
+    row-gap: 15px;
+    margin-left: 20px;
   }
 
   .quiz-container .questions {
-      padding: 3em 10px;
+    padding: 3em 10px;
   }
 
   .que-options {
@@ -357,20 +347,20 @@ ul{
     align-items: center;
     margin-bottom: 10px;
   }
-  
+
   .options {
     font-size: 16px;
-    margin-left: -11em;
+    margin-left: 0;  /* Adjusted to prevent large negative margin */
   }
-  
-  /* Styling for radio buttons */
+
   input[type="radio"] {
-    margin-inline-start: -10em;
+    margin-inline-start: 0;  /* Adjusted to prevent large negative margin */
   }
-  .hide-on-desktop{
-   display: block;
-   margin: auto;
-   margin-top: 10px;
+
+  .hide-on-desktop {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
   }
 
   .bottom-buttons {
@@ -380,7 +370,7 @@ ul{
     justify-content: space-between;
     margin-top: 3em;
     padding-bottom: 1em;
-    margin-left: -12em;
+    margin-left: 0;  /* Adjusted to prevent large negative margin */
     align-items: center;
   }
 
@@ -391,6 +381,4 @@ ul{
     padding-bottom: 6em;
     background-color: #999898;
   }
-  
 }
-

@@ -20,7 +20,7 @@ function TestIntroPage() {
 
   return (
     <div>
-    {/* <Navbar /> */}
+   
     <div className='testIntroPageBox '>
 
      <div className='flex'>
