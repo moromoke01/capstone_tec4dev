@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CognitiveQue from './CognitiveQue';
 import PersonalityTrait from './PersonalityTrait';
 import CreativityQue from './CreativityQue';
@@ -6,7 +6,7 @@ import Aptitude from './AptitudeQue';
 import SkillQue from './SkillQue';
 import UseAuth from '../../UseAuth'; // Import UseAuth component
 import { useNavigate } from 'react-router-dom';
-import Navbar from '../../Navbar/Navbar';
+// import Navbar from '../../Navbar/Navbar';
 
 function TestMainPage() {
   const [currentQuestion, setCurrentQuestion] = useState(1);
@@ -17,19 +17,11 @@ function TestMainPage() {
   const loggedIn = UseAuth(); // Get the logged-in status from UseAuth
   const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   if (!loggedIn) {
-  //     navigate('/Login');
-  //   }
-  // }, [loggedIn, navigate]);
-
-  // if (!loggedIn) {
-  //   navigate('/Login');
-  //   return null;
-  // }
-
-  
-
+  useEffect(() => {
+    if (!loggedIn) {
+      navigate('/Login');
+    }
+  }, [loggedIn, navigate]);
 
   const handleNext = () => {
     setCurrentQuestion(currentQuestion + 1);
@@ -59,15 +51,8 @@ function TestMainPage() {
     }
   };
 
-  if (!loggedIn) {
-    // Redirect user to login page or show login form
-    // return <p>Please log in to access this page</p>;
-    // navigate('/Login');
-  }
-
   return (
     <div className="testMainPage">
-      {/* <Navbar /> */}
       {currentQuestion === 1 && <CognitiveQue onChange={(response) => handleResponseChange(1, response)} />}
       {currentQuestion === 2 && <PersonalityTrait onChange={(response) => handleResponseChange(2, response)} />}
       {currentQuestion === 3 && <CreativityQue onChange={(response) => handleResponseChange(3, response)} />}
