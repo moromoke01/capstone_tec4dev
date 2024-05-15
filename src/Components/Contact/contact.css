@@ -1,99 +1,118 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:#D9D9D9;
-    margin: 0;
-}
+
 .contact-us-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff;
-    margin-top: 90px;
-    margin-bottom: 20px;
-    width: 60%;
-    margin-left: 250px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 10px; /* Adjusted padding for smaller screens */
+  background-color: #fff;
+  margin-top: 50px; /* Reduced margin top for smaller screens */
+  margin-bottom: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.message {
+  font-size: 18px; /* Reduced font size for smaller screens */
+  font-weight: 700;
+  color: #9c13be;
+}
+
+.contact-info h4 {
+  color: #9c13be;
+  font-size: 28px; /* Reduced font size for smaller screens */
+  font-weight: 700;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.contact-image {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 20px;
+  order: 2; /* Change the order to display on the right */
+}
+
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px; /* Reduced font size for smaller screens */
+  color: #09070a;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  line-height: 24px; /* Reduced line height for smaller screens */
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px; /* Adjusted padding for smaller screens */
+  border: none;
+  border-radius: 2px;
+  font-size: 16px; /* Reduced font size for smaller screens */
+}
+
+input[type="text"],
+input[type="email"] {
+  border-bottom: 2px solid black;
+}
+
+textarea {
+  border: 3px solid black;
+  height: 120px; /* Reduced height for smaller screens */
+}
+
+button {
+  background-color: #9c13be;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #7d0d8d;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .contact-us-container {
+    padding: 20px; /* Reset padding for larger screens */
+    margin-top: 90px; /* Reset margin top for larger screens */
   }
-  
-  .contact-info {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
+
+  .contact-us-container {
+    grid-template-columns: 1fr 1fr;
   }
-  
-  .contact-info h4 {
-    color: #9C13BE;
-    font-size: 32px;
-    font-weight: 700;
-    font-family: 'Source Sans Pro', sans-serif;
-    margin-bottom: 10px;
-  }
-  
+
+  .contact-info,
   .contact-image {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .contact-image img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 18px;
-    color:#09070A;
-    font-family: Source Sans Pro;
-    font-weight: 600;
-    line-height: 28px;
     text-align: left;
   }
-  
-  input[type="text"],
-  input[type="email"]
-   {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: none;
-    border-bottom: 2px solid #9C13BE ;
-   }
 
-
-   
-
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 3px solid #9C13BE;
-    border-radius: 5px;
-    height: 150px;
+  .contact-info {
+    order: 1; /* Change the order to display on the left */
   }
-  
+
   button {
-    background-color: #9C13BE;
-    color: #fff;
-    font-weight: 600;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 200px;
-    transition: background-color 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
-  button:hover {
-    background-color: #9C13BE;
-  }
-  
+}

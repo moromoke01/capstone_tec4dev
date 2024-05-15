@@ -1,0 +1,6 @@
+build:
+  config:
+    npm_install_enabled: true
+    npm_cache_enabled: true
+  script:
+    - npm run build

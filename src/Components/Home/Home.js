@@ -8,10 +8,16 @@ import foot_three from '../../Assets/img3.jpeg';
 import Freq from '../FAQ/freq';
 import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
+import { useForm, ValidationError } from '@formspree/react';
+
 
 const Home = () => {
-  // const progress = 80;
-
+  const [state, handleSubmit] = useForm("mjvnlvdd");
+  if (state.succeeded) {
+    console.log("success!");
+        document.getElementById("contact-form").reset();
+}
+  // const progress = 80; bikonu whats this cpode for?
   // function getRandomPosition() {
   //   const maxX = window.innerWidth - 100;
   //   const maxY = window.innerHeight - 100;
@@ -29,12 +35,13 @@ const Home = () => {
           <h2>Welcome to Insightify, your ultimate destination for unlocking your true potential in the vast world of technology. At Insightify, we believe that every individual possesses unique talents and abilities waiting to be discovered and harnessed. 
           With our cutting-edge psychometric tests tailored specifically for tech skills, we are dedicated to helping you understand your strengths, identify areas for growth, and embark on a journey of continuous improvement. </h2>
         </div>
-       <div><a href="/signUp" ><button type="button" class="focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Take Test</button></a></div>
+       <div><a href="/signUp" ><button type="button" className="focus:outline-none text-white bg-customPurple hover:bg-customDarkPurple focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Take Test</button></a></div>
         <div><img src={image} alt="Home Groupie" /></div>
         <div className='gh'></div>
         <div className='gh'></div>
       </div>
       {/* Avatar/rating Section */}
+<<<<<<< HEAD
       <div className='layer-two'>
         <div className='dofooter'>
           <span><img src={foot_one} alt="Footer 1" /></span>
@@ -79,21 +86,76 @@ const Home = () => {
     </div>
   </div>
 </div>
+=======
+ <div className='layer-two'>
+  <div className='dofooter'>
+    <span><img src={foot_one} alt="Footer 1" /></span>
+    <span><img src={foot_two} alt="Footer 2" /></span>
+    <span><img src={foot_three} alt="Footer 3" /></span>
+  </div>
+  <div className='pancon'>
+    <span>
+      <h3>10M+ Community</h3>
+      <h6>You can be a member</h6>
+    </span>
+  </div>
+  <div className='stars'>
+    <span>
+      <i className="fa-solid fa-star"></i>
+      <i className="fa-solid fa-star"></i>
+      <i className="fa-solid fa-star"></i>
+      <i className="fa-solid fa-star"></i>
+      <i className="fa-solid fa-star"></i>
+      <h6>20,000 rated</h6>
+    </span>
+  </div>
+</div>
 
-    <div class="nextone w-full py-8 px-4 bg-purple-900 text-white text-center">
-      <div><h3 class="text-2xl md:text-3xl font-bold mb-4">Join Insightify to get proven results</h3></div>
-      <div class="flex flex-wrap justify-center">
-        <div class="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
-          <h5 class="text-lg font-semibold">10,000+</h5>
-          <h4 class="text-base">Registered<br/>Users</h4>
+       {/* Mission Statement Section */}
+      <div className="bg-[#27AE6024] px-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-5">
+          <div className="m-5 bg-white rounded-lg p-6 shadow-lg">
+            <h2 className="font-bold text-3xl md:text-4xl mb-4">Our Mission</h2>
+            <h4 className="text-lg md:text-xl">
+              Our mission at Insightify is simple yet profound: To empower individuals like you to thrive in the fast-paced and dynamic field of technology. We are committed to providing you with the tools, resources, and insights needed to excel in your tech career and achieve your professional goals.
+            </h4>
+          </div>
+          <div className="m-5 bg-white rounded-lg p-6 shadow-lg">
+            <h2 className="font-bold text-3xl md:text-4xl mb-4">Our Commitment To Excellence</h2>
+            <h4 className="text-lg md:text-xl">
+              At Insightify, excellence is not just a goal; it's our standard. We are dedicated to upholding the highest standards of quality, integrity, and professionalism in everything we do. Whether you're a seasoned tech professional looking to level up your skills or a newcomer eager to break into the industry, Insightify is here to support you every step of the way.
+            </h4>
+          </div>
+          <div className="m-5 bg-white rounded-lg p-6 shadow-lg">
+            <h2 className="font-bold text-3xl md:text-4xl mb-4">Take Your Test</h2>
+            <h4 className="text-lg md:text-xl">
+              Embark on your tech journey to unlock your full potential. Start exploring and delve into your behavior, strengths, and weaknesses to uncover the tech skills that align with you perfectly. Insightify carefully analyzes your individual traits to craft personalized learning paths that match your unique goals and aspirations.
+            </h4>
+          </div>
+          <div className="m-5 bg-white rounded-lg p-6 shadow-lg">
+            <h2 className="font-bold text-3xl md:text-4xl mb-4">Accurate Career Recommendations</h2>
+            <h4 className="text-lg md:text-xl">
+              Unlock your professional potential with our Accurate Career Recommendations. Our advanced algorithm considers your skills, experiences, and career goals to offer personalized advice tailored just for you. Say goodbye to guesswork and hello to a clear path forward with Insightify.
+            </h4>
+          </div>
         </div>
-        <div class="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
-          <h5 class="text-lg font-semibold">92%</h5>
-          <h4 class="text-base">Career Match<br/>Accuracy</h4>
+      </div>
+>>>>>>> upstream/main
+
+    <div className="nextone w-full py-8 px-4 bg-purple-900 text-white text-center">
+      <div><h3 className="text-2xl md:text-3xl font-bold mb-4">Join Insightify to get proven results</h3></div>
+      <div className="flex flex-wrap justify-center">
+        <div className="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
+          <h5 className="text-lg font-semibold">10,000+</h5>
+          <h4 className="text-base">Registered<br/>Users</h4>
         </div>
-        <div class="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
-          <h5 class="text-lg font-semibold">5,000+</h5>
-          <h4 class="text-base">Who have successfully <br/>transitioned into tech</h4>
+        <div className="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
+          <h5 className="text-lg font-semibold">92%</h5>
+          <h4 className="text-base">Career Match<br/>Accuracy</h4>
+        </div>
+        <div className="flex-1 md:flex-none max-w-xs md:max-w-none md:flex-initial mx-2 mb-4">
+          <h5 className="text-lg font-semibold">5,000+</h5>
+          <h4 className="text-base">Who have successfully <br/>transitioned into tech</h4>
         </div>
       </div>
     </div>
@@ -151,18 +213,35 @@ const Home = () => {
           ))}
         </div>
       </div>
+      
       {/* newsletter  */}
-  <div className="newsletter-section">
-  <h1>Subscribe to Our Newsletter</h1>
-  <div className="form-container">
-    <div className="email-input ">
-      <label htmlFor="email" className="email-label">Email Address</label>
-      <input type="email" id="email" name="email" placeholder="Enter your email address" className="email-input-box" />
+      <aside className="newsletter-section p-4 my-8 bg-white border  rounded-lg shadow-md sm:p-6 lg:p-8 "
+    >
+      <h1 className="mb-3 text-md  font-bold">Subscribe to Our Newsletter</h1>
+      <form id="contact-form" onSubmit={handleSubmit}>
+    <div data-style="clean" className="flex items-center mb-3">
+    <div data-element="fields" data-stacked="false"
+      className="flex items-center w-full seva-fields formkit-fields">
+      <div className="relative w-full mr-3 formkit-field">
+        
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter Your Email"
+          className="formkit-input bg-transparent border-none border-b-2 border-purple-500 text-gray-900 text-md focus:ring-0 focus:border-purple-500 block w-full pl-3 p-2.5  dark:text-white"
+        />
+        <ValidationError 
+          prefix="Email" 
+          field="email"
+          errors={state.errors}
+        />
+      </div>
+      <button type='submit' disabled={state.submitting} className="px-5 py-3 text-sm font-medium text-center text-white bg-customPurple rounded-lg cursor-pointer hover:bg-purple-800 focus:ring-4 focus:ring-bg-customPurple ml-0">SUBSCRIBE</button>
     </div>
-
-    <button className="subscribe-button">SUBSCRIBE</button>
   </div>
-</div>
+</form>
+</aside>
   <Footer />
 </>
   );

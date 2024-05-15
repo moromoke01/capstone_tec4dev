@@ -35,7 +35,7 @@
 .containerbody button {
   margin: auto;
   text-align: center;
-  width: 200px; /* Fixed width */
+  width: 170px; /* Fixed width */
   height: 48px; /* Fixed height */
   padding: 16px 40px; /* Padding values */
   background-color:#9C13BE; /* Background color */
@@ -64,75 +64,79 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%; /* Adjust width to 100% for responsiveness */
-  height: auto; /* Allow height to adjust based on content */
-  padding: 20px 10px; /* Adjusted padding for better spacing */
+  width: 100%;
+  padding: 20px 10px;
   background: linear-gradient(90deg, #FFFFFF 0%, #FAEAFE 100%);
   box-shadow: 0px 4px 8px 0px rgba(114, 14, 139, 0.2);
 }
+
 .dofooter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   position: relative;
-  display: flex; /* Use flexbox layout */
-  align-items: center; /* Align items vertically */
-  width: auto;
-  height: 76px; /* Hug height*/
-  padding: 8px 16px; /*Padding values */
-  gap: 8px; /* Gap between elements */   
 }
+
 .dofooter img {
-  /* position: absolute; */
-   border-radius: 50%;
-   height: 40px;
-   width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
 }
+
 .dofooter img:nth-child(2) {
   position: absolute;
-  left: 20px; /* Adjust position to overlap */
+  left: 20px;
 }
 
 .dofooter img:nth-child(3) {
   position: absolute;
-  left: 40px; /* Adjust position to overlap */
+  left: 40px;
 }
+
 .pancon {
   display: flex;
   align-items: center;
-  flex-grow: 1; /* Allow the pancon to take up remaining space */
+  flex-grow: 1;
 }
 
 .pancon h3 {
-  font-family: 'Source Sans Pro' sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
-  text-align: left;
-  margin-right: 10px; /* Add margin to create space between h3 and h6 */
+  margin-right: 10px;
 }
+
 .pancon h6 {
-  font-family: 'Source Sans Pro' sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  text-align: left;
 }
+
 .stars {
   display: flex;
   justify-content: flex-end;
-  align-items: center; /* Center items vertically */
+  align-items: center;
 }
+
 .stars i {
-  color: #E2B93B; 
-  font-size: 20px; 
-  margin-left: 5px; 
+  color: #E2B93B;
+  font-size: 20px;
+  margin-left: 5px;
 }
+
 .stars h6 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   font-weight: 550;
   line-height: 18px;
   color: #09070A;
-  margin-left: 40px;
+  margin-left: 10px;
 }
+
+
+
 .card-container1 {
   display: flex;
   flex-wrap: wrap;
@@ -269,7 +273,6 @@
 /* Newsletter Section */
 .newsletter-section {
   background-color: white;
-  padding: 10px;
   border-radius: 0px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -277,45 +280,47 @@
   align-items: center;
   text-align: center;
 }
-
 .newsletter-section h1 {
+  font-size: x-large;
+}
+
+/* .newsletter-section h1 {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 40px;
-  margin-bottom: 20px; /* Increase space below the heading for better readability */
+  margin-bottom: 20px; 
 }
 
 .form-container {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
   position: relative;
   margin: 0px;
+  flex-direction: row;
 }
 
 .email-input {
   display: flex;
-  flex-direction: column;
-  flex-grow: 1.5; /* Allow the input field to grow and fill available space */
-  max-width: 400px; /* Limit width to prevent overflowing */
+  flex-direction: row;
+  flex-grow: 1.5; 
+  max-width: 400px; 
   width: 100%;
-  padding: 20px;
+
 }
 
 .email-label {
   font-weight: 600;
-  font-size: 18px; /* Decrease font size for better alignment */
-  line-height: 24px; /* Decrease line height for better alignment */
-  margin-bottom: 10px; /* Increase margin for better spacing */
-  color: #9c13be; /* Update color */
+  font-size: 18px; 
+  line-height: 24px; 
+  margin-bottom: 10px; 
+  color: #9c13be;
 }
 
 .email-input-box {
   width: 100%;
   padding: 30px;
-  outline: none; /* Remove input field outline */
-  /* border-bottom: 1px solid transparent; */
+  outline: none; 
   box-sizing: border-box;
   border: none;
 }
@@ -324,7 +329,7 @@
   background-color: #9c13be;
   color: #fff;
   padding: 0%;
-  width: 100%; /* Set button width */
+  width: 100%; 
   height: 40px;
   border-radius: 8px;
   border: none;
@@ -334,10 +339,10 @@
 }
 
 .subscribe-button:hover {
-  background-color: #7f0f98; /* Darken color on hover */
+  background-color: #7f0f98; 
 }
 
-/* Responsive Styles */
+
 @media only screen and (max-width: 768px) {
   .newsletter-section h1 {
     font-size: 28px;
@@ -350,16 +355,17 @@
   }
 
   .form-container {
-    flex-direction:row; /* Stack items vertically on smaller screens */
-    align-items: center; /* Stretch items to full width */
+    flex-direction:row; 
+    align-items: center; 
   }
 
   .subscribe-button {
-    width: auto; /* Make button width full on smaller screens */
+    width: auto; 
     justify-self: center;
     font-size: small;
     padding: 2px;
   }
+<<<<<<< HEAD
 
   .hero-section-content{
     max-width: 90%;
@@ -368,6 +374,9 @@
     text-align: justify;
   }
 }
+=======
+} */
+>>>>>>> upstream/main
 
 
 
