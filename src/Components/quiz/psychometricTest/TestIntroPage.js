@@ -20,14 +20,14 @@ function TestIntroPage() {
 
   return (
     <div>
-    <Navbar />
-    <div className="intro-box">
+    {/* <Navbar /> */}
+    <div className='testIntroPageBox '>
 
      <div className='flex'>
      <div className='content-area'>
-      {/* <div className="header">
-         <img src ={logo} style={{width:150}} alt="logo"/>
-       </div> */}
+      <div className="header">
+         <img src ={logo} style={{width:150,height:40}} alt="logo"/>
+       </div>
 
        <div className='head-intro'>
         <h2><b>insightify career <br /> psychometric assessment</b></h2>

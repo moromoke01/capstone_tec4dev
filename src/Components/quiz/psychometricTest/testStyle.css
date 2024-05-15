@@ -2,7 +2,7 @@
 
 *{
   font-family: 'Source Sans Pro', sans-serif;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 
 }
 
@@ -10,24 +10,18 @@
   width: 100%;
   max-width: 80%;
   height: 90vh;
-  padding-bottom: 15px;
+  padding:0 15px 15px;
   background-color: #ffffff;
   margin: auto;
   margin-top: 1em;
 }
 
-.intro-box {
-  width: 100%;
-  max-width: 80%;
-  background-color: #ffffff;
-  margin: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 2px 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
 .header {
   width: 100%;
   height: 50px;
-  padding: 10px;
+  padding: 20px 10px;
+  padding-bottom: 2em;
   border-bottom: 2px solid #dddddd;
   background-color: #ffffff;
   display: flex;
@@ -60,21 +54,30 @@ ul li {
   font-size: 16px;
 }
 
-.options {
-  font-size: 20px;
-  margin-left: 1em;
-  line-height: 24px;
-}
 
+ul{
+ list-style-type:none;
+}
+.options{
+  display:flex;
+  flex-direction: row;
+  word-wrap: break-word;
+}
 .option-div {
   display: flex;
 }
 
 .bottom-buttons {
   display: flex;
+  margin: auto;
+  text-align: center;
+  justify-items: center;
+  padding-left: 0;
+  /* margin-left: -3em; */
   flex-direction: row;
   justify-content: space-between;
   margin-top: 4em;
+  align-items: center;
 }
 
 .btn {
@@ -88,23 +91,36 @@ ul li {
 
 .que-options {
   display: flex;
-  align-items: center;
+  align-items: left;
+  justify-items: left;
+  text-align: left;
   margin-bottom: 10px;
 }
 
 .options {
   font-size: 16px;
-  margin-left: -29em;
-}
+  margin-left: -25em;
+  display: flex;
+  align-items: left;
+  justify-items: left;
+  text-align: left;
+} 
 
 /* Styling for radio buttons */
-input[type="radio"] {
-  margin-inline-start: -30em;
+ input[type="radio"] {
+  margin-inline-start: -27em;
+  display: flex;
+  align-items: left;
+  justify-items: left;
+  text-align: left;
 }
 
 .testMainPage {
   width: 100%;
-  height: 110vh;
+  /* height: 100vh; */
+  /* margin-top: 4.35em; */
+  padding-top: 10px;
+  padding-bottom: 1.2em;
   background-color: #999898;
 }
 
@@ -155,11 +171,13 @@ input[type="radio"] {
 
 /* TestIntroPage styling */
 .testIntroPageBox {
-  width: 80%;
+ width: 100%;
+  max-width: 900px;
   background-color: #ffffff;
   margin: auto;
   margin-top: 1em;
   margin-bottom: 2em;
+  padding-bottom: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 2px 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -209,13 +227,16 @@ input[type="radio"] {
   border: none;
   color: #ffffff;
   display: block;
+  align-items: left;
+  justify-content: left;
   padding: 10px;
   background-color: #9c13be;
+  text-align: left;
 }
 
 .side-oval-shape {
   display: block;
-  width: 40%;
+  width: 500px;
   padding: 0;
   margin: 0;
   /* height: 95vh; */
@@ -240,29 +261,48 @@ input[type="radio"] {
 /* Media query to maintain the size of pagination circles */
 @media screen and (max-width: 768px) {
   .quiz-container {
-    max-width: 100%;
-    /* height: 90vh; */
-    padding-bottom: 25px;
+    width: 100%;
+    height: 150vh;
+    padding: 10px;
+    padding-bottom: 1em;
+    /* padding-block-end: 2em; */
     background-color: #ffffff;
     margin: auto;
     margin-top: 1em;
   }
 
+  .start-btn {
+    margin: auto;
+    margin-top: 3em;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #9c13be;
+    text-align: center;
+  }
+
   .intro-box {
     /* width: 100%; */
-    max-width: 100%;
+   width: 1000px;
+   padding: 15px;
+   margin-top: 1em;
     background-color: #ffffff;
     margin: auto;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 2px 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
-
-  .testMainPage {
-    max-width: 100%;
-    padding-bottom: 15px;
-    /* height: 110vh; */
-    background-color: #999898;
-  }
   
+  .intro-div{
+    width:500px;
+    padding: 15px;
+    margin-top: 1em;
+     background-color: #ffffff;
+     margin: auto;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 2px 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 
   .housing{
     display: grid !important;
@@ -320,7 +360,7 @@ input[type="radio"] {
   
   .options {
     font-size: 16px;
-    margin-left: -10em;
+    margin-left: -11em;
   }
   
   /* Styling for radio buttons */
@@ -332,4 +372,25 @@ input[type="radio"] {
    margin: auto;
    margin-top: 10px;
   }
+
+  .bottom-buttons {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3em;
+    padding-bottom: 1em;
+    margin-left: -12em;
+    align-items: center;
+  }
+
+  .testMainPage {
+    width: 100%;
+    height: 100vh;
+    margin-top: 4.35em;
+    padding-bottom: 6em;
+    background-color: #999898;
+  }
+  
 }
+

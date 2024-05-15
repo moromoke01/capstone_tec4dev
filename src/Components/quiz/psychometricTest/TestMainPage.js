@@ -62,12 +62,12 @@ function TestMainPage() {
   if (!loggedIn) {
     // Redirect user to login page or show login form
     // return <p>Please log in to access this page</p>;
-    navigate('/Login');
+    // navigate('/Login');
   }
 
   return (
     <div className="testMainPage">
-      <Navbar />
+      {/* <Navbar /> */}
       {currentQuestion === 1 && <CognitiveQue onChange={(response) => handleResponseChange(1, response)} />}
       {currentQuestion === 2 && <PersonalityTrait onChange={(response) => handleResponseChange(2, response)} />}
       {currentQuestion === 3 && <CreativityQue onChange={(response) => handleResponseChange(3, response)} />}
