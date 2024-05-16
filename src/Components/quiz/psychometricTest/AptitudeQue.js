@@ -70,7 +70,7 @@ const AptitudeQuestion = () => {
     <div className="quiz-container">
       
       <div className="header">
-        <img src={logo} style={{ width: 150, height:40 }} alt="logo" />
+        <img src={logo} style={{ width: 150, height:30 }} alt="logo" />
         <h4>
           <b>Section D: Aptitude Questions</b>
         </h4>
@@ -93,13 +93,15 @@ const AptitudeQuestion = () => {
         ))}
       </div>
       
-      <div className="question">
-        <h4>{currentQuestionIndex + 1}. {currentQuestion && currentQuestion.question}</h4>
-        <form>
-          {currentQuestion && currentQuestion.options.map((option, index) => (
-            <div className="options" key={index}>
-              <ul>
-                <li>
+      <div className="questions">
+      {currentQuestion && (
+          <div className="question">
+        <h4>{currentQuestionIndex + 1}. {currentQuestion.question}</h4>
+        <form>   
+          {currentQuestion.options.map((option, index) => (
+           <p>
+           <div className="que-options" key={index}>
+
               <input
                 type="radio"
                 id={`option-${index}`}
@@ -108,19 +110,19 @@ const AptitudeQuestion = () => {
                 checked={selectedOption === option}
                 onChange={handleOptionChange}
               />
-              <div><label htmlFor={`option-${index}`} className="options-text" >{option}</label></div>
-
-                </li>
-              </ul>
-            </div>
+              <div><label htmlFor={`option-${index}`} className="options" >{option}</label></div>             </div>
+               
+              </p>
+           
           ))}
         </form>
       </div>
-
+        )}
       <div className="bottom-buttons">
         <button className="btn btn-left" onClick={handlePrevious}>Previous</button>
         <button className="btn btn-right" onClick={handleNext}>Next</button>
       </div>
+    </div>
     </div>
   );
 };

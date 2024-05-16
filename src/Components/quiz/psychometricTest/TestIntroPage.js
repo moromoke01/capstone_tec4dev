@@ -10,6 +10,7 @@ function TestIntroPage() {
 
   if (!loggedIn) {
     navigate('/Login');
+    return null;
   }
 
 

@@ -72,7 +72,7 @@ const CognitiveQuestions = () => {
   return (
     <div className="quiz-container">
       <div className="header">
-        <img src={logo} style={{ width: 150, height:40  }} alt="logo" />
+        <img src={logo} style={{ width: 150, height:30  }} alt="logo" />
         <h4><b>Section A: Cognitive Ability Questions</b></h4>
         <span>
           <b>59:49</b>
@@ -98,6 +98,7 @@ const CognitiveQuestions = () => {
             <h4>{currentQuestionIndex + 1}. {currentQuestion.question}</h4>
             <form>
               {currentQuestion.options.map((option, index) => (
+              <p>
                 <div key={index} className="que-options">
                   <input
                     type="radio"
@@ -107,8 +108,9 @@ const CognitiveQuestions = () => {
                     checked={selectedOption === option}
                     onChange={handleOptionChange}
                   />
-                  <label htmlFor={`option-${index}`} className="options">{option}</label>
+                  <div><label htmlFor={`option-${index}`} className="options"><p>{option}</p></label></div>
                 </div>
+              </p>
               ))}
             </form>
           </div>

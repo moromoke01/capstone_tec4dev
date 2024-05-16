@@ -37,10 +37,10 @@ const Login = () => {
 
       if (response.ok && data.message === 'Login successful') {
         const { userId, fullName, token } = data;
-        localStorage.setItem('userId', userId);
-        localStorage.setItem('fullName', fullName);
-        localStorage.setItem('email', email);
-        localStorage.setItem('token', token);
+        localStorage.setItem('userId', data.userId);
+        localStorage.setItem('fullName', data.fullName);
+        localStorage.setItem('email', data.email);
+        localStorage.setItem('token', data.token);
 
         alert('Login successful');
 
