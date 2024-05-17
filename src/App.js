@@ -1,4 +1,6 @@
 import React from 'react';
+import Animate from 'animate.css'
+import 'animate.css/animate.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Terms from './Components/terms';
 import Quiz from './Components/quiz/quiz';

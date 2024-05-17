@@ -36,7 +36,7 @@ const Login = () => {
       console.log(data); // Log the response from the server
 
       if (response.ok && data.message === 'Login successful') {
-        const { userId, fullName, token } = data;
+        // const { userId, fullName, token } = data;
         localStorage.setItem('userId', data.userId);
         localStorage.setItem('fullName', data.fullName);
         localStorage.setItem('email', data.email);

@@ -70,7 +70,7 @@ const AptitudeQuestion = () => {
     <div className="quiz-container">
       
       <div className="header">
-        <img src={logo} style={{ width: 150, height:30 }} alt="logo" />
+        <img src={logo} style={{ width: 150, height:35 }} alt="logo" />
         <h4>
           <b>Section D: Aptitude Questions</b>
         </h4>
@@ -119,7 +119,7 @@ const AptitudeQuestion = () => {
       </div>
         )}
       <div className="bottom-buttons">
-        <button className="btn btn-left" onClick={handlePrevious}>Previous</button>
+        <button className="btn btn-left " onClick={handlePrevious}>Previous</button>
         <button className="btn btn-right" onClick={handleNext}>Next</button>
       </div>
     </div>
