@@ -8,7 +8,7 @@ function TestIntroPage() {
   const loggedIn = UseAuth(); // Get the logged-in status from UseAuth
   const navigate = useNavigate();
 
-  if (!loggedIn) {
+  if (loggedIn === false) {
     navigate('/Login');
     return null;
   }
