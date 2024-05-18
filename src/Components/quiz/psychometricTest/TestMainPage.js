@@ -4,23 +4,12 @@ import PersonalityTrait from './PersonalityTrait';
 import CreativityQue from './CreativityQue';
 import Aptitude from './AptitudeQue';
 import SkillQue from './SkillQue';
-import UseAuth from '../../UseAuth'; // Import UseAuth component
-import { useNavigate } from 'react-router-dom';
-// import Navbar from '../../Navbar/Navbar';
 
 function TestMainPage() {
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [responses, setResponses] = useState({});
   const [learningTrack, setLearningTrack] = useState(null);
   const totalQuestions = 5;
-
-  const loggedIn = UseAuth(); // Get the logged-in status from UseAuth
-  const navigate = useNavigate();
-
-  
-    if (!loggedIn) {
-      navigate('/Login');
-    }
   
 
   const handleNext = () => {

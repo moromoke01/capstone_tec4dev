@@ -1,17 +1,10 @@
 import React from 'react';
 import logo from '../../../Assets/logo.png';
 import "./testStyle.css";
-import { Link, useNavigate } from 'react-router-dom';
-import UseAuth from '../../UseAuth'; // Import UseAuth component
+import { Link } from 'react-router-dom';
+
 
 function TestIntroPage() {
-  const loggedIn = UseAuth(); // Get the logged-in status from UseAuth
-  const navigate = useNavigate();
-
-  if (loggedIn === false) {
-    navigate('/Login');
-    return null;
-  }
 
 
   return (
@@ -19,7 +12,7 @@ function TestIntroPage() {
       <div className='testIntroPageBox'>
         <div className='flex'>
           <div className='content-area'>
-            <div className="header">
+            <div className="header-1">
               <img src={logo} style={{ width: 150, height: 40 }} alt="logo" />
             </div>
 

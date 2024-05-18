@@ -99,7 +99,7 @@ const AptitudeQuestion = () => {
         <h4>{currentQuestionIndex + 1}. {currentQuestion.question}</h4>
         <form>   
           {currentQuestion.options.map((option, index) => (
-           <p>
+           <p className='justify-content'>
            <div className="que-options" key={index}>
 
               <input
