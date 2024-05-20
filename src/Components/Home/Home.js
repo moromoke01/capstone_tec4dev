@@ -1,6 +1,5 @@
 import React from 'react';
 import './Home.css';
-import 'animate.css/animate.css'
 import image from '../../Assets/image (2).png';
 import foot_one from '../../Assets/img1.jpeg';
 import foot_two from '../../Assets/img2.jpeg';
@@ -42,50 +41,6 @@ const Home = () => {
         <div className='gh'></div>
       </div>
       {/* Avatar/rating Section */}
-      <div className='layer-two'>
-        <div className='dofooter'>
-          <span><img src={foot_one} alt="Footer 1" /></span>
-          <span><img src={foot_two} alt="Footer 2" /></span>
-          <span><img src={foot_three} alt="Footer 3" /></span>
-        </div>
-        <div className='pancon'>
-          <span>
-            <h3>10M+ Community</h3>
-            <h6>You can be a member</h6>
-          </span>
-        </div>
-        <div className='stars'>
-          <span>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <h6>20,000 rated</h6>
-          </span>
-        </div>
-      </div>
-
-      <div class='flex justify-center'>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-    <div class="bg-white rounded-lg p-6">
-      <h2 class="font-bold text-3xl md:text-4xl mb-4">Our Mission</h2>
-      <h4 class="text-lg md:text-xl">Our mission at Insightify is simple yet profound:<br/><br/>To empower individuals like you to thrive in the fast-paced and dynamic field of technology.<br/><br/>We are committed to providing you with the tools, resources, and insights needed to excel in your tech career and achieve your professional goals.</h4>
-    </div>
-    <div class="bg-white rounded-lg p-6">
-      <h2 class="font-bold text-3xl md:text-4xl mb-4">Our Commitment To Excellence</h2>
-      <h4 class="text-lg md:text-xl">At Insightify, excellence is not just a goal; it's our standard. We are dedicated to upholding the highest standards of quality, integrity, and professionalism in everything we do.<br/><br/>Whether you're a seasoned tech professional looking to level up your skills or a newcomer eager to break into the industry, Insightify is here to support you every step of the way.</h4>
-    </div>
-    <div class="bg-white rounded-lg p-6">
-      <h2 class="font-bold text-3xl md:text-4xl mb-4">Take Your Test</h2>
-      <h4 class="text-lg md:text-xl">Embark on your tech journey to unlock your full potential.<br/>Start exploring and delve into your behavior, strengths, and weaknesses to uncover the tech skills that align with you perfectly.<br/><br/>Insightify carefully analyzes your individual traits to craft personalized learning paths that match your unique goals and aspirations.</h4>
-    </div>
-    <div class="bg-white rounded-lg p-6">
-      <h2 class="font-bold text-3xl md:text-4xl mb-4">Accurate Career Recommendations</h2>
-      <h4 class="text-lg md:text-xl">Unlock your professional potential with our Accurate Career Recommendations.<br/><br/>Our advanced algorithm considers your skills, experiences, and career goals to offer personalized advice tailored just for you.<br/><br/>Say goodbye to guesswork and hello to a clear path forward with Insightify</h4>
-    </div>
-  </div>
-</div>
  <div className='layer-two'>
   <div className='dofooter'>
     <span><img src={foot_one} alt="Footer 1" /></span>
