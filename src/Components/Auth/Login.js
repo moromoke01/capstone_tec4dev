@@ -36,11 +36,11 @@ const Login = () => {
       console.log(data); // Log the response from the server
 
       if (response.ok && data.message === 'Login successful') {
-        const { userId, fullName, token } = data;
-        localStorage.setItem('userId', userId);
-        localStorage.setItem('fullName', fullName);
-        localStorage.setItem('email', email);
-        localStorage.setItem('token', token);
+        // const { userId, fullName, token } = data;
+        localStorage.setItem('userId', data.userId);
+        localStorage.setItem('fullName', data.fullName);
+        localStorage.setItem('email', data.email);
+        localStorage.setItem('token', data.token);
 
         alert('Login successful');
 
@@ -69,16 +69,16 @@ const Login = () => {
 
   return (
     <div className="body">
-      <div className="auth-cont">
+      <div className="auth-cont-1">
         <div className="info-bar">
           <div className="logoAndTagline">
             <img src={logo} style={{ width: 150 }} alt="logo" />
-            <p>...the best online career compass</p>
+            <p className='text-white'>...the best online career compass</p>
           </div>
 
           <div className="auth-info-body">
-            <h3>You are here, Welcome to Insightify!</h3>
-            <p>
+            <h3 className='text-white'>You are here, Welcome to Insightify!</h3>
+            <p className='text-white'>
               Are you new here? Sign up to create an account with Insightify
             </p>
 
@@ -133,6 +133,8 @@ const Login = () => {
               >
                 SIGN IN
               </div>
+
+              <p className="hide-on-desktop">No Account yet? <span><Link to="/signup">Signup</Link></span></p>
             </div>
           </form>
         </div>

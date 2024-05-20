@@ -10,9 +10,9 @@
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .navbar-logo {
     color: #9C13BE;
-    justify-self: start;
     margin-left: 20px;
     cursor: pointer;
 }
@@ -21,102 +21,79 @@
     display: flex;
     list-style: none;
     text-align: center;
-    width: 90%; /* Adjust width as needed */
-    justify-content: flex-end; /* Align items to the end */
-    margin-right: 20px; /* Add margin to separate menu items from logo */
+    justify-content: flex-end;
+    margin-right: 20px;
 }
 
 .nav-links {
-    padding: 10px 10px; /* Adjust padding as needed */
+    padding: 10px 10px;
     color: black;
     text-decoration: none;
     font-size: 18px;
-    flex: 1; /* Allow items to grow and shrink */
+    flex: 1;
 }
 
 .nav-links:hover {
-    background-color:#9C13BE;
+    background-color: #9C13BE;
     border-radius: 3px;
-    /* transition: all 0.2s ease-out; */
     color: aliceblue;
 }
 
 .menu-icon {
     display: none;
 }
-.logo-div{
+
+.logo-div {
     display: flex;
     flex-direction: column;
     margin-left: 30px;
 }
-.logo-div h2{
-font-size: 10px;
+
+.logo-div h2 {
+    font-size: 10px;
 }
 
-.logo-div img{
+.logo-div img {
     width: 150px;
 }
-.nav-links-mobile {
+
+.nav-links-mobile, .nav-links-mobile-alone {
     width: 6em;
-    color:#ffffff ;
-    /* display:block; */
-    padding:13px;
-    background-color: #9C13BE;
-    border:none;
-    border-radius: 5px; 
-    text-decoration: none; 
+    color: #ffffff;
+    padding: 13px 10px;
+    border-radius: 5px;
+    text-decoration: none;
     font-size: 16px;
-    margin-right: 13px;
-    margin-left: 10px;
+    margin: 0 10px;
+}
+
+.nav-links-mobile {
+    background-color: #9C13BE;
 }
 
 .nav-links-mobile:hover {
-    background-color: #ffffff; 
-    color: #9C13BE; 
+    background-color: #ffffff;
+    color: #9C13BE;
     border: 1px solid #9C13BE;
 }
 
 .nav-links-mobile-alone {
-    width: 6em;
-    color: #9C13BE;
-    /* display:block; */
-    padding:10px;
     background-color: #ffffff;
     border: 2px solid #9C13BE;
-    border-radius: 5px; 
-    text-decoration: none; 
-    font-size: 16px;
+    color: #9C13BE;
 }
 
 .nav-links-mobile-alone:hover {
-    background-color:#9C13BE; 
+    background-color: #9C13BE;
     color: #ffffff;
 }
 
-
-/* tablet screen */
 @media screen and (max-width: 900px) {
-
-    .nav-menu {
-        display: flex;
-        list-style: none;
-        text-align: center;
-        width: 90%; /* Adjust width as needed */
-        justify-content: flex-end; /* Align items to the end */
-        margin-right: 20px; /* Add margin to separate menu items from logo */
-    }
-
-    .nav-links {
-        padding: 10px 10px; /* Adjust padding as needed */
-        color: black;
-        text-decoration: none;
+    .nav-menu, .nav-links {
         font-size: 14px;
-        flex: 1; /* Allow items to grow and shrink */
     }
 }
 
-
-/* Smaller screens */
 @media screen and (max-width: 768px) {
     .NavbarItems {
         background: #fffffe;
@@ -129,9 +106,7 @@ font-size: 10px;
     }
 
     .navbar-logo {
-        color: #9C13BE;
         margin: 20px 0;
-        cursor: pointer;
     }
 
     .menu-icon {
@@ -164,8 +139,6 @@ font-size: 10px;
     }
 
     .nav-links {
-        color: black;
-        text-decoration: none;
         padding: 10px 0;
     }
 
@@ -175,4 +148,3 @@ font-size: 10px;
         transition: all 0.2s ease-out;
     }
 }
-

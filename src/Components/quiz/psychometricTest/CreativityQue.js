@@ -72,7 +72,7 @@ const CreativityQues = () => {
   return (
     <div className="quiz-container">
       <div className="header">
-        {/* <img src={logo} style={{ width: 130 }} alt="logo" /> */}
+        <img src={logo} style={{ width: 150, height:35 }} alt="logo" />
         <h4>
           <b>Section C: Creativity and innovation Questions</b>
         </h4>
@@ -95,12 +95,14 @@ const CreativityQues = () => {
         ))}
       </div>
 
+     <div className="questions">
       {currentQuestion && ( // Conditionally render the question section only when currentQuestion exists
         <div className="question">
           <h4>{currentQuestionIndex + 1}. {currentQuestion.question}</h4>
           <form>
             {currentQuestion.options.map((option, index) => (
-              <div key={index}>
+            <p>
+              <div key={index} className="que-options">         
                 <input
                   type="radio"
                   id={`option-${index}`}
@@ -109,8 +111,9 @@ const CreativityQues = () => {
                   checked={selectedOption === option}
                   onChange={handleOptionChange}
                 />
-                <label htmlFor={`option-${index}`} className="options">{option}</label>
+                <div><label htmlFor={`option-${index}`} className="options">{option}</label></div>
               </div>
+              </p>
             ))}
           </form>
         </div>
@@ -120,6 +123,7 @@ const CreativityQues = () => {
         <button className="btn btn-left" onClick={handlePrevious}>Previous</button>
         <button className="btn btn-right" onClick={handleNext}>Next</button>
       </div>
+    </div>
     </div>
   );
 };

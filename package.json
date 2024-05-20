@@ -8,6 +8,10 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
+<<<<<<< HEAD
+=======
+    "animate.css-react": "^1.1.0",
+>>>>>>> 43dc41201493309fcae95fb9cef7957375ad4ded
     "axios": "^1.6.8",
     "go-to-top-react": "^0.0.1",
     "react": "^18.2.0",
