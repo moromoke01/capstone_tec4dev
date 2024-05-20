@@ -13,20 +13,20 @@
   text-align: justify;
 }
 .containerbody h1 {
-  /* font-family: 'Source Sans Pro', sans-serif; */
-  font-size: 4rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 3.5rem;
   font-weight: 700;
-  /* line-height: 3.75rem; */
+  line-height: 3.75rem;
   text-align: center;
   color: #09070A; /* Set text color to contrast with background */
   padding: 20px; /* Add padding for better readability */
 }
 
 .containerbody h2 {
-  /* font-family: 'Source Sans Pro', sans-serif; */
-  font-size: 2rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.25rem;
   font-weight: 400;
-  /* line-height: 1.75rem; */
+  line-height: 1.75rem;
   text-align: center;
   color: #09070A;
   margin-bottom: 20px;
@@ -187,34 +187,6 @@
   .paral {
     width: calc(100% - 40px); /* Adjusted to occupy full width on smaller screens */
   }
-
-  .hero-section-content{
-    width: 90%;
-    margin: auto;
-    justify-content: center;
-    text-align: justify;
-  }
-
-  .containerbody h1 {
-    /* font-family: 'Source Sans Pro', sans-serif; */
-    font-size: 2rem;
-    font-weight: 700;
-    /* line-height: 3.75rem; */
-    text-align: center;
-    color: #09070A; /* Set text color to contrast with background */
-    padding: 20px; /* Add padding for better readability */
-  }
-  
-  .containerbody h2 {
-    /* font-family: 'Source Sans Pro', sans-serif; */
-    font-size: 16px;
-    font-weight: 400;
-    /* line-height: 1.75rem; */
-    text-align: center;
-    color: #09070A;
-    margin-bottom: 20px;
-    text-align: center;
-  }
 }
 .nextone {
   width: 100%; /* Make width responsive */
@@ -365,18 +337,7 @@
     font-size: small;
     padding: 2px;
   }
-<<<<<<< HEAD
-
-  .hero-section-content{
-    max-width: 90%;
-    margin: auto;
-    justify-content: center;
-    text-align: justify;
-  }
-}
-=======
 } */
->>>>>>> upstream/main
 
 
 
