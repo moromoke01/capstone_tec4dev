@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import 'animate.css/animate.css'
 import image from '../../Assets/image (2).png';
 import foot_one from '../../Assets/img1.jpeg';
 import foot_two from '../../Assets/img2.jpeg';
