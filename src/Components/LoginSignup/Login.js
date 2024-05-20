@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Auth.css';
-import logo from '../../Assets/logo.png';
+import logo from '../../Assets/Main_logo.png';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
