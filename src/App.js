@@ -48,20 +48,4 @@ function App() {
   );
 }
 
-// const SignupPage = () => (
-//   <>
-//     <SignupForm className="signup-heading" />
-//   </>
-// );
-
-// const SigninPage = () => (
-//   <>
-//     <SigninForm className="signin-heading" />
-//   </>
-// );
-
-  //  <AuthProvider>
-  //       <TestMainPage />
-  //   </AuthProvider>
-
 export default App;
