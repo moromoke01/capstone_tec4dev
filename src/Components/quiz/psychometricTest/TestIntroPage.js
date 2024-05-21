@@ -11,10 +11,12 @@ function TestIntroPage() {
   if (!isAuthenticated) {
     navigate('/login');
     return null;  // Optionally, you can return a loading spinner or a message
-  }else{
-
   }
+  
 
+
+
+  
   return (
     <div>
       <div className='testIntroPageBox'>

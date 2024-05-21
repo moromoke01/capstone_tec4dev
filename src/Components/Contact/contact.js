@@ -23,25 +23,49 @@ const ContactUsPage = () => {
     });
   };
 
-  const [state, handleSubmit] = useForm("xyyrojwb");
+  // const [state, handleSubmit] = useForm("xyyrojwb");
   
   const handleFormSubmit = async (e) => {
     e.preventDefault();
+    const contactInfo = {
+      name: formData.name,
+      email: formData.email,
+      subject: formData.subject,
+      message: formData.message
+    };
     try {
-      await handleSubmit(e);
-      // Clear form fields after successful submission
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-      // Set submission status to true
-      setIsSubmitted(true);
-    } catch (error) {
+       const response = await fetch('https://insignify-backend.onrender.com/contactUs', {
+        method: 'POST',
+        headers:{
+          "Content-Type": "application/json",
+        },
+        body:JSON.stringify(contactInfo),
+       });
+
+       if (response.ok){
+        alert("Message sent");
+        console.log("message sent", response);
+       }else{
+        alert("Error sending message");
+        console.log("Internal error");
+       }
+
+      }
+      // // Set submission status to true
+      // setIsSubmitted(true);
+    catch(error) {
       console.error(error);
     }
-  };
+
+     // Clear form fields after successful submission
+     setFormData({
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+  });
+
+}
 
   return (
     <>
@@ -52,9 +76,9 @@ const ContactUsPage = () => {
         </div>
         <div className="contact-info">
           <h4>Get in Touch with us</h4>
-          {isSubmitted ? (
+          {/* {isSubmitted ? (
             <p className='message'>Your message was sent successfully. We will respond to you shortly.</p>
-          ) : (
+          ) : ( */}
             <form onSubmit={handleFormSubmit}>
               <div className="form-group">
                 <label htmlFor="name">Name</label>
@@ -103,9 +127,9 @@ const ContactUsPage = () => {
                   required
                 ></textarea>
               </div>
-              <button type="submit">SEND A MESSAGE</button>
+              <button type="submit" onClick={handleFormSubmit}>SEND A MESSAGE</button>
             </form>
-          )}
+          {/* )} */}
         </div>
       </div>
       <Footer />
