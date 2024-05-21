@@ -4,17 +4,15 @@ import PersonalityTrait from './PersonalityTrait';
 import CreativityQue from './CreativityQue';
 import Aptitude from './AptitudeQue';
 import SkillQue from './SkillQue';
-import useAuth from '../../Auth/UseAuth'
+import useAuth from '../../Auth/UseAuth';   // Adjust the path according to your project structure
 
 function TestMainPage() {
-
   const isAuthenticated = useAuth();  // Check authentication
 
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [responses, setResponses] = useState({});
   const [learningTrack, setLearningTrack] = useState(null);
   const totalQuestions = 5;
-  
 
   const handleNext = () => {
     setCurrentQuestion(currentQuestion + 1);
