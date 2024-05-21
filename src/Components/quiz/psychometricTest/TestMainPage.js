@@ -4,8 +4,12 @@ import PersonalityTrait from './PersonalityTrait';
 import CreativityQue from './CreativityQue';
 import Aptitude from './AptitudeQue';
 import SkillQue from './SkillQue';
+import useAuth from './Components/Auth/useAuth';
 
 function TestMainPage() {
+
+  const isAuthenticated = useAuth();  // Check authentication
+
   const [currentQuestion, setCurrentQuestion] = useState(1);
   const [responses, setResponses] = useState({});
   const [learningTrack, setLearningTrack] = useState(null);
@@ -40,6 +44,10 @@ function TestMainPage() {
     }
   };
 
+  if (!isAuthenticated) {
+    return null;  // Optionally, you can return a loading spinner or a message
+  }
+  
   return (
     <div className="testMainPage">
       {currentQuestion === 1 && <CognitiveQue onChange={(response) => handleResponseChange(1, response)} />}

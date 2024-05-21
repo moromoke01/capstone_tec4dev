@@ -2,10 +2,16 @@ import React from 'react';
 import logo from '../../../Assets/logo.png';
 import "./testStyle.css";
 import { Link } from 'react-router-dom';
+import useAuth from './Components/Auth/useAuth';
 
 
 function TestIntroPage() {
+  const isAuthenticated = useAuth();  // Check authentication
 
+
+  if (!isAuthenticated) {
+    return null;  // Optionally, you can return a loading spinner or a message
+  }
 
   return (
     <div>
