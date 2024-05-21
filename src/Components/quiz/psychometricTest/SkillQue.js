@@ -70,7 +70,7 @@ const SkillsAndInterest = () => {
   return (
     <div className="quiz-container">
       <div className="header">
-         <img src ={logo} style={{ width:130 }} alt="logo"/>
+         <img src ={logo} style={{ width: 150, height:35  }} alt="logo"/>
          <h4><b>Section E:Skill and Interest Questions</b></h4>
 
          <span>
@@ -95,7 +95,8 @@ const SkillsAndInterest = () => {
             <h4>{currentQuestionIndex + 1}. {currentQuestion.question}</h4>
             <form>
               {currentQuestion.options.map((option, index) => (
-                <div key={index}>
+              <p>
+                <div key={index} className="que-options">
                   <input
                     type="radio"
                     id={`option-${index}`}
@@ -106,6 +107,7 @@ const SkillsAndInterest = () => {
                   />
                   <div><label htmlFor={`option-${index}`}  className="options">{option}</label></div>
                 </div>
+                </p>
               ))}
             </form>
           </div>

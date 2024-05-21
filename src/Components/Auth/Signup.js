@@ -43,6 +43,7 @@ export default function Signup() {
       if (response.ok) {
         alert("User successfully registered");
         console.log('User Account successfully created');
+        
         navigate('/Login');
       } else {
         console.log("Account creation failed");

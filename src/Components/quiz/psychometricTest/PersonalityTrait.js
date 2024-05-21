@@ -70,7 +70,7 @@ const PersonalityTrait = () => {
   return (
     <div className="quiz-container">
       <div className="header">
-        <img src={logo} style={{ width: 130 }} alt="logo" />
+        <img src={logo} style={{ width: 150, height:35  }} alt="logo" />
         <h4><b>Section B: Personal Trait Questions</b></h4>
         <span>
           <b>59:49</b>
@@ -97,7 +97,8 @@ const PersonalityTrait = () => {
             <h4>{currentQuestionIndex + 1}. {currentQuestion.question}</h4>
             <form>
               {currentQuestion.options.map((option, index) => (
-                <div className="option-div" key={index}>
+                <p>
+                <div className="que-options" key={index}>
                   <input
                     type="radio"
                     id={`option-${index}`}
@@ -108,6 +109,7 @@ const PersonalityTrait = () => {
                   />
                  <div><label htmlFor={`option-${index}`} className="options">{option}</label></div>
                 </div>
+                </p>
               ))}
             </form>
           </div>

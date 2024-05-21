@@ -36,11 +36,11 @@ const Login = () => {
       console.log(data); // Log the response from the server
 
       if (response.ok && data.message === 'Login successful') {
-        const { userId, fullName, token } = data;
-        localStorage.setItem('userId', userId);
-        localStorage.setItem('fullName', fullName);
-        localStorage.setItem('email', email);
-        localStorage.setItem('token', token);
+        // const { userId, fullName, token } = data;
+        localStorage.setItem('userId', data.userId);
+        localStorage.setItem('fullName', data.fullName);
+        localStorage.setItem('email', data.email);
+        localStorage.setItem('token', data.token);
 
         alert('Login successful');
 
@@ -133,6 +133,8 @@ const Login = () => {
               >
                 SIGN IN
               </div>
+
+              <p className="hide-on-desktop">No Account yet? <span><Link to="/signup">Signup</Link></span></p>
             </div>
           </form>
         </div>

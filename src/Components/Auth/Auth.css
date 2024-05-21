@@ -253,8 +253,9 @@ input{
 
  .auth-cont {
   background: #ffffff;
-  max-width: 90%;
+  max-width: 98%;
   margin: auto;
+  padding: 10px;
   /* height: 90vh; */
   padding-block-end: 20px;
   padding-bottom: 50px;
@@ -316,7 +317,7 @@ label{
       }
       .auth-cont {
         background: #ffffff;
-        width: 90%;
+        width: 96%;
         margin: auto;
         padding: 0 10px 0 10px;
         /* height: 90vh; */
