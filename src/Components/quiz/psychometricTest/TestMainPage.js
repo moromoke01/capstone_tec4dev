@@ -4,7 +4,7 @@ import PersonalityTrait from './PersonalityTrait';
 import CreativityQue from './CreativityQue';
 import Aptitude from './AptitudeQue';
 import SkillQue from './SkillQue';
-import useAuth from './Components/Auth/useAuth';
+import useAuth from '../../Auth/UseAuth'
 
 function TestMainPage() {
 
@@ -47,7 +47,7 @@ function TestMainPage() {
   if (!isAuthenticated) {
     return null;  // Optionally, you can return a loading spinner or a message
   }
-  
+
   return (
     <div className="testMainPage">
       {currentQuestion === 1 && <CognitiveQue onChange={(response) => handleResponseChange(1, response)} />}

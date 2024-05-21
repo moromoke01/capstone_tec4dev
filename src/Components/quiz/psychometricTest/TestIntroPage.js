@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../../../Assets/logo.png';
 import "./testStyle.css";
 import { Link } from 'react-router-dom';
-import useAuth from './Components/Auth/useAuth';
+import useAuth from '../../Auth/UseAuth'
 
 
 function TestIntroPage() {
