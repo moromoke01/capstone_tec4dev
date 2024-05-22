@@ -6,39 +6,53 @@
   align-items: center;
   justify-content: center;
 }
-.hero-section-content{
+
+.hero-section-content {
   width: 70%;
   margin: auto;
   justify-content: center;
   text-align: justify;
 }
+
 .containerbody h1 {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 3.5rem;
+  font-size: 4.7rem; /* Increased font size */
   font-weight: 700;
-  line-height: 3.75rem;
+  line-height: 4.5rem; /* Adjusted line height */
   text-align: center;
   color: #09070A; /* Set text color to contrast with background */
   padding: 20px; /* Add padding for better readability */
+  margin-top: 2rem;
+  margin-bottom: 0; /* Updated to remove bottom margin */
 }
 
 .containerbody h2 {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.25rem;
+  font-size: 2.0rem; /* Increased font size for desktop */
   font-weight: 400;
-  line-height: 1.75rem;
+  line-height: 2.5rem; /* Adjusted line height */
   text-align: center;
   color: #09070A;
   margin-bottom: 20px;
-  text-align: center;
+  margin-top: -1rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .containerbody h2 {
+    font-size: 1.5rem; /* Decreased font size for mobile */
+    line-height: 2rem; /* Adjusted line height for mobile */
+    padding: 0 20px; /* Added padding for better readability on mobile */
+  }
+}
+
+
 .containerbody button {
   margin: auto;
   text-align: center;
   width: 170px; /* Fixed width */
   height: 48px; /* Fixed height */
   padding: 16px 40px; /* Padding values */
-  background-color:#9C13BE; /* Background color */
+  background-color: #9C13BE; /* Background color */
   color: #ffffff; /* Text color */
   border: none;
   gap: 20px; /* Gap between elements */
@@ -49,9 +63,11 @@
   cursor: pointer; /* Cursor style */
   transition: opacity 0.3s ease; /* Transition effect */
 }
+
 .containerbody button:hover {
   opacity: 1; /* Change opacity on hover */
 }
+
 .containerbody img {
   width: 100%;
   height: auto;
@@ -60,6 +76,7 @@
   gap: 8px;
   opacity: 0px;
 }
+
 .layer-two {
   display: flex;
   justify-content: space-between;
@@ -101,17 +118,17 @@
 
 .pancon h3 {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
+  font-size: 18px; /* Increased font size */
   font-weight: 600;
-  line-height: 20px;
+  line-height: 22px;
   margin-right: 10px;
 }
 
 .pancon h6 {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14px;
+  font-size: 16px; /* Increased font size */
   font-weight: 400;
-  line-height: 18px;
+  line-height: 20px;
 }
 
 .stars {
@@ -122,20 +139,18 @@
 
 .stars i {
   color: #E2B93B;
-  font-size: 20px;
+  font-size: 22px; /* Increased font size */
   margin-left: 5px;
 }
 
 .stars h6 {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
+  font-size: 18px; /* Increased font size */
   font-weight: 550;
-  line-height: 18px;
+  line-height: 20px;
   color: #09070A;
   margin-left: 10px;
 }
-
-
 
 .card-container1 {
   display: flex;
@@ -144,10 +159,12 @@
   background-color: #FEFEFE;
   width: 100%; /* Adjusted to occupy full width */
 }
+
 .par {
   display: flex;
   justify-content: center;
 }
+
 .paral {
   width: calc(50% - 40px); /* Adjust the width of each card */
   height: auto; /* Adjust height to fit content */
@@ -156,38 +173,43 @@
   border-radius: 8px; /* Add border radius for rounded corners */
   background: white;
 }
+
 .paral h2 {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 24px;
+  font-size: 26px; /* Increased font size */
   font-weight: 700;
-  line-height: 28px;
+  line-height: 30px; /* Adjusted line height */
   text-align: left;
   color: #09070A;
-  /* margin-bottom: auto; */
   margin-top: auto;
 }
+
 .paral h4 {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 29px;
+  font-size: 20px; /* Increased font size */
   font-weight: 400;
-  line-height: 20px;
+  line-height: 24px; /* Adjusted line height */
   text-align: left;
   color: #09070A;
 }
+
 /* Responsive styles */
 @media only screen and (max-width: 768px) {
   .paral h2 {
-    font-size: 20px; /* Decrease font size for smaller screens */
-    line-height: 24px; /* Adjust line height for smaller screens */
+    font-size: 22px; /* Decrease font size for smaller screens */
+    line-height: 26px; /* Adjust line height for smaller screens */
   }
+  
   .paral h4 {
-    font-size: 14px; /* Decrease font size for smaller screens */
-    line-height: 18px; /* Adjust line height for smaller screens */
+    font-size: 18px; /* Decrease font size for smaller screens */
+    line-height: 22px; /* Adjust line height for smaller screens */
   }
+  
   .paral {
     width: calc(100% - 40px); /* Adjusted to occupy full width on smaller screens */
   }
 }
+
 .nextone {
   width: 100%; /* Make width responsive */
   padding: 40px 20px; /* Adjust padding for responsiveness */
@@ -196,52 +218,61 @@
   align-items: center;
   text-align: center; /* Center text */
 }
+
 .nextone h3 {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 30px; /* Adjust font size for responsiveness */
+  font-size: 32px; /* Increased font size */
   font-weight: 700;
-  line-height: 30px; /* Adjust line height for responsiveness */
+  line-height: 36px; /* Adjusted line height */
   text-align: center;
   color: #FEFEFE;
   margin-bottom: 20px; /* Add spacing below heading */
 }
+
 .changes {
   display: flex;
   flex-wrap: wrap; /* Wrap items for responsiveness */
   justify-content: center; /* Center items */
 }
+
 .changes > div {
-  flex: 4; 
+  flex: 4;
   max-width: 400px; /* Limit maximum width of each item */
   margin: 10px; /* Adjust margin for spacing between items */
 }
+
 .changes h5 {
-  font-size: 19px; /* Adjust font size for responsiveness */
+  font-size: 21px; /* Increased font size */
   font-weight: 700;
-  line-height: 20px; /* Adjust line height for responsiveness */
+  line-height: 24px; /* Adjusted line height */
   text-align: center;
   color: #FEFEFE;
 }
+
 .changes h4 {
-  font-size: 16px; 
+  font-size: 18px; 
   font-weight: 400;
 }
+
 .frequent {
   text-align: center; /* Center the content horizontally */
 }
+
 .frequent .faq-item h3 {
   font-family: 'Source Sans Pro', sans-serif; /* Specify the font family */
-  font-size: 30px; /* Specify the font size */
+  font-size: 32px; /* Increased font size */
   font-weight: 700; /* Specify the font weight */
-  line-height: 44px; /* Specify the line height */
+  line-height: 36px; /* Specify the line height */
   color: #000000; /* Specify the text color */
   margin-top: 10px;
 }
+
 .items-center h3 {
   font-family: 'Source Sans Pro', sans-serif; /* Specify the font family */
   font-size: 40px; /* Specify the font size */
   text-align: center; /* Center the text horizontally */
 }
+
 /* Newsletter Section */
 .newsletter-section {
   background-color: white;
@@ -252,134 +283,67 @@
   align-items: center;
   text-align: center;
 }
-.newsletter-section h1 {
-  font-size: x-large;
+
+.newsletter-section h2 {
+  font-size: 36px; /* Increased font size */
+  color: black;
+  margin-bottom: 1rem;
 }
 
-/* .newsletter-section h1 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 40px;
-  margin-bottom: 20px; 
+.newsletter-section p {
+  font-size: 20px; /* Increased font size */
+  color: black;
+  margin-bottom: 2rem;
 }
 
-.form-container {
+.newsletter-section .input-group {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  position: relative;
-  margin: 0px;
-  flex-direction: row;
-}
-
-.email-input {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1.5; 
-  max-width: 400px; 
   width: 100%;
-
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.email-label {
-  font-weight: 600;
-  font-size: 18px; 
-  line-height: 24px; 
-  margin-bottom: 10px; 
-  color: #9c13be;
-}
-
-.email-input-box {
+.newsletter-section input[type="email"] {
   width: 100%;
-  padding: 30px;
-  outline: none; 
-  box-sizing: border-box;
-  border: none;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-.subscribe-button {
-  background-color: #9c13be;
-  color: #fff;
-  padding: 0%;
-  width: 100%; 
-  height: 40px;
-  border-radius: 8px;
+.newsletter-section button {
+  padding: 1rem 2rem;
+  font-size: 18px;
+  background-color: #9C13BE;
+  color: white;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
-  margin-top: 20px;
-  margin-left: 0%;
+  transition: background-color 0.3s;
 }
 
-.subscribe-button:hover {
-  background-color: #7f0f98; 
+.newsletter-section button:hover {
+  background-color: #780ea0;
 }
 
-
-@media only screen and (max-width: 768px) {
-  .newsletter-section h1 {
-    font-size: 28px;
-    line-height: 36px;
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .newsletter-section h2 {
+    font-size: 28px; /* Adjust font size for smaller screens */
   }
-
-  .email-label {
-    font-size: 16px;
-    line-height: 22px;
+  
+  .newsletter-section p {
+    font-size: 16px; /* Adjust font size for smaller screens */
   }
-
-  .form-container {
-    flex-direction:row; 
-    align-items: center; 
+  
+  .newsletter-section input[type="email"] {
+    font-size: 16px; /* Adjust font size for smaller screens */
   }
-
-  .subscribe-button {
-    width: auto; 
-    justify-self: center;
-    font-size: small;
-    padding: 2px;
+  
+  .newsletter-section button {
+    font-size: 16px; /* Adjust font size for smaller screens */
   }
-} */
-
-
-
-.footer {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start; /* Align items at the top */
-  background-color: #9c13be;
-  color: white;
-  padding: 20px; /* Add padding for better spacing */
-  box-sizing: border-box;
-}
-.footer h3 {
-  margin-bottom: 10px;
-}
-.footer ul {
-  padding: 0;
-  margin: 0;
-}
-.footer ul li {
-  margin-bottom: 5px;
-}
-.footer ul li a {
-  color: white;
-  text-decoration: none;
-}
-.footer ul li a:hover {
-  text-decoration: underline;
-}
-.insightify-section, .navigate-section, .connect-section {
-  flex: 1; /* Make sections evenly spaced */
-  padding: 0 20px; /* Add padding to each section */
-}
-.insightify-section h3, .navigate-section h3, .connect-section h3{
-  font-family: 'Andika New Basic', sans-serif;
-  font-weight: 700;
-  font-size: 24px; /* Decrease font size for better readability */
-  line-height: 28px;
-  margin-bottom: 10px;
-}
-.insightify-section p {
-  color: white
 }
