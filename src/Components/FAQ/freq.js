@@ -23,14 +23,12 @@ function Question({ ques, answ }) {
 function Freq() {
   return (
     <div className="max-w-7x2 mx-auto my-5 p-5">
-      {/* <h1 className="text-3xl text-center mb-8 font-bold">Frequently Asked Questions</h1> */}
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <Question
           ques="How can Insightify benefit me?"
-          answ="
-          Insightify helps individuals understand their strengths and areas for growth in the tech field through personalized assessments and learning paths. Its accurate career recommendations further assist users in advancing their tech careers confidently, empowering them to thrive in the Tech world."
+          answ="Insightify helps individuals understand their strengths and areas for growth in the tech field through personalized assessments and learning paths. Its accurate career recommendations further assist users in advancing their tech careers confidently, empowering them to thrive in the Tech world."
         />
-        <Question
+    <Question
           ques="Who can use Insightify?"
           answ="Insightify is designed for individuals of all backgrounds who are interested in the field of technology. Whether you're a seasoned tech professional looking to level up your skills or a newcomer eager to break into the industry, Insightify offers personalized assessments and guidance tailored to your unique goals and aspirations."
         />
@@ -75,7 +73,6 @@ function Freq() {
           ques="How can I provide feedback on Insightify?"
           answ="You can provide feedback on Insightify through our feedback feature, located at the end of your assessment. Your insights help us improve our platform for a better user experience. Feel free to share your thoughts!"
         />
-       
       </div>
     </div>
   );
