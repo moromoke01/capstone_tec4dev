@@ -1,6 +1,6 @@
 // VerificationPage.js
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './Verification.css';
 import emailImage from "../../Assets/email.png";
 
@@ -8,7 +8,7 @@ const VerificationPage = () => {
   const [email, setEmail] = useState(''); // Assuming you have a way to get the email, set it here.
   const [verificationCode, setVerificationCode] = useState(['', '', '', '', '', '']);
   const [message, setMessage] = useState('');
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleChange = (index, event) => {
     const newCode = [...verificationCode];
@@ -18,7 +18,7 @@ const VerificationPage = () => {
 
   const handleVerify = async () => {
     const otp = verificationCode.join('');
-    const response = await fetch('/api/verify-otp', {
+    const response = await fetch('https://insignify-backend.onrender.com//verify-otp', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ email, otp }),
@@ -28,7 +28,7 @@ const VerificationPage = () => {
     
     if (response.ok) {
       // Redirect to another page or perform any success action
-      history.push('/success-page'); // Replace with your success route
+      navigate('/Login'); 
     }
   };
 
