@@ -1,14 +1,25 @@
-// VerificationPage.js
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import './Verification.css';
 import emailImage from "../../Assets/email.png";
 
 const VerificationPage = () => {
-  const [email, setEmail] = useState(''); // Assuming you have a way to get the email, set it here.
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const queryParams = new URLSearchParams(location.search);
+  const userId = queryParams.get('userId');
+  const emailFromQuery = queryParams.get('email');
+
+  const [email, setEmail] = useState(emailFromQuery || '');
   const [verificationCode, setVerificationCode] = useState(['', '', '', '', '', '']);
   const [message, setMessage] = useState('');
-  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (emailFromQuery) {
+      setEmail(emailFromQuery);
+    }
+  }, [emailFromQuery]);
 
   const handleChange = (index, event) => {
     const newCode = [...verificationCode];
@@ -18,17 +29,16 @@ const VerificationPage = () => {
 
   const handleVerify = async () => {
     const otp = verificationCode.join('');
-    const response = await fetch('https://insignify-backend.onrender.com//verify-otp', {
+    const response = await fetch('https://insignify-backend.onrender.com/verify-otp', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, otp }),
+      body: JSON.stringify({ email, otp, userId }),
     });
     const data = await response.json();
     setMessage(data.message);
-    
+
     if (response.ok) {
-      // Redirect to another page or perform any success action
-      navigate('/Login'); 
+      navigate('/Login');
     }
   };
 
