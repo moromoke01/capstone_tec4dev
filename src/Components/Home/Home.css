@@ -11,33 +11,34 @@
 .hero-section-content {
   width: 70%;
   margin: auto;
+  justify-content: center;
   text-align: justify;
 }
-
+/* 
 .hero-section-content h1, .hero-section-content h2 {
   opacity: 0;
   animation: fadeIn 1s ease-out forwards;
 }
 
-.hero-section-content h1 {
+/* .hero-section-content h1 {
   animation-delay: 0.5s;
-}
+} */
 
-.hero-section-content h2 {
+/* .hero-section-content h2 {
   animation-delay: 1s;
-}
+} */
 
-.hero-button {
+/* .hero-button {
   opacity: 0;
   animation: fadeIn 1s ease-out forwards, bounce 2s infinite;
   animation-delay: 1.5s;
-}
+} */
 
-.hero-image {
+/* .hero-image {
   opacity: 0;
   animation: fadeIn 1s ease-out forwards, scaleUp 0.5s ease-in-out;
   animation-delay: 2s;
-}
+} */
 
 /* .typing-text {
   display: block;
@@ -49,7 +50,7 @@
 } */
 
 /* Keyframes for animations */
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -58,9 +59,9 @@
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
-@keyframes bounce {
+/* @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
   }
@@ -70,55 +71,55 @@
   60% {
     transform: translateY(-15px);
   }
-}
+} */
 
-@keyframes scaleUp {
+/* @keyframes scaleUp {
   0% {
     transform: scale(0.5);
   }
   100% {
     transform: scale(1);
   }
-}
+} */
 
-@keyframes typing {
+/* @keyframes typing {
   from {
     width: 0;
   }
   to {
     width: 100%;
   }
-}
+} */
 
-@keyframes blink-caret {
+/* @keyframes blink-caret {
   from, to {
     border-color: transparent;
   }
   50% {
-    border-color: orange; /* Color of the caret */
+    border-color: orange; Color of the caret
   }
-}
+} */
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .hero-section-content {
     width: 90%;
   }
 
   .typing-text {
-    font-size: 1.5em; /* Adjust the font size for smaller screens */
+    font-size: 1.5em; Adjust the font size for smaller screens
   }
-}
-
+} */
+/* 
 @media (max-width: 480px) {
   .hero-section-content {
     width: 100%;
   }
 
   .typing-text {
-    font-size: 1.2em; /* Further adjust the font size for very small screens */
+    font-size: 1.2em; Further adjust the font size for very small screens
   }
-}
+} */
 
 
 
