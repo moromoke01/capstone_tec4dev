@@ -10,9 +10,10 @@
 }
 .cont{
   background: #ffffff;
-  width: 90%;
+  width: 80%;
   margin: auto;
   height: 90vh;
+  padding: 15px;
   /* display: flex; */
   flex-direction: row;
   border-radius: 5px;
@@ -27,10 +28,11 @@
   position: relative;
 }
 
-.email-image img{
-  max-width: 400px;
+.email{
+  /* max-width: 400px; */
   /* width: 100%; */
   transform:rotate(-20deg) ; 
+  color: #e373ff;
 }
 
 .circled-number{
@@ -41,8 +43,8 @@
   justify-content: center;
   align-items:center;
   position: absolute;
-  top:28%;
-  left: 85%;
+  top:35%;
+  left: 70%;
   border-radius: 50%;
   background: #7a0404;
   color: #ccc9c9;
@@ -91,7 +93,7 @@
  justify-content: center;
  align-items: center;
  /* background: #9c13be; */
- padding-right: 1em;
+ padding-right: 4em;
 }
 .verification-code {
   display: flex;
@@ -100,13 +102,16 @@
   margin-top: 30px;
 }
 
-.verification-code input {
-  width: 50px;
-  height: 50px;
+input {
+  display: block;
+  width: 30px;
+  height: 30px;
   text-align: center;
   font-size: 24px;
-  border: 1px solid rgb(20, 20, 20);
+  border: 1px solid #7a0d92;
   border-radius: 5px;
+  margin-right: 10px;
+  border:#9c13be;
 }
 
 /* Submit button styling */
@@ -138,7 +143,7 @@
 }
 
 @media screen and (max-width: 900px) {
-  .email-image{
+  .email{
     display: none;
   }
 
@@ -147,12 +152,12 @@ padding: 0 20px;
 width: 100%;
 }    
 
-.verification-code input {
-  width: 40px;
-  height: 40px;
+ input {
+  width: 30px;
+  height: 30px;
   text-align: center;
   font-size: 24px;
-  border: 1px solid rgb(20, 20, 20);
+  border: 1px solid #7a0d92;
   border-radius: 5px;
 }
 }
