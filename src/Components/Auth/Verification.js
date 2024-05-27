@@ -60,7 +60,7 @@ const VerificationPage = () => {
           </div>
           
           {/* Email input */}
-          <div className="email-input">
+          {/* <div className="email-input">
             <input
               type="email"
               value={email}
@@ -68,7 +68,7 @@ const VerificationPage = () => {
               placeholder="Email"
               required
             />
-          </div>
+          </div> */}
 
           {/* Verification code boxes */}
           <div className="verification-code">

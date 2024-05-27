@@ -45,7 +45,7 @@ export default function Signup() {
         const userId = data.data.userId;
         alert("User successfully registered. Please check your email for the OTP.");
         console.log('User Account successfully created');
-        navigate(`/verify?userId=${userId}&email=${formData.step1.email}`);
+        navigate(`/VerificationPage?userId=${userId}&email=${formData.step1.email}`);
       } else {
         alert("Account creation failed");
         console.log("Account creation failed");
