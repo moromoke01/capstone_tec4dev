@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import './Verification.css';
-import emailImage from "../../Assets/email.png";
+// import emailImage from "../../Assets/email.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 
 const VerificationPage = () => {
   const location = useLocation();
@@ -38,6 +41,7 @@ const VerificationPage = () => {
     setMessage(data.message);
 
     if (response.ok) {
+      alert("User Email Verified");
       navigate('/Login');
     }
   };
@@ -46,7 +50,9 @@ const VerificationPage = () => {
     <div className='body'> 
       <div className='cont flex'>
         <div className='email-image'>
-          <img src={emailImage} alt="email-logo"/>
+        <FontAwesomeIcon icon={faEnvelope} size="10x" className='email'/>
+        {/* <FontAwesomeIcon icon="fa-solid fa-envelope"  size="6x"/> */}
+          {/* <img src={emailImage} alt="email-logo"/> */}
           <div className='circled-number'>  </div>
         </div>
 
