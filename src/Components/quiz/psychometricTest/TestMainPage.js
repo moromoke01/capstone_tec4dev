@@ -4,7 +4,7 @@ import PersonalityTrait from './PersonalityTrait';
 import CreativityQue from './CreativityQue';
 import Aptitude from './AptitudeQue';
 import SkillQue from './SkillQue';
-import useAuth from '../../Auth/UseAuth';   // Adjust the path according to your project structure
+import useAuth from '../../Auth/UseAuth';  // Adjust the path according to your project structure
 
 function TestMainPage() {
   const isAuthenticated = useAuth();  // Check authentication
@@ -19,7 +19,7 @@ function TestMainPage() {
   };
 
   const handleResponseChange = (questionNumber, response) => {
-    setResponses({ ...responses, [questionNumber]: response });
+    setResponses(prevResponses => ({ ...prevResponses, [questionNumber]: response }));
   };
 
   const handleSubmit = async () => {
@@ -43,7 +43,7 @@ function TestMainPage() {
   };
 
   if (!isAuthenticated) {
-    return null;  // Optionally, you can return a loading spinner or a message
+    return <p>Please log in to take the test.</p>;  // Optionally, you can return a loading spinner or a message
   }
 
   return (
