@@ -23,7 +23,7 @@ function TestIntroPage() {
         <div className='flex'>
           <div className='content-area'>
             <div className="header-1">
-              <img src={logo} style={{ width: 150, height: 40 }} alt="logo" />
+              <img src={logo} style={{ width: 150, height: 40 , padding:0, marginBottom: 0 }} alt="logo" />
             </div>
 
             <div className='head-intro'>

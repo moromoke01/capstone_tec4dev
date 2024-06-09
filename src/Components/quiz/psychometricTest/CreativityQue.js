@@ -1,40 +1,30 @@
 import React, { useState, useEffect } from 'react';
-import './testStyle.css';
 import logo from '../../../Assets/logo.png';
+import "./testStyle.css";
 
-const CreativityQues = () => {
+const CreativityQues = ({ onUpdateResponse }) => {
   const [creativityQuestions, setCreativityQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedOptions, setSelectedOptions] = useState({});
   const [answeredQuestions, setAnsweredQuestions] = useState([]);
 
   useEffect(() => {
-    // Fetch questions from the backend
     fetchCreativityQuestions();
   }, []);
 
   const fetchCreativityQuestions = async () => {
     try {
-      // Simulate fetching data from a URL
       const response = await fetch('https://insignify-backend.onrender.com/questions');
       const data = await response.json();
-
-      // Filter questions by section
-      const creativityQues = data.filter(question => question.section === 'Creativity and innovation');
-
-      // Shuffle the array of questions
-      const shuffledQuestions = shuffleArray(creativityQues);
-      
-      // Initialize answeredQuestions array with false for each question
-      setAnsweredQuestions(new Array(shuffledQuestions.length).fill(false));
-
+      const creativityQuestions = data.filter(question => question.section === "Creativity");
+      const shuffledQuestions = shuffleArray(creativityQuestions);
       setCreativityQuestions(shuffledQuestions);
+      setAnsweredQuestions(new Array(shuffledQuestions.length).fill(false));
     } catch (error) {
       console.error('Error fetching questions:', error);
     }
   };
 
-  // Function to shuffle an array
   const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -56,14 +46,15 @@ const CreativityQues = () => {
   };
 
   const handleOptionChange = (event) => {
-    const newSelectedOptions = { ...selectedOptions };
-    newSelectedOptions[currentQuestionIndex] = event.target.value;
-    setSelectedOptions(newSelectedOptions);
-
-    // Update answeredQuestions array to mark current question as answered
-    const updatedAnsweredQuestions = [...answeredQuestions];
-    updatedAnsweredQuestions[currentQuestionIndex] = true;
+    const selectedIndex = currentQuestionIndex;
+    const selectedOption = event.target.value;
+    setSelectedOptions(prevOptions => ({
+      ...prevOptions,
+      [selectedIndex]: selectedOption
+    }));
+    const updatedAnsweredQuestions = answeredQuestions.map((answer, index) => index === selectedIndex ? true : answer);
     setAnsweredQuestions(updatedAnsweredQuestions);
+    onUpdateResponse(selectedIndex, selectedOption);
   };
 
   const currentQuestion = creativityQuestions[currentQuestionIndex];
@@ -73,14 +64,8 @@ const CreativityQues = () => {
     <div className="quiz-container">
       <div className="header">
         <img src={logo} style={{ width: 150, height:35 }} alt="logo" />
-        <h4>
-          <b>Section C: Creativity and innovation Questions</b>
-        </h4>
-
-        <span>
-          <b>59:49</b>
-          <button>End Assessment</button>
-        </span>
+        <h4><b>Section B: Creativity Questions</b></h4>
+        <span><b>59:49</b><button>End Assessment</button></span>
       </div>
 
       <div className='pagination'>
@@ -94,36 +79,33 @@ const CreativityQues = () => {
           </div>
         ))}
       </div>
-
-     <div className="questions">
-      {currentQuestion && ( // Conditionally render the question section only when currentQuestion exists
-        <div className="question">
-          <h4>{currentQuestionIndex + 1}. {currentQuestion.question}</h4>
-          <form>
-            {currentQuestion.options.map((option, index) => (
-            <p>
-              <div key={index} className="que-options">         
-                <input
-                  type="radio"
-                  id={`option-${index}`}
-                  name="option"
-                  value={option}
-                  checked={selectedOption === option}
-                  onChange={handleOptionChange}
-                />
-                <div><label htmlFor={`option-${index}`} className="options">{option}</label></div>
-              </div>
-              </p>
-            ))}
-          </form>
+      
+      <div className="questions">
+        {currentQuestion && (
+          <div className="question">
+            <h4>{currentQuestionIndex + 1}. {currentQuestion.question}</h4>
+            <form>
+              {currentQuestion.options.map((option, index) => (
+                <p key={index} className="que-options">
+                  <input
+                    type="radio"
+                    id={`option-${index}`}
+                    name="option"
+                    value={option}
+                    checked={selectedOption === option}
+                    onChange={handleOptionChange}
+                  />
+                  <label htmlFor={`option-${index}`} className="options">{option}</label>
+                </p>
+              ))}
+            </form>
+          </div>
+        )}
+        <div className="bottom-buttons">
+          <button className="btn btn-left" onClick={handlePrevious}>Previous</button>
+          <button className="btn btn-right" onClick={handleNext}>Next</button>
         </div>
-      )}
-
-      <div className="bottom-buttons">
-        <button className="btn btn-left" onClick={handlePrevious}>Previous</button>
-        <button className="btn btn-right" onClick={handleNext}>Next</button>
       </div>
-    </div>
     </div>
   );
 };

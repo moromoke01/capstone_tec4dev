@@ -185,7 +185,7 @@ input[type="radio"] {
 /* TestIntroPage styling */
 .testIntroPageBox {
   width: 100%;
-  max-width: 900px;
+  max-width: 1020px;
   background-color: #ffffff;
   margin: auto;
   margin-top: 1em;
@@ -324,8 +324,11 @@ input[type="radio"] {
   .content-area {
     padding: 15px;
     margin: auto;
+    
   }
-
+  .content-area p{
+    line-height: 10px;
+  }
   .header {
     width: 100%;
     height: 140px;

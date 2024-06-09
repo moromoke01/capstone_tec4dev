@@ -17,6 +17,7 @@ import Result from './Components/Result/Result';
 import Contact from './Components/Contact/contact';
 import { GoToTop } from "go-to-top-react";
 import PrivateRoute from './Components/Auth/PrivateRoute';
+import QuestionComponent from './Components/Test/QuestionComponent';
 
 
 
@@ -40,6 +41,7 @@ function App() {
           <Route path="/Explore" element={<ExploreCarousel/>} />
           <Route path="/about" element={<AboutUs/>} />
           <Route path="/contact" element={<Contact />} /> {/* Add this line */}
+          <Route path="/QuestionComponent" element={<QuestionComponent />} />
         </Routes>
       </Router>
 
